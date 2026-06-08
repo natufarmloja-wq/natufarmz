@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NatuFarm - Produtos Naturais a Granel</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>@import url("new_styles.css");</style>
+<script src="dados.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="logo_NatuFarm.png" alt="NatuFarm">
+    </div>
+    <div class="header-search">
+      <input type="text" id="headerSearch" placeholder="Buscar produto natural..." oninput="filtrarBusca(this.value)">
+      <span class="search-icon">🔍</span>
+    </div>
+    <a href="https://wa.me/5542998505408?text=Olá! Gostaria de fazer um pedido na NatuFarm." class="btn-wa-header" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.761-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Natureza em cada <span>grão</span>, qualidade em cada produto</h1>
+    <p>Produtos naturais a granel e suplementos com o melhor preço. Entregamos em Foz do Jordão e região.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">🌿 100% Natural</span>
+      <span class="hero-badge">⚖️ Vendido a granel</span>
+      <span class="hero-badge">💊 Encapsulados</span>
+      <span class="hero-badge">🚚 Entrega regional</span>
+    </div>
+    <a href="https://wa.me/5542998505408?text=Olá! Gostaria de fazer um pedido na NatuFarm." class="hero-cta" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.761-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Fazer Pedido Agora
+    </a>
+  </div>
+</section>
+
+<div class="entrega-bar">
+  <div class="entrega-inner">
+    <div class="entrega-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Foz do Jordão
+    </div>
+    <div class="entrega-item">
+      <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+      Candói · Mangueirinha · Reserva do Iguaçu
+    </div>
+    <div class="entrega-item">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Frete para cidades vizinhas — consulte no WhatsApp
+    </div>
+  </div>
+</div>
+
+<div class="main-layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Categorias</div>
+    <ul class="cat-list" id="catList"></ul>
+  </aside>
+  <main>
+    <div class="content-header">
+      <div>
+        <div class="content-title" id="catTitulo">Todos os Produtos</div>
+        <div class="content-desc" id="catDesc">Explore toda a nossa linha de produtos naturais</div>
+      </div>
+      <div class="produtos-count" id="produtosCount">0 produtos</div>
+    </div>
+    <div class="produtos-grid" id="produtosGrid"></div>
+    <div class="sem-resultado" id="semResultado">
+      <p style="font-size:40px;margin-bottom:12px">🔍</p>
+      <p>Nenhum produto encontrado</p>
+    </div>
+  </main>
+</div>
+
+<!-- MODAL DETALHES -->
+<div class="det-overlay" id="detOverlay" onclick="fecharDetalhesOverlay(event)">
+  <div class="det-modal" id="detModal">
+    <div class="det-header">
+      <div class="det-header-info">
+        <div class="det-emoji" id="detEmoji"></div>
+        <div class="det-nome" id="detNome"></div>
+        <span class="det-tipo" id="detTipo"></span>
+      </div>
+      <div style="text-align:right">
+        <div class="det-preco" id="detPreco"></div>
+        <button class="det-fechar" onclick="fecharDetalhes()">✕</button>
+      </div>
+    </div>
+    <div class="det-body" id="detBody"></div>
+    <div class="det-footer">
+      <button class="det-btn-add" id="detBtnAdd" onclick="addDoDetalhe()">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Adicionar ao pedido
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- CARRINHO BTN -->
+<button class="carrinho-btn" id="carrinhoBtn" onclick="abrirCarrinho()">
+  <svg viewBox="0 0 24 24"><path d="M17 18c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.9 18 9 18h12v-2H9.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H19c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0023.46 5H5.21l-.94-2H1zm6 16c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2z"/></svg>
+  Meu pedido
+  <span class="carrinho-badge" id="carrinhoBadge">0</span>
+</button>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="fecharCarrinho()"></div>
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <div class="modal-titulo">🛒 Meu Pedido</div>
+    <button class="modal-fechar" onclick="fecharCarrinho()">✕</button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+  <div class="modal-footer">
+    <div class="modal-total">
+      <span class="modal-total-label">Total estimado</span>
+      <span class="modal-total-valor" id="modalTotal">R$ 0,00</span>
+    </div>
+    <textarea class="modal-obs" id="modalObs" rows="2" placeholder="Observações (endereço, horário, etc.)..."></textarea>
+    <button class="btn-enviar" onclick="enviarPedido()">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.761-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>NatuFarm</h4>
+      <p>Produtos naturais a granel e suplementos com qualidade e preço justo. Atendemos Foz do Jordão e região.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Onde Atendemos</h4>
+      <p>📍 Foz do Jordão — PR</p>
+      <p>🚚 Candói (10,9 km)</p>
+      <p>🚚 Reserva do Iguaçu (17,8 km)</p>
+      <p>🚚 Mangueirinha (39 km)</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <a href="https://wa.me/5542998505408" target="_blank">📱 (42) 99850-5408</a>
+      <p>Granel: mínimo 50g por produto</p>
+      <p>Preços granel por 100g</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 NatuFarm Produtos Naturais · Foz do Jordão - PR</div>
+</footer>
+<script>
+const WA = '5542998505408';
+
+// InformaÃ§Ãµes adicionais de BenefÃ­cios e Uso (cadastrÃ¡veis no Admin)
+if (typeof INFO === 'undefined') { window.INFO = {}; }
+
+function calcPreco(nome) {
+  const p = PRODUTOS[nome];
+  if (!p) return 2;
+  if (p.tipo === 'caps') {
+    return p.custo * 2.5;
+  }
+  const c = p.custo / 10;
+  const m = c < 21 ? 3.2 : c <= 50 ? 2.5 : 2.0;
+  let v = c * m;
+  if (v < 2.0) v = 2.0;
+  if (v > 30.0) v = 25.0;
+  return v;
+}
+
+function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
+
+function getImgSrc(nome) {
+  if (IMGS[nome]) return IMGS[nome];
+  const n = nome.toLowerCase();
+  if (n.includes('argila')) return 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80';
+  if (n.includes('mel')) return 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80';
+  if (n.includes('vitamina') || n.includes('complexo') || n.includes('magnÃ©s') || n.includes('colÃ¡geno') || n.includes('Ã´mega') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da') || n.includes('trÃ­bulos') || n.includes('polivit') || n.includes('fisio') || n.includes('spray') || n.includes('prÃ³polis') || n.includes('cloreto')) return 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80';
+  if (n.includes('vinagre')) return 'https://images.unsplash.com/photo-1574224630577-72fd84c94c94?w=400&q=80';
+  if (n.includes('Ã³leo') || n.includes('oleo')) return 'https://images.unsplash.com/photo-1526397751294-331021109fbd?w=400&q=80';
+  if (n.includes('coco')) return 'https://images.unsplash.com/photo-1581768099668-b67895df3c6b?w=400&q=80';
+  if (n.includes('granola')) return 'https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=400&q=80';
+  if (n.includes('pÃ¡prica') || n.includes('pimenta') || n.includes('colorau') || n.includes('curry') || n.includes('cominho') || n.includes('anis') || n.includes('cravo') || n.includes('noz moscada') || n.includes('lemon')) return 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&q=80';
+  if (n.includes('sal')) return 'https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&q=80';
+  if (n.includes('canela')) return 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=400&q=80';
+  if (n.includes('gengibre')) return 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=400&q=80';
+  if (n.includes('chips') || n.includes('banana')) return 'https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400&q=80';
+  if (n.includes('uva') || n.includes('ameixa') || n.includes('fruta')) return 'https://images.unsplash.com/photo-1423345089985-13b6b18e5b79?w=400&q=80';
+  return 'https://images.unsplash.com/photo-1515586000433-45406d8e6662?w=400&q=80';
+}
+
+function getEmoji(nome) {
+  const n = nome.toLowerCase();
+  if (n.includes('argila')) return 'ðŸ’†';
+  if (n.includes('vitamina') || n.includes('complexo') || n.includes('magnÃ©s') || n.includes('colÃ¡geno') || n.includes('Ã´mega') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da') || n.includes('trÃ­bulos') || n.includes('polivit') || n.includes('fisio') || n.includes('spray') || n.includes('prÃ³polis') || n.includes('cloreto') || n.includes('Ã³leo de alho')) return 'ðŸ’Š';
+  if (n.includes('mel') || n.includes('prÃ³polis')) return 'ðŸ¯';
+  if (n.includes('vinagre')) return 'ðŸ¾';
+  if (n.includes('Ã³leo de coco')) return 'ðŸ¥¥';
+  if (n.includes('castanha') || n.includes('amÃªnd') || n.includes('nozes') || n.includes('amendoim')) return 'ðŸ¥œ';
+  if (n.includes('chia') || n.includes('semente') || n.includes('linhaÃ§a') || n.includes('girassol') || n.includes('abÃ³bora')) return 'ðŸŒ±';
+  if (n.includes('aveia') || n.includes('farinha') || n.includes('farelo') || n.includes('extrato')) return 'ðŸŒ¾';
+  if (n.includes('cacau') || n.includes('chocolate')) return 'ðŸ«';
+  if (n.includes('aÃ§Ãºcar') || n.includes('xilitol') || n.includes('coco') || n.includes('granola')) return 'ðŸ¬';
+  if (n.includes('uva') || n.includes('ameixa') || n.includes('fruta') || n.includes('chips')) return 'ðŸ‡';
+  if (n.includes('caldo') || n.includes('tempero') || n.includes('curry') || n.includes('chimichurri') || n.includes('pÃ¡prica') || n.includes('pimenta') || n.includes('colorau') || n.includes('orÃ©gano') || n.includes('vinagrete') || n.includes('ervas') || n.includes('pega marido') || n.includes('alho frito') || n.includes('tomilho') || n.includes('cominho') || n.includes('cebola') || n.includes('alho') || n.includes('coentro') || n.includes('creme') || n.includes('noz') || n.includes('fumaÃ§a') || n.includes('endro') || n.includes('funcho') || n.includes('manjericÃ£o')) return 'ðŸ§‚';
+  if (n.includes('sal')) return 'ðŸ§‚';
+  if (n.includes('guaranÃ¡') || n.includes('maca') || n.includes('catuaba') || n.includes('tribulus') || n.includes('creatina') || n.includes('ginseng')) return 'âš¡';
+  if (n.includes('camomila') || n.includes('melissa') || n.includes('cidreira') || n.includes('capim') || n.includes('sene') || n.includes('guaco') || n.includes('hortelÃ£') || n.includes('alecrim') || n.includes('pata') || n.includes('tanchagem') || n.includes('melÃ£o') || n.includes('cardo') || n.includes('carqueja') || n.includes('jambolÃ£o') || n.includes('canela de velho') || n.includes('unha') || n.includes('ipÃª') || n.includes('graviola') || n.includes('amora') || n.includes('quebra') || n.includes('uxi') || n.includes('feno') || n.includes('baleeira') || n.includes('sÃ£o joÃ£o') || n.includes('oliveira') || n.includes('malva') || n.includes('secabarriga') || n.includes('anis') || n.includes('barbatimÃ£o') || n.includes('chapÃ©u') || n.includes('alcachofra') || n.includes('chÃ¡ verde') || n.includes('sÃ¡lvia') || n.includes('erva doce') || n.includes('hibisco') || n.includes('espinheira') || n.includes('eucalipto') || n.includes('salsa')) return 'ðŸµ';
+  return 'ðŸ“¦';
+}
+
+// â”€â”€ CARRINHO â”€â”€
+let carrinho = {};
+
+try {
+  const saved = localStorage.getItem('natufarm_carrinho');
+  if (saved) {
+    carrinho = JSON.parse(saved);
+  }
+} catch (e) {
+  console.error(e);
+}
+
+function addCarrinho(nome, qtdManual) {
+  const p = PRODUTOS[nome];
+  if (!p) return;
+  const preco = calcPreco(nome);
+  const tipo = p.tipo || 'granel';
+  
+  if (carrinho[nome]) {
+    if (qtdManual !== undefined) {
+      carrinho[nome].qtd = qtdManual;
+    } else {
+      carrinho[nome].qtd += (tipo === 'granel' ? 100 : 1);
+    }
+  } else {
+    carrinho[nome] = {
+      preco: preco,
+      qtd: qtdManual !== undefined ? qtdManual : (tipo === 'granel' ? 100 : 1),
+      tipo: tipo
+    };
+  }
+  
+  if (carrinho[nome].qtd < (tipo === 'granel' ? 50 : 1)) {
+    delete carrinho[nome];
+  }
+  
+  salvarCarrinho();
+  atualizarCarrinho();
+  renderProdutos();
+}
+
+function removerCarrinho(nome) {
+  delete carrinho[nome];
+  salvarCarrinho();
+  atualizarCarrinho();
+  renderProdutos();
+}
+
+function mudarQtdCarrinho(nome, novaQtd) {
+  const tipo = PRODUTOS[nome]?.tipo || 'granel';
+  if (novaQtd < (tipo === 'granel' ? 50 : 1)) {
+    removerCarrinho(nome);
+  } else {
+    carrinho[nome].qtd = novaQtd;
+    salvarCarrinho();
+    atualizarCarrinho();
+  }
+}
+
+function limparCarrinho() {
+  carrinho = {};
+  salvarCarrinho();
+  atualizarCarrinho();
+  renderProdutos();
+}
+
+function salvarCarrinho() {
+  try {
+    localStorage.setItem('natufarm_carrinho', JSON.stringify(carrinho));
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function abrirCarrinho() {
+  document.getElementById('modalOverlay').classList.add('open');
+  document.getElementById('modal').classList.add('open');
+  atualizarCarrinho();
+}
+
+function fecharCarrinho() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.getElementById('modal').classList.remove('open');
+}
+
+function atualizarCarrinho() {
+  const body = document.getElementById('modalBody');
+  const totalEl = document.getElementById('modalTotal');
+  const badge = document.getElementById('carrinhoBadge');
+  const btnFlutuante = document.getElementById('carrinhoBtn');
+  
+  body.innerHTML = '';
+  let totalGeral = 0;
+  let totalItens = 0;
+  const chaves = Object.keys(carrinho);
+  
+  if (chaves.length === 0) {
+    body.innerHTML = `
+      <div class="carrinho-vazio">
+        <span style="font-size: 48px;">ðŸ›’</span>
+        <p>Seu carrinho estÃ¡ vazio.</p>
+        <button class="btn-wa-header" onclick="fecharCarrinho()" style="background:var(--verde-escuro); margin-top: 10px;">Continuar Comprando</button>
+      </div>
+    `;
+    badge.textContent = '0';
+    btnFlutuante.style.display = 'none';
+    totalEl.textContent = 'R$ 0,00';
+    return;
+  }
+  
+  btnFlutuante.style.display = 'flex';
+  
+  chaves.forEach(nome => {
+    const item = carrinho[nome];
+    let valorItem = 0;
+    
+    if (item.tipo === 'granel') {
+      valorItem = item.preco * item.qtd / 100;
+      totalItens += 1;
+    } else {
+      valorItem = item.preco * item.qtd;
+      totalItens += item.qtd;
+    }
+    totalGeral += valorItem;
+    
+    const emoji = getEmoji(nome);
+    const unitText = item.tipo === 'granel' ? 'g' : ' un';
+    const stepVal = item.tipo === 'granel' ? 50 : 1;
+    const minVal = item.tipo === 'granel' ? 50 : 1;
+    
+    const itemHtml = `
+      <div class="carrinho-item">
+        <div class="carrinho-item-emoji">${emoji}</div>
+        <div class="carrinho-item-info">
+          <div class="carrinho-item-nome">${nome}</div>
+          <div class="carrinho-item-preco">${fmtR(item.preco)} ${item.tipo === 'granel' ? 'por 100g' : 'por un'}</div>
+          <span class="carrinho-item-granel">${item.tipo === 'granel' ? 'a granel' : 'suplemento'}</span>
+        </div>
+        <div class="qtd-wrap">
+          <input class="qtd-input" type="number" value="${item.qtd}" min="${minVal}" step="${stepVal}" onchange="mudarQtdCarrinho('${nome.replace(/'/g, "\\'")}', parseInt(this.value) || 0)">
+          <span class="qtd-unit">${unitText}</span>
+        </div>
+        <button class="carrinho-remover" onclick="removerCarrinho('${nome.replace(/'/g, "\\'")}')">âœ•</button>
+      </div>
+    `;
+    body.innerHTML += itemHtml;
+  });
+  
+  badge.textContent = totalItens;
+  totalEl.textContent = fmtR(totalGeral);
+}
+
+function enviarPedido() {
+  const chaves = Object.keys(carrinho);
+  if (chaves.length === 0) return;
+  
+  let texto = "*Novo Pedido - NatuFarm*\n\n";
+  let totalGeral = 0;
+  
+  chaves.forEach((nome, idx) => {
+    const item = carrinho[nome];
+    let valorItem = 0;
+    if (item.tipo === 'granel') {
+      valorItem = item.preco * item.qtd / 100;
+      texto += `${idx + 1}. *${nome}* - ${item.qtd}g (${fmtR(valorItem)})\n`;
+    } else {
+      valorItem = item.preco * item.qtd;
+      texto += `${idx + 1}. *${nome}* - ${item.qtd} un (${fmtR(valorItem)})\n`;
+    }
+    totalGeral += valorItem;
+  });
+  
+  texto += `\n*Total Estimado:* ${fmtR(totalGeral)}`;
+  
+  const obs = document.getElementById('modalObs').value.trim();
+  if (obs) {
+    texto += `\n\n*ObservaÃ§Ãµes/EndereÃ§o:*\n${obs}`;
+  }
+  
+  const url = `https://wa.me/${WA}?text=${encodeURIComponent(texto)}`;
+  window.open(url, '_blank');
+}
+
+function fecharDetalhes() {
+  document.getElementById('detOverlay').classList.remove('open');
+}
+
+function fecharDetalhesOverlay(e) {
+  if (e.target === document.getElementById('detOverlay')) fecharDetalhes();
+}
+
+function addDoDetalhe() {
+  if (detNomeAtual) {
+    const qtd = parseInt(document.getElementById('detQtdInput').value);
+    addCarrinho(detNomeAtual, qtd);
+    const btn = document.getElementById('detBtnAdd');
+    btn.innerHTML = `<svg viewBox='0 0 24 24'><path d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg> Adicionado ao pedido`;
+    btn.className = 'det-btn-add adicionado';
+  }
+}
+
+function atualizarPrecoDetalhe() {
+  if (!detNomeAtual) return;
+  const preco = calcPreco(detNomeAtual);
+  const tipo = PRODUTOS[detNomeAtual]?.tipo || 'granel';
+  const qtd = parseInt(document.getElementById('detQtdInput').value) || 0;
+  
+  let totalCalculado = 0;
+  if (tipo === 'granel') {
+    totalCalculado = preco * qtd / 100;
+    document.getElementById('detPreco').textContent = fmtR(totalCalculado) + ` (${qtd}g)`;
+  } else {
+    totalCalculado = preco * qtd;
+    document.getElementById('detPreco').textContent = fmtR(totalCalculado) + ` (${qtd} un)`;
+  }
+}
+
+let detNomeAtual = '';
+
+function abrirDetalhes(nome) {
+  const p = PRODUTOS[nome];
+  if (!p) return;
+  const preco = calcPreco(nome);
+  const tipo = p.tipo || 'granel';
+  const emoji = getEmoji(nome);
+  const info = INFO[nome] || {};
+  detNomeAtual = nome;
+  
+  document.getElementById('detEmoji').textContent = emoji;
+  document.getElementById('detNome').textContent = nome;
+  
+  const tipoEl = document.getElementById('detTipo');
+  tipoEl.textContent = tipo === 'caps' ? 'SUPLEMENTO' : 'GRANEL';
+  tipoEl.className = 'det-tipo' + (tipo === 'caps' ? ' caps' : '');
+  
+  document.getElementById('detPreco').textContent = fmtR(preco) + (tipo === 'caps' ? '/un' : '/100g');
+  
+  const qtdInput = document.getElementById('detQtdInput');
+  const qtdUnit = document.getElementById('detQtdUnit');
+  if (tipo === 'granel') {
+    qtdInput.value = 100;
+    qtdInput.min = 50;
+    qtdInput.step = 50;
+    qtdUnit.textContent = 'gramas';
+  } else {
+    qtdInput.value = 1;
+    qtdInput.min = 1;
+    qtdInput.step = 1;
+    qtdUnit.textContent = 'unidades';
+  }
+  
+  let html = '';
+  if (info.ben) {
+    html += `<div class="det-section"><div class="det-section-titulo">ðŸŒ¿ BenefÃ­cios</div><div class="det-section-texto">${info.ben}</div></div>`;
+  }
+  if (info.uso) {
+    html += `<div class="det-section"><div class="det-section-titulo">ðŸ“‹ Como usar</div><div class="det-section-texto">${info.uso}</div></div>`;
+  }
+  
+  if (!info.ben && !info.uso) {
+    html = `<div class="det-sem-info">Selecione a quantidade para adicionar ao seu pedido.</div>`;
+  }
+  
+  document.getElementById('detBody').innerHTML = html;
+  
+  const btn = document.getElementById('detBtnAdd');
+  btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Adicionar ao pedido`;
+  btn.className = 'det-btn-add';
+  
+  document.getElementById('detOverlay').classList.add('open');
+  atualizarPrecoDetalhe();
+}
+
+// â”€â”€ RENDER â”€â”€
+let catAtiva = 'todos';
+let buscaAtiva = '';
+
+function renderCats() {
+  const list = document.getElementById('catList');
+  list.innerHTML = '';
+  for (const cat of CATS) {
+    const count = cat.prods.filter(p => PRODUTOS[p]).length;
+    const li = document.createElement('li');
+    li.className = 'cat-item';
+    li.innerHTML = `<button class="cat-btn ${cat.id === catAtiva ? 'active' : ''}" onclick="selecionarCat('${cat.id}')">
+      <span class="cat-emoji">${cat.emoji}</span>
+      <span>${cat.nome}</span>
+      <span class="cat-count">${count}</span>
+    </button>`;
+    list.appendChild(li);
+  }
+}
+
+function selecionarCat(id) {
+  catAtiva = id;
+  buscaAtiva = '';
+  document.getElementById('headerSearch').value = '';
+  renderCats();
+  renderProdutos();
+  const grid = document.getElementById('produtosGrid');
+  const offset = grid.getBoundingClientRect().top + window.scrollY - 100;
+  window.scrollTo({ top: offset, behavior: 'smooth' });
+}
+
+function filtrarBusca(val) {
+  buscaAtiva = val.trim().toLowerCase();
+  catAtiva = 'todos';
+  renderCats();
+  renderProdutos();
+  if (buscaAtiva.length > 0) {
+    setTimeout(() => {
+      const grid = document.getElementById('produtosGrid');
+      const offset = grid.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }, 100);
+  }
+}
+
+function renderProdutos() {
+  const cat = CATS.find(c => c.id === catAtiva);
+  let lista = cat ? cat.prods.filter(p => PRODUTOS[p]) : [];
+  if (buscaAtiva) lista = todosArr.filter(p => p.toLowerCase().includes(buscaAtiva));
+
+  document.getElementById('catTitulo').textContent = buscaAtiva ? `Busca: "${buscaAtiva}"` : cat.nome;
+  document.getElementById('catDesc').textContent = buscaAtiva ? `${lista.length} produto(s) encontrado(s)` : cat.desc;
+  document.getElementById('produtosCount').textContent = lista.length + (lista.length === 1 ? ' produto' : ' produtos');
+
+  const grid = document.getElementById('produtosGrid');
+  const sem = document.getElementById('semResultado');
+
+  if (lista.length === 0) { grid.innerHTML = ''; sem.style.display = 'block'; return; }
+  sem.style.display = 'none';
+
+  grid.innerHTML = lista.map(nome => {
+    const preco = calcPreco(nome);
+    const tipo = PRODUTOS[nome]?.tipo || 'granel';
+    const noCarrinho = !!carrinho[nome];
+    const tagLabel = tipo === 'caps' ? 'SUPLEMENTO' : 'GRANEL';
+    const tagClass = tipo === 'caps' ? 'caps' : '';
+    const infoText = tipo === 'caps' ? 'Por unidade' : 'A granel â€¢ mÃ­n. 50g';
+    const precoUnit = tipo === 'caps' ? 'por unidade' : 'por 100g';
+    const imgSrc = getImgSrc(nome);
+    return `<div class="produto-card ${noCarrinho ? 'no-carrinho' : ''}">
+      <div class="produto-img">
+        <img src="${imgSrc}" alt="${nome}" loading="lazy" onerror="this.style.display='none';this.parentNode.innerHTML+='<span style=font-size:38px>${getEmoji(nome)}</span>'">
+        <span class="produto-tag ${tagClass}">${tagLabel}</span>
+      </div>
+      <div class="produto-body">
+        <div class="produto-nome">${nome}</div>
+        <div class="produto-info">${infoText}</div>
+        <div class="produto-preco">${fmtR(preco)}</div>
+        <div class="produto-preco-unit">${precoUnit}</div>
+        <button class="btn-add ${noCarrinho ? 'adicionado' : ''}" onclick="addCarrinho('${nome.replace(/'/g,"\\'")}')">
+          ${noCarrinho
+            ? `<svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Adicionado`
+            : `<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir`
+            : `<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir`}
+        </button>
+        <button class="btn-detalhes" onclick="abrirDetalhes('${nome.replace(/'/g,"\\'")}')">
+          <svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          Ver detalhes
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+renderCats();
+renderProdutos();
+atualizarCarrinho(); // Mostra o botÃ£o flutuante se houver itens salvos no localStorage
+</script>
+</body>
+</html>

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NatuFarm - Painel Administrativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-escuro: #064E3B;
+      --verde-medio: #059669;
+      --verde-claro: #34D399;
+      --verde-suave: #D1FAE5;
+      --verde-mint: #ECFDF5;
+      --bege: #F9FAFB;
+      --texto: #111827;
+      --texto-suave: #4B5563;
+      --branco: #ffffff;
+      --danger: #EF4444;
+      --danger-light: #FEE2E2;
+      --accent: #F59E0B;
+      --sombra: 0 10px 25px -5px rgba(6, 78, 59, 0.05), 0 8px 10px -6px rgba(6, 78, 59, 0.05);
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #F3F4F6;
+      color: var(--texto);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--verde-escuro);
+      color: white;
+      padding: 16px 32px;
+      box-shadow: 0 4px 20px rgba(6, 78, 59, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-title h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-title span {
+      background: var(--verde-claro);
+      color: var(--verde-escuro);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .connection-status {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 14px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--danger);
+      box-shadow: 0 0 8px var(--danger);
+    }
+
+    .status-dot.connected {
+      background: #10B981;
+      box-shadow: 0 0 8px #10B981;
+    }
+
+    .btn-connect {
+      background: var(--verde-claro);
+      color: var(--verde-escuro);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    .btn-connect:hover {
+      background: white;
+      transform: translateY(-1px);
+    }
+
+    .main-container {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 32px auto;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--sombra);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: sticky;
+      top: 110px;
+    }
+
+    .sidebar-section h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--texto-suave);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .action-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--verde-escuro);
+      color: white;
+      box-shadow: 0 4px 12px rgba(6, 78, 59, 0.15);
+    }
+    .btn-primary:hover {
+      background: var(--verde-medio);
+      transform: translateY(-2px);
+    }
+    .btn-primary:disabled {
+      background: #9CA3AF;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .btn-secondary {
+      background: var(--verde-mint);
+      color: var(--verde-escuro);
+      border: 1px solid var(--verde-suave);
+    }
+    .btn-secondary:hover {
+      background: var(--verde-suave);
+    }
+    .btn-secondary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .cat-filter-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cat-filter-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border: none;
+      background: transparent;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--texto-suave);
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .cat-filter-btn:hover {
+      background: #F3F4F6;
+      color: var(--texto);
+    }
+    .cat-filter-btn.active {
+      background: var(--verde-mint);
+      color: var(--verde-escuro);
+      font-weight: 700;
+    }
+
+    /* CONTENT AREA */
+    .content-area {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .search-filter-bar {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      box-shadow: var(--sombra);
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      flex: 1;
+    }
+
+    .search-input-wrapper input {
+      width: 100%;
+      padding: 12px 16px 12px 40px;
+      border: 1px solid #E5E7EB;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .search-input-wrapper input:focus {
+      border-color: var(--verde-medio);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      opacity: 0.5;
+    }
+
+    .select-type-filter {
+      padding: 12px 16px;
+      border: 1px solid #E5E7EB;
+      border-radius: var(--radius-md);
+      background: white;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+      color: var(--texto-suave);
+    }
+
+    /* TABLE / GRID LIST */
+    .table-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--sombra);
+      overflow: hidden;
+    }
+
+    .no-data-view {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--texto-suave);
+    }
+    .no-data-view span { font-size: 64px; display: block; margin-bottom: 16px; }
+    .no-data-view h2 { font-family: 'Playfair Display', serif; color: var(--verde-escuro); margin-bottom: 8px; }
+
+    .prod-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .prod-table th {
+      background: #F9FAFB;
+      padding: 16px 24px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--texto-suave);
+      font-weight: 700;
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    .prod-table td {
+      padding: 16px 24px;
+      border-bottom: 1px solid #F3F4F6;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    .prod-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .prod-table tr:hover td {
+      background: var(--verde-mint);
+    }
+
+    .prod-info-cell {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .prod-thumb {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      background: var(--verde-mint);
+      border: 1px solid #E5E7EB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .prod-title {
+      font-weight: 600;
+      color: var(--texto);
+      font-size: 15px;
+    }
+
+    .tag-type {
+      display: inline-block;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .tag-type.granel {
+      background: var(--verde-suave);
+      color: var(--verde-escuro);
+    }
+    .tag-type.caps {
+      background: #E0E7FF;
+      color: #4F46E5;
+    }
+
+    .price-badge {
+      font-weight: 700;
+      color: var(--verde-escuro);
+      font-size: 15px;
+    }
+    .price-cost {
+      font-size: 12px;
+      color: var(--texto-suave);
+      margin-top: 2px;
+    }
+
+    .action-cells {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #E5E7EB;
+      background: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .icon-btn:hover {
+      background: #F3F4F6;
+      transform: scale(1.05);
+    }
+    .icon-btn.delete:hover {
+      background: var(--danger-light);
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+
+    /* MODAL EDITOR */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(17, 24, 39, 0.6);
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open {
+      display: flex;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .modal {
+      background: white;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .modal-header {
+      padding: 20px 24px;
+      background: var(--verde-mint);
+      border-bottom: 1px solid #E5E7EB;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--verde-escuro);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .modal-close {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--texto-suave);
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--texto); }
+
+    .modal-body {
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--texto-suave);
+    }
+
+    .form-control {
+      padding: 10px 14px;
+      border: 1px solid #D1D5DB;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+      width: 100%;
+    }
+    .form-control:focus {
+      border-color: var(--verde-medio);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-check-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #F9FAFB;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #E5E7EB;
+      max-height: 180px;
+      overflow-y: auto;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .form-check input {
+      cursor: pointer;
+    }
+
+    .preview-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 12px;
+      border: 1px solid #E5E7EB;
+      border-radius: var(--radius-sm);
+      background: #F9FAFB;
+    }
+
+    .preview-img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      background: var(--verde-mint);
+      border: 1px solid #D1D5DB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .modal-footer {
+      padding: 16px 24px;
+      border-top: 1px solid #E5E7EB;
+      background: #F9FAFB;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    /* NOTIFICATION Toast */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1100;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toast {
+      background: white;
+      padding: 16px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--verde-medio);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      min-width: 300px;
+    }
+
+    @keyframes slideInRight {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .toast.success { border-left-color: #10B981; }
+    .toast.error { border-left-color: var(--danger); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <h1>NatuFarm</h1>
+        <span>Painel Administrativo</span>
+      </div>
+      
+      <div class="connection-status">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">Desconectado</span>
+        <button class="btn-connect" id="btnConnect" onclick="conectarPasta()">Conectar Pasta</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>Ações</h3>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <button class="action-btn btn-primary" id="btnAddProd" onclick="abrirCriacao()" disabled>
+            ➕ Novo Produto
+          </button>
+          <button class="action-btn btn-secondary" id="btnSalvar" onclick="salvarDados()" disabled>
+            💾 Salvar Alterações
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Categorias</h3>
+        <ul class="cat-filter-list" id="catFilterList">
+          <li>
+            <button class="cat-filter-btn active" onclick="filtrarCategoria('todos', this)">
+              <span class="cat-emoji">🛒</span>
+              <span>Todos</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- CONTENT AREA -->
+    <main class="content-area">
+      <div class="search-filter-bar">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="adminSearch" placeholder="Buscar produto..." oninput="filtrarProdutos()">
+        </div>
+        <select class="select-type-filter" id="typeFilter" onchange="filtrarProdutos()">
+          <option value="todos">Todos os Tipos</option>
+          <option value="granel">Granel</option>
+          <option value="caps">Suplemento (Caps)</option>
+        </select>
+      </div>
+
+      <div class="table-card">
+        <div class="no-data-view" id="noDataView">
+          <span>📁</span>
+          <h2>Conecte a pasta do projeto</h2>
+          <p>Para ler os produtos da NatuFarm e fazer alterações, clique em "Conectar Pasta" no topo e escolha a pasta do site.</p>
+        </div>
+
+        <table class="prod-table" id="prodTable" style="display: none;">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Tipo</th>
+              <th>Custo</th>
+              <th>Venda (Estimado)</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="prodTableBody">
+            <!-- Linhas inseridas via JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- MODAL EDITOR -->
+  <div class="modal-overlay" id="editorOverlay" onclick="fecharEditorOverlay(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modalTitle">Editar Produto</h2>
+        <button class="modal-close" onclick="fecharEditor()">✕</button>
+      </div>
+      
+      <div class="modal-body">
+        <input type="hidden" id="editOriginalName">
+        
+        <div class="form-group">
+          <label for="editNome">Nome do Produto</label>
+          <input type="text" class="form-control" id="editNome" placeholder="Ex: Vinagrete">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="editTipo">Tipo de Produto</label>
+            <select class="form-control" id="editTipo" onchange="aoMudarTipoEditor()">
+              <option value="granel">Granel</option>
+              <option value="caps">Suplemento (Cápsulas/Embalagem)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="editCusto" id="labelCusto">Custo por kg (R$)</label>
+            <input type="number" class="form-control" id="editCusto" step="0.01" min="0" oninput="atualizarPrecoVendaEstimado()">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Preço de Venda Estimado no Site</label>
+          <div style="font-size: 16px; font-weight:700; color:var(--verde-escuro);" id="previewVendaText">
+            R$ 0,00
+          </div>
+          <div style="font-size:11px; color:var(--texto-suave);" id="previewVendaDesc">
+            (Calculado automaticamente pelas regras de markup)
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="editImgUrl">URL da Imagem (Internet)</label>
+          <input type="text" class="form-control" id="editImgUrl" placeholder="https://..." oninput="atualizarPreviewImg()">
+        </div>
+
+        <div class="form-group">
+          <label for="editImgFile">Ou Selecionar Foto Local (Manual)</label>
+          <input type="file" class="form-control" id="editImgFile" accept="image/*" onchange="aoSelecionarArquivoImagem(this)">
+        </div>
+
+        <div class="preview-box">
+          <div class="preview-img" id="previewImgContainer">📸</div>
+          <div>
+            <div style="font-size:13px; font-weight:600;">Pré-visualização da Imagem</div>
+            <div style="font-size:11px; color:var(--texto-suave);">Insira uma URL ou selecione uma foto para visualizar</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Categorias Associadas</label>
+          <div class="form-check-group" id="editorCategoriasList">
+            <!-- Checks de categorias via JS -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="editBeneficios">Benefícios (Opcional)</label>
+          <textarea class="form-control" id="editBeneficios" rows="2" placeholder="Descreva os benefícios para aparecer nos detalhes..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="editUso">Como Usar / Sugestão de Consumo (Opcional)</label>
+          <textarea class="form-control" id="editUso" rows="2" placeholder="Descreva sugestão de consumo..."></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="action-btn btn-secondary" onclick="fecharEditor()" style="width:auto; padding: 10px 20px;">Cancelar</button>
+        <button class="action-btn btn-primary" onclick="salvarProduto()" style="width:auto; padding: 10px 20px;">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    // Variáveis Globais de dados do projeto (carregadas de dados.js)
+    let PRODUTOS = null;
+    let CATS = null;
+    let IMGS = null;
+    let INFO = null;
+
+    let dirHandle = null;
+    let dadosFileHandle = null;
+
+    let categoriaAtiva = 'todos';
+    let editMode = 'criar'; // 'criar' ou 'editar'
+    
+    // Variável para guardar o arquivo físico selecionado no upload local
+    let arquivoImagemSelecionado = null;
+
+    // Regra de precificação idêntica ao site para preview
+    function calcPreco(custo, tipo) {
+      if (!custo) return 0;
+      if (tipo === 'caps') {
+        return custo * 2.5;
+      }
+      const c = custo / 10; // custo por 100g
+      const m = c < 21 ? 3.2 : c <= 50 ? 2.5 : 2.0;
+      let v = c * m;
+      if (v < 2.0) v = 2.0;
+      if (v > 30.0) v = 25.0;
+      return v;
+    }
+
+    function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
+
+    // Verifica a permissão do diretório local
+    async function verificarPermissao(fileHandle, readWrite) {
+      const options = {};
+      if (readWrite) {
+        options.mode = 'readwrite';
+      }
+      if ((await fileHandle.queryPermission(options)) === 'granted') {
+        return true;
+      }
+      if ((await fileHandle.requestPermission(options)) === 'granted') {
+        return true;
+      }
+      return false;
+    }
+
+    // Conectar à pasta do projeto
+    async function conectarPasta() {
+      try {
+        dirHandle = await window.showDirectoryPicker();
+        if (await verificarPermissao(dirHandle, true)) {
+          await carregarDados();
+        }
+      } catch (e) {
+        console.error(e);
+        showNotification("Erro", "Não foi possível acessar a pasta selecionada: " + e.message, "error");
+      }
+    }
+
+    // Carrega o dados.js e faz o parse das variáveis globais
+    async function carregarDados() {
+      try {
+        dadosFileHandle = await dirHandle.getFileHandle('dados.js', { create: false });
+        const file = await dadosFileHandle.getFile();
+        const texto = await file.text();
+
+        // Extrai as variáveis
+        const parser = new Function(texto + "\r\nreturn { PRODUTOS, CATS, IMGS };");
+        const dados = parser();
+        
+        PRODUTOS = dados.PRODUTOS;
+        CATS = dados.CATS;
+        IMGS = dados.IMGS;
+
+        // Extrai INFO se existir, senão inicializa vazio
+        if (texto.includes('const INFO =')) {
+          const infoParser = new Function(texto + "\r\nreturn INFO;");
+          INFO = infoParser();
+        } else {
+          INFO = {};
+        }
+
+        // Habilita botões
+        document.getElementById('btnAddProd').removeAttribute('disabled');
+        document.getElementById('btnSalvar').removeAttribute('disabled');
+
+        // Atualiza UI de Conexão
+        const dot = document.getElementById('statusDot');
+        dot.className = 'status-dot connected';
+        document.getElementById('statusText').textContent = "Conectado: " + dirHandle.name;
+        document.getElementById('btnConnect').textContent = "Mudar Pasta";
+
+        // Esconde NoDataView e mostra tabela
+        document.getElementById('noDataView').style.display = 'none';
+        document.getElementById('prodTable').style.display = 'table';
+
+        // Preenche as Categorias na sidebar
+        montarCategoriasSidebar();
+        
+        // Exibe os produtos
+        exibirProdutos();
+        showNotification("Conectado", "dados.js carregado com sucesso!", "success");
+
+      } catch (e) {
+        console.error(e);
+        showNotification("Erro", "Erro ao carregar dados.js. Verifique se escolheu a pasta correta.", "error");
+      }
+    }
+
+    // Salva as alterações de volta no dados.js do disco
+    async function salvarDados() {
+      if (!dadosFileHandle) return;
+      try {
+        // Gera o conteúdo do arquivo dados.js idêntico à estrutura esperada
+        const conteudo = `// ── DADOS DO CATÁLOGO NATUFARM ─────────────────────────
+// Este arquivo é gerado automaticamente pelo Painel Administrativo.
+
+const PRODUTOS = ${JSON.stringify(PRODUTOS, null, 2)};
+
+const CATS = ${JSON.stringify(CATS, null, 2)};
+
+const IMGS = ${JSON.stringify(IMGS, null, 2)};
+
+const INFO = ${JSON.stringify(INFO, null, 2)};
+
+// Inicialização automática da lista 'Todos os Produtos'
+const vistos = new Set();
+const todosArr = [];
+for (const cat of CATS) {
+  if (cat.id === 'todos') continue;
+  for (const p of cat.prods) {
+    if (!vistos.has(p) && PRODUTOS[p]) {
+      vistos.add(p);
+      todosArr.push(p);
+    }
+  }
+}
+CATS[0].prods = todosArr;
+`;
+
+        const writable = await dadosFileHandle.createWritable();
+        await writable.write(conteudo);
+        await writable.close();
+        
+        showNotification("Salvo", "Alterações gravadas no dados.js com sucesso!", "success");
+      } catch (e) {
+        console.error(e);
+        showNotification("Erro", "Falha ao gravar arquivo: " + e.message, "error");
+      }
+    }
+
+    // Exibe as categorias no menu da sidebar
+    function montarCategoriasSidebar() {
+      const list = document.getElementById('catFilterList');
+      // Mantém apenas o "Todos" original
+      list.innerHTML = `
+        <li>
+          <button class="cat-filter-btn active" onclick="filtrarCategoria('todos', this)">
+            <span class="cat-emoji">🛒</span>
+            <span>Todos os Produtos</span>
+          </button>
+        </li>
+      `;
+
+      CATS.forEach(cat => {
+        if (cat.id === 'todos') return;
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <button class="cat-filter-btn" onclick="filtrarCategoria('${cat.id}', this)">
+            <span class="cat-emoji">${cat.emoji}</span>
+            <span>${cat.nome}</span>
+          </button>
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    // Filtra por Categoria na Sidebar
+    function filtrarCategoria(id, btn) {
+      categoriaAtiva = id;
+      document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      exibirProdutos();
+    }
+
+    // Filtra produtos com base no input de busca e select de tipo
+    function filtrarProdutos() {
+      exibirProdutos();
+    }
+
+    // Exibe a tabela de produtos
+    function exibirProdutos() {
+      const query = document.getElementById('adminSearch').value.toLowerCase().trim();
+      const typeFilter = document.getElementById('typeFilter').value;
+      const tbody = document.getElementById('prodTableBody');
+      tbody.innerHTML = '';
+
+      // Determina quais produtos pertencem à categoria selecionada
+      let prodNames = [];
+      if (categoriaAtiva === 'todos') {
+        prodNames = Object.keys(PRODUTOS);
+      } else {
+        const cat = CATS.find(c => c.id === categoriaAtiva);
+        prodNames = cat ? cat.prods.filter(p => PRODUTOS[p]) : [];
+      }
+
+      // Ordena alfabeticamente
+      prodNames.sort();
+
+      let count = 0;
+      prodNames.forEach(nome => {
+        const prod = PRODUTOS[nome];
+        if (!prod) return;
+
+        // Filtro de Busca por Nome
+        if (query && !nome.toLowerCase().includes(query)) return;
+
+        // Filtro de Tipo
+        if (typeFilter !== 'todos' && prod.tipo !== typeFilter) return;
+
+        count++;
+
+        // Elemento da imagem ou emoji
+        const imgUrl = IMGS[nome];
+        const emoji = getEmoji(nome);
+        const imgHtml = imgUrl 
+          ? `<img class="prod-thumb" src="${imgUrl}" alt="${nome}">`
+          : `<div class="prod-thumb">${emoji}</div>`;
+
+        const precoVenda = calcPreco(prod.custo, prod.tipo);
+        const descVendaUnit = prod.tipo === 'granel' ? 'por 100g' : 'por un';
+        const descCustoUnit = prod.tipo === 'granel' ? 'por kg' : 'por un';
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>
+            <div class="prod-info-cell">
+              ${imgHtml}
+              <div class="prod-title">${nome}</div>
+            </div>
+          </td>
+          <td>
+            <span class="tag-type ${prod.tipo}">${prod.tipo === 'granel' ? 'Granel' : 'Suplemento'}</span>
+          </td>
+          <td>
+            <div style="font-weight: 500;">${fmtR(prod.custo)}</div>
+            <div style="font-size:11px; color:var(--texto-suave);">${descCustoUnit}</div>
+          </td>
+          <td>
+            <div class="price-badge">${fmtR(precoVenda)}</div>
+            <div class="price-cost">${descVendaUnit}</div>
+          </td>
+          <td>
+            <div class="action-cells">
+              <button class="icon-btn edit" onclick="abrirEdicao('${nome.replace(/'/g, "\\'")}')" title="Editar produto">✏️</button>
+              <button class="icon-btn delete" onclick="excluirProduto('${nome.replace(/'/g, "\\'")}')" title="Excluir produto">🗑️</button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      if (count === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="5" style="text-align: center; padding: 40px; color: var(--texto-suave);">
+              Nenhum produto encontrado correspondente aos filtros.
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    // Modal Editor - Mudar Custo Label conforme o tipo
+    function aoMudarTipoEditor() {
+      const tipo = document.getElementById('editTipo').value;
+      const labelCusto = document.getElementById('labelCusto');
+      if (tipo === 'granel') {
+        labelCusto.textContent = "Custo por kg (R$)";
+      } else {
+        labelCusto.textContent = "Custo por unidade/frasco (R$)";
+      }
+      atualizarPrecoVendaEstimado();
+    }
+
+    // Modal Editor - Atualiza o preview do preço de venda com base no custo
+    function atualizarPrecoVendaEstimado() {
+      const tipo = document.getElementById('editTipo').value;
+      const custo = parseFloat(document.getElementById('editCusto').value) || 0;
+      const precoVenda = calcPreco(custo, tipo);
+
+      document.getElementById('previewVendaText').textContent = fmtR(precoVenda);
+      if (tipo === 'granel') {
+        document.getElementById('previewVendaDesc').textContent = `(Markup aplicado. Preço final de venda no site: ${fmtR(precoVenda)} por 100g)`;
+      } else {
+        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por unidade - Custo x 2.5)`;
+      }
+    }
+
+    // Chamado quando o usuário escolhe um arquivo de foto local
+    function aoSelecionarArquivoImagem(input) {
+      const file = input.files[0];
+      if (file) {
+        arquivoImagemSelecionado = file;
+        const container = document.getElementById('previewImgContainer');
+        const tempUrl = URL.createObjectURL(file);
+        container.innerHTML = `<img src="${tempUrl}" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">`;
+        document.getElementById('editImgUrl').value = ''; // Limpa o input de link da internet
+      }
+    }
+
+    // Modal Editor - Atualiza a foto preview baseado na URL do input
+    function atualizarPreviewImg() {
+      const url = document.getElementById('editImgUrl').value.trim();
+      const container = document.getElementById('previewImgContainer');
+      if (url) {
+        container.innerHTML = `<img src="${url}" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;" onerror="this.parentNode.innerHTML='❌'">`;
+        // Limpa o arquivo local selecionado, pois o usuário optou pela URL
+        document.getElementById('editImgFile').value = '';
+        arquivoImagemSelecionado = null;
+      } else if (!arquivoImagemSelecionado) {
+        container.innerHTML = "📸";
+      }
+    }
+
+    // Abre modal para cadastrar produto
+    function abrirCriacao() {
+      editMode = 'criar';
+      document.getElementById('modalTitle').textContent = "Adicionar Novo Produto";
+      
+      // Reseta formulário
+      document.getElementById('editOriginalName').value = "";
+      document.getElementById('editNome').value = "";
+      document.getElementById('editNome').removeAttribute('readonly');
+      document.getElementById('editTipo').value = "granel";
+      document.getElementById('editCusto').value = "";
+      document.getElementById('editImgUrl').value = "";
+      document.getElementById('editImgFile').value = "";
+      arquivoImagemSelecionado = null;
+      document.getElementById('editBeneficios').value = "";
+      document.getElementById('editUso').value = "";
+      
+      aoMudarTipoEditor();
+      atualizarPreviewImg();
+      montarCategoriasCheckbox([]);
+
+      document.getElementById('editorOverlay').classList.add('open');
+    }
+
+    // Abre modal para editar produto
+    function abrirEdicao(nome) {
+      editMode = 'editar';
+      document.getElementById('modalTitle').textContent = "Editar Produto";
+      
+      const prod = PRODUTOS[nome];
+      const img = IMGS[nome] || "";
+      const info = INFO[nome] || {};
+
+      document.getElementById('editOriginalName').value = nome;
+      document.getElementById('editNome').value = nome;
+      document.getElementById('editNome').setAttribute('readonly', 'true'); // impede renomear se quiser (seguro contra quebra de chaves)
+      document.getElementById('editTipo').value = prod.tipo;
+      document.getElementById('editCusto').value = prod.custo;
+      document.getElementById('editImgUrl').value = img;
+      document.getElementById('editImgFile').value = "";
+      arquivoImagemSelecionado = null;
+      document.getElementById('editBeneficios').value = info.ben || "";
+      document.getElementById('editUso').value = info.uso || "";
+      
+      aoMudarTipoEditor();
+      atualizarPreviewImg();
+      
+      // Acha quais categorias possuem esse produto
+      const catsDoProd = CATS.filter(cat => cat.prods.includes(nome)).map(cat => cat.id);
+      montarCategoriasCheckbox(catsDoProd);
+
+      document.getElementById('editorOverlay').classList.add('open');
+    }
+
+    // Monta a lista de Checkboxes de categorias no modal editor
+    function montarCategoriasCheckbox(categoriasMarcadas) {
+      const container = document.getElementById('editorCategoriasList');
+      container.innerHTML = '';
+
+      CATS.forEach(cat => {
+        if (cat.id === 'todos') return; // Todos é calculado dinamicamente
+        const isMarcada = categoriasMarcadas.includes(cat.id);
+        
+        const label = document.createElement('label');
+        label.className = 'form-check';
+        label.innerHTML = `
+          <input type="checkbox" value="${cat.id}" ${isMarcada ? 'checked' : ''}>
+          <span>${cat.emoji} ${cat.nome}</span>
+        `;
+        container.appendChild(label);
+      });
+    }
+
+    function fecharEditor() {
+      document.getElementById('editorOverlay').classList.remove('open');
+    }
+
+    function fecharEditorOverlay(e) {
+      if (e.target === document.getElementById('editorOverlay')) fecharEditor();
+    }
+
+    // Função para redimensionar e compactar a imagem no navegador antes de salvar
+    function otimizarImagem(file, maxDimension = 800, quality = 0.8) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = new Image();
+          img.onload = function() {
+            const canvas = document.createElement('canvas');
+            let width = img.width;
+            let height = img.height;
+
+            // Redimensiona mantendo proporções se ultrapassar o limite
+            if (width > height) {
+              if (width > maxDimension) {
+                height = Math.round((height * maxDimension) / width);
+                width = maxDimension;
+              }
+            } else {
+              if (height > maxDimension) {
+                width = Math.round((width * maxDimension) / height);
+                height = maxDimension;
+              }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+
+            canvas.toBlob((blob) => {
+              if (blob) {
+                resolve(blob);
+              } else {
+                reject(new Error("Falha ao gerar o blob da imagem."));
+              }
+            }, 'image/jpeg', quality);
+          };
+          img.onerror = () => reject(new Error("Erro ao carregar imagem para renderização."));
+          img.src = e.target.result;
+        };
+        reader.onerror = () => reject(new Error("Erro ao ler o arquivo selecionado."));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // Salvar Produto (Novo ou Editado)
+    async function salvarProduto() {
+      const originalName = document.getElementById('editOriginalName').value;
+      const nome = document.getElementById('editNome').value.trim();
+      const tipo = document.getElementById('editTipo').value;
+      const custo = parseFloat(document.getElementById('editCusto').value) || 0;
+      let imgUrl = document.getElementById('editImgUrl').value.trim();
+      const ben = document.getElementById('editBeneficios').value.trim();
+      const uso = document.getElementById('editUso').value.trim();
+
+      if (!nome) {
+        alert("Preencha o nome do produto.");
+        return;
+      }
+      if (custo <= 0) {
+        alert("O custo do produto precisa ser maior que zero.");
+        return;
+      }
+
+      // Validação de nomes repetidos no modo criação
+      if (editMode === 'criar' && PRODUTOS[nome]) {
+        alert("Já existe um produto cadastrado com este nome!");
+        return;
+      }
+
+      // Salva imagem física localmente se houver upload
+      if (arquivoImagemSelecionado) {
+        try {
+          showNotification("Processando", "Redimensionando e compactando imagem...", "success");
+          
+          // Compacta a imagem para JPEG com qualidade 80% e dimensão máxima de 800px
+          const blobOtimizado = await otimizarImagem(arquivoImagemSelecionado, 800, 0.8);
+
+          // Obtém ou cria a pasta "imagens" na raiz do projeto
+          const imagensDir = await dirHandle.getDirectoryHandle('imagens', { create: true });
+          const nomeLimpo = nome.toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // remove acentos
+            .replace(/[^a-z0-9]/g, "-") // caracteres especiais -> hífens
+            .replace(/-+/g, "-")
+            .replace(/^-|-$/g, "");
+            
+          const novoNomeArquivo = `${nomeLimpo}.jpg`;
+          const fileHandle = await imagensDir.getFileHandle(novoNomeArquivo, { create: true });
+          const writable = await fileHandle.createWritable();
+          await writable.write(blobOtimizado);
+          await writable.close();
+          
+          imgUrl = `imagens/${novoNomeArquivo}`;
+          arquivoImagemSelecionado = null;
+        } catch (e) {
+          console.error(e);
+          alert("Erro ao compactar ou gravar arquivo de imagem: " + e.message);
+          return;
+        }
+      }
+
+      // Salva ou atualiza no objeto PRODUTOS
+      if (editMode === 'editar' && originalName !== nome) {
+        // Renomeação: remove o antigo e cria o novo
+        delete PRODUTOS[originalName];
+        delete IMGS[originalName];
+        delete INFO[originalName];
+        
+        // Remove dos arrays de categorias antigas
+        CATS.forEach(cat => {
+          const idx = cat.prods.indexOf(originalName);
+          if (idx > -1) {
+            cat.prods.splice(idx, 1);
+          }
+        });
+      }
+
+      // Adiciona/Atualiza PRODUTOS
+      PRODUTOS[nome] = { custo: custo, tipo: tipo };
+
+      // Adiciona/Atualiza IMGS
+      if (imgUrl) {
+        IMGS[nome] = imgUrl;
+      } else {
+        delete IMGS[nome];
+      }
+
+      // Adiciona/Atualiza INFO (benefícios e modo de uso)
+      if (ben || uso) {
+        INFO[nome] = {};
+        if (ben) INFO[nome].ben = ben;
+        if (uso) INFO[nome].uso = uso;
+      } else {
+        delete INFO[nome];
+      }
+
+      // Salva as categorias selecionadas
+      const checks = document.querySelectorAll('#editorCategoriasList input[type="checkbox"]');
+      checks.forEach(chk => {
+        const catId = chk.value;
+        const cat = CATS.find(c => c.id === catId);
+        if (!cat) return;
+
+        const idx = cat.prods.indexOf(nome);
+        if (chk.checked) {
+          // Se marcou e não estava na lista, insere
+          if (idx === -1) {
+            cat.prods.push(nome);
+            cat.prods.sort(); // Mantém ordenado
+          }
+        } else {
+          // Se desmarcou e estava na lista, remove
+          if (idx > -1) {
+            cat.prods.splice(idx, 1);
+          }
+        }
+      });
+
+      // Recalcula o "todos"
+      const vistos = new Set();
+      const todosArr = [];
+      for (const cat of CATS) {
+        if (cat.id === 'todos') continue;
+        for (const p of cat.prods) {
+          if (!vistos.has(p) && PRODUTOS[p]) {
+            vistos.add(p);
+            todosArr.push(p);
+          }
+        }
+      }
+      todosArr.sort();
+      CATS.find(c => c.id === 'todos').prods = todosArr;
+
+      fecharEditor();
+      exibirProdutos();
+      montarCategoriasSidebar();
+      
+      showNotification("Sucesso", `Produto "${nome}" atualizado! Não se esqueça de salvar as alterações no disco.`, "success");
+    }
+
+    // Excluir Produto do Catálogo
+    function excluirProduto(nome) {
+      if (confirm(`Deseja realmente excluir o produto "${nome}" do catálogo?`)) {
+        delete PRODUTOS[nome];
+        delete IMGS[nome];
+        delete INFO[nome];
+
+        // Remove das categorias
+        CATS.forEach(cat => {
+          const idx = cat.prods.indexOf(nome);
+          if (idx > -1) {
+            cat.prods.splice(idx, 1);
+          }
+        });
+
+        // Recalcula o "todos"
+        const vistos = new Set();
+        const todosArr = [];
+        for (const cat of CATS) {
+          if (cat.id === 'todos') continue;
+          for (const p of cat.prods) {
+            if (!vistos.has(p) && PRODUTOS[p]) {
+              vistos.add(p);
+              todosArr.push(p);
+            }
+          }
+        }
+        todosArr.sort();
+        CATS.find(c => c.id === 'todos').prods = todosArr;
+
+        exibirProdutos();
+        montarCategoriasSidebar();
+        showNotification("Excluído", `Produto "${nome}" removido!`, "error");
+      }
+    }
+
+    // Função de Notificações Toast
+    function showNotification(title, text, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.innerHTML = `
+        <div>
+          <strong style="display:block; font-size:13px;">${title}</strong>
+          <span style="font-size:12px; color:var(--texto-suave);">${text}</span>
+        </div>
+      `;
+      container.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(50px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
