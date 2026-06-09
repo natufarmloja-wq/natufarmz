@@ -158,7 +158,6 @@
 <script>
 const WA = '5542998505408';
 
-// InformaÃ§Ãµes adicionais de BenefÃ­cios e Uso (cadastrÃ¡veis no Admin)
 if (typeof INFO === 'undefined') { window.INFO = {}; }
 
 function calcPreco(nome) {
@@ -174,12 +173,12 @@ function getImgSrc(nome) {
   const n = nome.toLowerCase();
   if (n.includes('argila')) return 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80';
   if (n.includes('mel')) return 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80';
-  if (n.includes('vitamina') || n.includes('complexo') || n.includes('magnÃ©s') || n.includes('colÃ¡geno') || n.includes('Ã´mega') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da') || n.includes('trÃ­bulos') || n.includes('polivit') || n.includes('fisio') || n.includes('spray') || n.includes('prÃ³polis') || n.includes('cloreto')) return 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80';
+  if (n.includes('vitamina') || n.includes('complexo') || n.includes('magnés') || n.includes('colágeno') || n.includes('ômega') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da') || n.includes('tríbulos') || n.includes('polivit') || n.includes('fisio') || n.includes('spray') || n.includes('própolis') || n.includes('cloreto')) return 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80';
   if (n.includes('vinagre')) return 'https://images.unsplash.com/photo-1574224630577-72fd84c94c94?w=400&q=80';
-  if (n.includes('Ã³leo') || n.includes('oleo')) return 'https://images.unsplash.com/photo-1526397751294-331021109fbd?w=400&q=80';
+  if (n.includes('óleo') || n.includes('oleo')) return 'https://images.unsplash.com/photo-1526397751294-331021109fbd?w=400&q=80';
   if (n.includes('coco')) return 'https://images.unsplash.com/photo-1581768099668-b67895df3c6b?w=400&q=80';
   if (n.includes('granola')) return 'https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=400&q=80';
-  if (n.includes('pÃ¡prica') || n.includes('pimenta') || n.includes('colorau') || n.includes('curry') || n.includes('cominho') || n.includes('anis') || n.includes('cravo') || n.includes('noz moscada') || n.includes('lemon')) return 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&q=80';
+  if (n.includes('páprica') || n.includes('pimenta') || n.includes('colorau') || n.includes('curry') || n.includes('cominho') || n.includes('anis') || n.includes('cravo') || n.includes('noz moscada') || n.includes('lemon')) return 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&q=80';
   if (n.includes('sal')) return 'https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&q=80';
   if (n.includes('canela')) return 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=400&q=80';
   if (n.includes('gengibre')) return 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=400&q=80';
@@ -190,25 +189,31 @@ function getImgSrc(nome) {
 
 function getEmoji(nome) {
   const n = nome.toLowerCase();
-  if (n.includes('argila')) return 'ðŸ’†';
-  if (n.includes('vitamina') || n.includes('complexo') || n.includes('magnÃ©s') || n.includes('colÃ¡geno') || n.includes('Ã´mega') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da') || n.includes('trÃ­bulos') || n.includes('polivit') || n.includes('fisio') || n.includes('spray') || n.includes('prÃ³polis') || n.includes('cloreto') || n.includes('Ã³leo de alho')) return 'ðŸ’Š';
-  if (n.includes('mel') || n.includes('prÃ³polis')) return 'ðŸ¯';
-  if (n.includes('vinagre')) return 'ðŸ¾';
-  if (n.includes('Ã³leo de coco')) return 'ðŸ¥¥';
-  if (n.includes('castanha') || n.includes('amÃªnd') || n.includes('nozes') || n.includes('amendoim')) return 'ðŸ¥œ';
-  if (n.includes('chia') || n.includes('semente') || n.includes('linhaÃ§a') || n.includes('girassol') || n.includes('abÃ³bora')) return 'ðŸŒ±';
-  if (n.includes('aveia') || n.includes('farinha') || n.includes('farelo') || n.includes('extrato')) return 'ðŸŒ¾';
-  if (n.includes('cacau') || n.includes('chocolate')) return 'ðŸ«';
-  if (n.includes('aÃ§Ãºcar') || n.includes('xilitol') || n.includes('coco') || n.includes('granola')) return 'ðŸ¬';
-  if (n.includes('uva') || n.includes('ameixa') || n.includes('fruta') || n.includes('chips')) return 'ðŸ‡';
-  if (n.includes('caldo') || n.includes('tempero') || n.includes('curry') || n.includes('chimichurri') || n.includes('pÃ¡prica') || n.includes('pimenta') || n.includes('colorau') || n.includes('orÃ©gano') || n.includes('vinagrete') || n.includes('ervas') || n.includes('pega marido') || n.includes('alho frito') || n.includes('tomilho') || n.includes('cominho') || n.includes('cebola') || n.includes('alho') || n.includes('coentro') || n.includes('creme') || n.includes('noz') || n.includes('fumaÃ§a') || n.includes('endro') || n.includes('funcho') || n.includes('manjericÃ£o')) return 'ðŸ§‚';
-  if (n.includes('sal')) return 'ðŸ§‚';
-  if (n.includes('guaranÃ¡') || n.includes('maca') || n.includes('catuaba') || n.includes('tribulus') || n.includes('creatina') || n.includes('ginseng')) return 'âš¡';
-  if (n.includes('camomila') || n.includes('melissa') || n.includes('cidreira') || n.includes('capim') || n.includes('sene') || n.includes('guaco') || n.includes('hortelÃ£') || n.includes('alecrim') || n.includes('pata') || n.includes('tanchagem') || n.includes('melÃ£o') || n.includes('cardo') || n.includes('carqueja') || n.includes('jambolÃ£o') || n.includes('canela de velho') || n.includes('unha') || n.includes('ipÃª') || n.includes('graviola') || n.includes('amora') || n.includes('quebra') || n.includes('uxi') || n.includes('feno') || n.includes('baleeira') || n.includes('sÃ£o joÃ£o') || n.includes('oliveira') || n.includes('malva') || n.includes('secabarriga') || n.includes('anis') || n.includes('barbatimÃ£o') || n.includes('chapÃ©u') || n.includes('alcachofra') || n.includes('chÃ¡ verde') || n.includes('sÃ¡lvia') || n.includes('erva doce') || n.includes('hibisco') || n.includes('espinheira') || n.includes('eucalipto') || n.includes('salsa')) return 'ðŸµ';
-  return 'ðŸ“¦';
+  if (n.includes('argila')) return '🧴';
+  if (n.includes('vitamina') || n.includes('complexo') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac')) return '💊';
+  if (n.includes('magnés') || n.includes('cloreto')) return '⚗️';
+  if (n.includes('colágeno')) return '✨';
+  if (n.includes('ômega') || n.includes('omega')) return '🐟';
+  if (n.includes('mel')) return '🍯';
+  if (n.includes('vinagre')) return '🫙';
+  if (n.includes('óleo') || n.includes('oleo')) return '💧';
+  if (n.includes('spray') || n.includes('própolis') || n.includes('propolis')) return '🌺';
+  if (n.includes('polivita') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da')) return '💊';
+  if (n.includes('fisio') || n.includes('canela de velho') || n.includes('psyllium') || n.includes('moringa') || n.includes('tríbulos')) return '🌿';
+  if (n.includes('castanha') || n.includes('nozes') || n.includes('amênd') || n.includes('amendoim')) return '🥜';
+  if (n.includes('chia') || n.includes('semente') || n.includes('linhaça') || n.includes('girassol') || n.includes('abóbora')) return '🌱';
+  if (n.includes('aveia') || n.includes('farinha') || n.includes('farelo') || n.includes('extrato')) return '🌾';
+  if (n.includes('cacau') || n.includes('chocolate')) return '🍫';
+  if (n.includes('açúcar') || n.includes('xilitol') || n.includes('coco') || n.includes('granola')) return '🍬';
+  if (n.includes('uva') || n.includes('ameixa') || n.includes('fruta') || n.includes('chips')) return '🍇';
+  if (n.includes('caldo') || n.includes('tempero') || n.includes('curry') || n.includes('chimichurri') || n.includes('páprica') || n.includes('pimenta') || n.includes('colorau')) return '🫙';
+  if (n.includes('sal')) return '🧂';
+  if (n.includes('guaraná') || n.includes('maca') || n.includes('catuaba') || n.includes('tribulus') || n.includes('creatina') || n.includes('ginseng')) return '💪';
+  if (n.includes('camomila') || n.includes('melissa') || n.includes('cidreira') || n.includes('capim')) return '😌';
+  return '🌿';
 }
 
-// â”€â”€ CARRINHO â”€â”€
+// ── CARRINHO ──
 let carrinho = {};
 
 try {
@@ -258,7 +263,12 @@ function removerCarrinho(nome) {
 
 function mudarQtdCarrinho(nome, novaQtd) {
   const tipo = PRODUTOS[nome]?.tipo || 'granel';
-  if (novaQtd < (tipo === 'granel' ? 50 : 1)) {
+  if (tipo === 'granel' && novaQtd < 50) {
+    alert("O pedido mínimo para produtos a granel é de 50g. Se deseja retirar o produto, clique no '✕' ao lado.");
+    carrinho[nome].qtd = 50;
+    salvarCarrinho();
+    atualizarCarrinho();
+  } else if (tipo === 'caps' && novaQtd < 1) {
     removerCarrinho(nome);
   } else {
     carrinho[nome].qtd = novaQtd;
@@ -350,7 +360,7 @@ function atualizarCarrinho() {
           <input class="qtd-input" type="number" value="${item.qtd}" min="${minVal}" step="${stepVal}" onchange="mudarQtdCarrinho('${nome.replace(/'/g, "\\'")}', parseInt(this.value) || 0)">
           <span class="qtd-unit">${unitText}</span>
         </div>
-        <button class="carrinho-remover" onclick="removerCarrinho('${nome.replace(/'/g, "\\'")}')">âœ•</button>
+        <button class="carrinho-remover" onclick="removerCarrinho('${nome.replace(/'/g, "\\'")}')">✕</button>
       </div>
     `;
     body.innerHTML += itemHtml;
@@ -520,7 +530,7 @@ function renderProdutos() {
     const noCarrinho = !!carrinho[nome];
     const tagLabel = tipo === 'caps' ? 'SUPLEMENTO' : 'GRANEL';
     const tagClass = tipo === 'caps' ? 'caps' : '';
-    const infoText = tipo === 'caps' ? 'Por unidade' : 'A granel â€¢ mÃ­n. 50g';
+    const infoText = tipo === 'caps' ? 'Por unidade' : 'A granel • mín. 50g';
     const precoUnit = tipo === 'caps' ? 'por unidade' : 'por 100g';
     const imgSrc = getImgSrc(nome);
     return `<div class="produto-card ${noCarrinho ? 'no-carrinho' : ''}">
