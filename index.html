@@ -350,7 +350,9 @@ function atualizarCarrinho() {
     
     const itemHtml = `
       <div class="carrinho-item">
-        <div class="carrinho-item-emoji">${emoji}</div>
+        <div class="carrinho-item-emoji">
+          <img src="${getImgSrc(nome)}" alt="${nome}" style="width:100%;height:100%;object-fit:cover;border-radius:6px;" onerror="this.outerHTML='${emoji}'">
+        </div>
         <div class="carrinho-item-info">
           <div class="carrinho-item-nome">${nome}</div>
           <div class="carrinho-item-preco">${fmtR(item.preco)} ${item.tipo === 'granel' ? 'por 100g' : 'por un'}</div>
@@ -429,7 +431,7 @@ function abrirDetalhes(nome) {
   const info = INFO[nome] || {};
   detNomeAtual = nome;
   
-  document.getElementById('detEmoji').textContent = emoji;
+  document.getElementById('detEmoji').innerHTML = `<img src="${getImgSrc(nome)}" alt="${nome}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" onerror="this.outerHTML='${emoji}'">`;
   document.getElementById('detNome').textContent = nome;
   
   const tipoEl = document.getElementById('detTipo');
