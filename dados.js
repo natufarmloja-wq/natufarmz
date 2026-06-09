@@ -3,747 +3,747 @@
 
 const PRODUTOS = {
   "Vinagrete": {
-    "custo": 21.78,
+    "custo": 6.97,
     "tipo": "granel"
   },
   "Tempero Baiano": {
-    "custo": 9.91,
+    "custo": 3.17,
     "tipo": "granel"
   },
   "Tempero Mineiro": {
-    "custo": 22.72,
+    "custo": 7.27,
     "tipo": "granel"
   },
   "Páprica Doce": {
-    "custo": 12.81,
+    "custo": 4.1,
     "tipo": "granel"
   },
   "Páprica Picante": {
-    "custo": 12.47,
+    "custo": 3.99,
     "tipo": "granel"
   },
   "Páprica Defumada": {
-    "custo": 11.25,
+    "custo": 3.6,
     "tipo": "granel"
   },
   "Sal Rosa Himalaia": {
-    "custo": 4.69,
+    "custo": 2,
     "tipo": "granel"
   },
   "Ervas Finas": {
-    "custo": 17.97,
+    "custo": 5.75,
     "tipo": "granel"
   },
   "Orégano": {
-    "custo": 19.44,
+    "custo": 6.22,
     "tipo": "granel"
   },
   "Pega Marido": {
-    "custo": 22.19,
+    "custo": 7.1,
     "tipo": "granel"
   },
   "Chimichurri Defumado": {
-    "custo": 20.28,
+    "custo": 6.49,
     "tipo": "granel"
   },
   "Alho Frito": {
-    "custo": 19.38,
+    "custo": 6.2,
     "tipo": "granel"
   },
   "Tomilho": {
-    "custo": 10.59,
+    "custo": 3.39,
     "tipo": "granel"
   },
   "Pimenta Preta Grão": {
-    "custo": 39.38,
+    "custo": 12.6,
     "tipo": "granel"
   },
   "Pimenta Preta Moída": {
-    "custo": 13.47,
+    "custo": 4.31,
     "tipo": "granel"
   },
   "Cominho": {
-    "custo": 16.16,
+    "custo": 5.17,
     "tipo": "granel"
   },
   "Cebola em Pó": {
-    "custo": 17.19,
+    "custo": 5.5,
     "tipo": "granel"
   },
   "Alho em Pó": {
-    "custo": 17.66,
+    "custo": 5.65,
     "tipo": "granel"
   },
   "Coentro em Pó": {
-    "custo": 11.94,
+    "custo": 3.82,
     "tipo": "granel"
   },
   "Creme de Cebola": {
-    "custo": 8.28,
+    "custo": 2.65,
     "tipo": "granel"
   },
   "Caldo de Carne": {
-    "custo": 8.44,
+    "custo": 2.7,
     "tipo": "granel"
   },
   "Caldo de Galinha": {
-    "custo": 8.44,
+    "custo": 2.7,
     "tipo": "granel"
   },
   "Noz Moscada em Grão": {
-    "custo": 57.19,
+    "custo": 18.3,
     "tipo": "granel"
   },
   "Fumaça em Pó": {
-    "custo": 17.09,
+    "custo": 5.47,
     "tipo": "granel"
   },
   "Pimenta Calabresa": {
-    "custo": 14.03,
+    "custo": 4.49,
     "tipo": "granel"
   },
   "Guaraná em Pó": {
-    "custo": 19.13,
+    "custo": 6.12,
     "tipo": "granel"
   },
   "Maca Peruana": {
-    "custo": 18.69,
+    "custo": 5.98,
     "tipo": "granel"
   },
   "Tribulus Terrestris": {
-    "custo": 30.63,
+    "custo": 9.8,
     "tipo": "granel"
   },
   "Catuaba": {
-    "custo": 17.72,
+    "custo": 5.67,
     "tipo": "granel"
   },
   "Moringa": {
-    "custo": 38.34,
+    "custo": 12.27,
     "tipo": "granel"
   },
   "Farinha de Beterraba": {
-    "custo": 24.13,
+    "custo": 7.72,
     "tipo": "granel"
   },
   "Farinha de Uva": {
-    "custo": 17.81,
+    "custo": 5.7,
     "tipo": "granel"
   },
   "Mix de Castanhas": {
-    "custo": 48.69,
+    "custo": 15.58,
     "tipo": "granel"
   },
   "Castanha do Pará": {
-    "custo": 42.44,
+    "custo": 13.58,
     "tipo": "granel"
   },
   "Castanha de Caju": {
-    "custo": 48.75,
+    "custo": 15.6,
     "tipo": "granel"
   },
   "Amêndoas": {
-    "custo": 44.84,
+    "custo": 14.35,
     "tipo": "granel"
   },
   "Nozes": {
-    "custo": 43.75,
+    "custo": 14,
     "tipo": "granel"
   },
   "Semente de Linhaça Marrom": {
-    "custo": 12.5,
+    "custo": 4,
     "tipo": "granel"
   },
   "Semente de Linhaça Dourada": {
-    "custo": 13.13,
+    "custo": 4.2,
     "tipo": "granel"
   },
   "Farinha Linhaça Marrom": {
-    "custo": 10.94,
+    "custo": 3.5,
     "tipo": "granel"
   },
   "Farinha Linhaça Dourada": {
-    "custo": 16.78,
+    "custo": 5.37,
     "tipo": "granel"
   },
   "Manjericão": {
-    "custo": 9.34,
+    "custo": 2.99,
     "tipo": "granel"
   },
   "Granola": {
-    "custo": 17.09,
+    "custo": 5.47,
     "tipo": "granel"
   },
   "Chia": {
-    "custo": 19.38,
+    "custo": 6.2,
     "tipo": "granel"
   },
   "Aveia Flocos Grosso": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Aveia Flocos Médio": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Aveia Flocos Finos": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Farinha de Aveia": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Farelo de Aveia": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Canela em Pó": {
-    "custo": 18.75,
+    "custo": 6,
     "tipo": "granel"
   },
   "Canela em Rama": {
-    "custo": 43.75,
+    "custo": 14,
     "tipo": "granel"
   },
   "Cravo da Índia": {
-    "custo": 44.53,
+    "custo": 14.25,
     "tipo": "granel"
   },
   "Gengibre": {
-    "custo": 20.22,
+    "custo": 6.47,
     "tipo": "granel"
   },
   "Seca Barriga": {
-    "custo": 7,
+    "custo": 2.24,
     "tipo": "granel"
   },
   "Anis Estrelado": {
-    "custo": 43.13,
+    "custo": 13.8,
     "tipo": "granel"
   },
   "Barbatimão": {
-    "custo": 14.06,
+    "custo": 4.5,
     "tipo": "granel"
   },
   "Chapéu de Couro": {
-    "custo": 29.59,
+    "custo": 9.47,
     "tipo": "granel"
   },
   "Salsa Desidratada": {
-    "custo": 18.75,
+    "custo": 6,
     "tipo": "granel"
   },
   "Alcachofra": {
-    "custo": 26.94,
+    "custo": 8.62,
     "tipo": "granel"
   },
   "Chá Verde": {
-    "custo": 17.19,
+    "custo": 5.5,
     "tipo": "granel"
   },
   "Sálvia": {
-    "custo": 14.69,
+    "custo": 4.7,
     "tipo": "granel"
   },
   "Erva Doce": {
-    "custo": 17.88,
+    "custo": 5.72,
     "tipo": "granel"
   },
   "Hibisco": {
-    "custo": 29.28,
+    "custo": 9.37,
     "tipo": "granel"
   },
   "Espinheira Santa": {
-    "custo": 27.16,
+    "custo": 8.69,
     "tipo": "granel"
   },
   "Capim Limão": {
-    "custo": 16.69,
+    "custo": 5.34,
     "tipo": "granel"
   },
   "Eucalipto": {
-    "custo": 10.94,
+    "custo": 3.5,
     "tipo": "granel"
   },
   "Sene": {
-    "custo": 9.28,
+    "custo": 2.97,
     "tipo": "granel"
   },
   "Hortelã": {
-    "custo": 8.75,
+    "custo": 2.8,
     "tipo": "granel"
   },
   "Alecrim": {
-    "custo": 12.47,
+    "custo": 3.99,
     "tipo": "granel"
   },
   "Camomila": {
-    "custo": 23.34,
+    "custo": 7.47,
     "tipo": "granel"
   },
   "Pata de Vaca": {
-    "custo": 23.03,
+    "custo": 7.37,
     "tipo": "granel"
   },
   "Dente de Leão": {
-    "custo": 29.66,
+    "custo": 9.49,
     "tipo": "granel"
   },
   "Tanchagem": {
-    "custo": 20.63,
+    "custo": 6.6,
     "tipo": "granel"
   },
   "Melissa": {
-    "custo": 39.06,
+    "custo": 12.5,
     "tipo": "granel"
   },
   "Melão São Caetano": {
-    "custo": 17.56,
+    "custo": 5.62,
     "tipo": "granel"
   },
   "Cardo Mariano": {
-    "custo": 30.59,
+    "custo": 9.79,
     "tipo": "granel"
   },
   "Erva Cidreira": {
-    "custo": 29.59,
+    "custo": 9.47,
     "tipo": "granel"
   },
   "Carqueja Amarga": {
-    "custo": 13.88,
+    "custo": 4.44,
     "tipo": "granel"
   },
   "Jambolão": {
-    "custo": 15,
+    "custo": 4.8,
     "tipo": "granel"
   },
   "Canela de Velho": {
-    "custo": 10.94,
+    "custo": 3.5,
     "tipo": "granel"
   },
   "Unha de Gato": {
-    "custo": 21.9,
+    "custo": 7.01,
     "tipo": "granel"
   },
   "Ipê Roxo": {
-    "custo": 13.75,
+    "custo": 4.4,
     "tipo": "granel"
   },
   "Graviola": {
-    "custo": 16.9,
+    "custo": 5.41,
     "tipo": "granel"
   },
   "Folha de Amora": {
-    "custo": 17.16,
+    "custo": 5.49,
     "tipo": "granel"
   },
   "Bicarbonato": {
-    "custo": 4.69,
+    "custo": 2,
     "tipo": "granel"
   },
   "Fruta Cristalizada": {
-    "custo": 20.28,
+    "custo": 6.49,
     "tipo": "granel"
   },
   "Uva Passa": {
-    "custo": 20.31,
+    "custo": 6.5,
     "tipo": "granel"
   },
   "Cacau 50%": {
-    "custo": 40.59,
+    "custo": 12.99,
     "tipo": "granel"
   },
   "Cacau 70%": {
-    "custo": 46.84,
+    "custo": 14.99,
     "tipo": "granel"
   },
   "Açúcar Mascavo": {
-    "custo": 5.63,
+    "custo": 2,
     "tipo": "granel"
   },
   "Açúcar Demerara": {
-    "custo": 5.31,
+    "custo": 2,
     "tipo": "granel"
   },
   "Xilitol": {
-    "custo": 24.03,
+    "custo": 7.69,
     "tipo": "granel"
   },
   "Coco Ralado": {
-    "custo": 27.25,
+    "custo": 8.72,
     "tipo": "granel"
   },
   "Coco em Flocos": {
-    "custo": 31.16,
+    "custo": 9.97,
     "tipo": "granel"
   },
   "Pepita de Girassol": {
-    "custo": 17.16,
+    "custo": 5.49,
     "tipo": "granel"
   },
   "Semente de Abóbora": {
-    "custo": 27.81,
+    "custo": 8.9,
     "tipo": "granel"
   },
   "Quinoa": {
-    "custo": 17.19,
+    "custo": 5.5,
     "tipo": "granel"
   },
   "Ameixa": {
-    "custo": 30.63,
+    "custo": 9.8,
     "tipo": "granel"
   },
   "Endro": {
-    "custo": 20.6,
+    "custo": 6.59,
     "tipo": "granel"
   },
   "Funcho": {
-    "custo": 14.97,
+    "custo": 4.79,
     "tipo": "granel"
   },
   "Psyllium": {
-    "custo": 20.84,
+    "custo": 6.67,
     "tipo": "granel"
   },
   "Farinha de Banana": {
-    "custo": 14.06,
+    "custo": 4.5,
     "tipo": "granel"
   },
   "Extrato de Soja": {
-    "custo": 10.94,
+    "custo": 3.5,
     "tipo": "granel"
   },
   "Farinha de Arroz": {
-    "custo": 9.69,
+    "custo": 3.1,
     "tipo": "granel"
   },
   "Argila Verde": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Argila Cinza": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Argila Preta": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Argila Branca": {
-    "custo": 6.25,
+    "custo": 2,
     "tipo": "granel"
   },
   "Amendoim Salsa e Cebola": {
-    "custo": 18.41,
+    "custo": 5.89,
     "tipo": "granel"
   },
   "Chips de Banana": {
-    "custo": 60,
+    "custo": 19.2,
     "tipo": "granel"
   },
   "Creatina": {
-    "custo": 28.75,
+    "custo": 9.2,
     "tipo": "granel"
   },
   "Colorau Extra Fort": {
-    "custo": 15.59,
+    "custo": 4.99,
     "tipo": "granel"
   },
   "Tempero pra Feijão": {
-    "custo": 19.69,
+    "custo": 6.3,
     "tipo": "granel"
   },
   "Açafrão da Terra": {
-    "custo": 10.94,
+    "custo": 3.5,
     "tipo": "granel"
   },
   "Curry Fit": {
-    "custo": 11.88,
+    "custo": 3.8,
     "tipo": "granel"
   },
   "Fit Frango": {
-    "custo": 16.88,
+    "custo": 5.4,
     "tipo": "granel"
   },
   "Chimichurri sem Pimenta": {
-    "custo": 23.44,
+    "custo": 7.5,
     "tipo": "granel"
   },
   "Chimichurri com Pimenta": {
-    "custo": 23.44,
+    "custo": 7.5,
     "tipo": "granel"
   },
   "Lemon Pepper": {
-    "custo": 18.41,
+    "custo": 5.89,
     "tipo": "granel"
   },
   "Ana Maria": {
-    "custo": 16.91,
+    "custo": 5.41,
     "tipo": "granel"
   },
   "Edu Guedes": {
-    "custo": 21.84,
+    "custo": 6.99,
     "tipo": "granel"
   },
   "Amendoim Salsa": {
-    "custo": 26.95,
+    "custo": 8.62,
     "tipo": "granel"
   },
   "Cacau 100%": {
-    "custo": 113.95,
+    "custo": 25,
     "tipo": "granel"
   },
   "Gergelim Branco": {
-    "custo": 16.78,
+    "custo": 5.37,
     "tipo": "granel"
   },
   "Gergelim Torrado": {
-    "custo": 22.34,
+    "custo": 7.15,
     "tipo": "granel"
   },
   "Gergelim Preto": {
-    "custo": 24.91,
+    "custo": 7.97,
     "tipo": "granel"
   },
   "Uxi Amarelo": {
-    "custo": 27.5,
+    "custo": 8.8,
     "tipo": "granel"
   },
   "Quebra Pedra": {
-    "custo": 38.28,
+    "custo": 12.25,
     "tipo": "granel"
   },
   "Feno Grego": {
-    "custo": 13.13,
+    "custo": 4.2,
     "tipo": "granel"
   },
   "Ginseng": {
-    "custo": 22.41,
+    "custo": 7.17,
     "tipo": "granel"
   },
   "Erva Baleeira": {
-    "custo": 28.7,
+    "custo": 9.18,
     "tipo": "granel"
   },
   "Erva São João": {
-    "custo": 13.19,
+    "custo": 4.22,
     "tipo": "granel"
   },
   "Guaco": {
-    "custo": 41.38,
+    "custo": 13.24,
     "tipo": "granel"
   },
   "Oliveira": {
-    "custo": 33.31,
+    "custo": 10.66,
     "tipo": "granel"
   },
   "Malva": {
-    "custo": 20.31,
+    "custo": 6.5,
     "tipo": "granel"
   },
   "Polivitamínico A-Z Homem": {
-    "custo": 17.49,
+    "custo": 43.72,
     "tipo": "caps"
   },
   "Polivitamínico A-Z Mulher": {
-    "custo": 17.98,
+    "custo": 44.95,
     "tipo": "caps"
   },
   "Polivitamínico A-Z Idoso": {
-    "custo": 21.91,
+    "custo": 54.78,
     "tipo": "caps"
   },
   "Óleo de Alho": {
-    "custo": 11.04,
+    "custo": 27.6,
     "tipo": "caps"
   },
   "Própolis Verde em Gotas": {
-    "custo": 15.63,
+    "custo": 39.08,
     "tipo": "caps"
   },
   "Spray Romã": {
-    "custo": 6.69,
+    "custo": 16.73,
     "tipo": "caps"
   },
   "Spray Menta": {
-    "custo": 6.69,
+    "custo": 16.73,
     "tipo": "caps"
   },
   "Magnésio Quelato": {
-    "custo": 14.95,
+    "custo": 37.38,
     "tipo": "caps"
   },
   "Cloreto de Magnésio": {
-    "custo": 15.09,
+    "custo": 37.73,
     "tipo": "caps"
   },
   "Ômega 3": {
-    "custo": 15.5,
+    "custo": 38.75,
     "tipo": "caps"
   },
   "Vitamina A": {
-    "custo": 12.33,
+    "custo": 30.83,
     "tipo": "caps"
   },
   "Vitamina D3": {
-    "custo": 11.61,
+    "custo": 29.03,
     "tipo": "caps"
   },
   "Complexo B": {
-    "custo": 12.82,
+    "custo": 32.05,
     "tipo": "caps"
   },
   "Vitamina B12": {
-    "custo": 12.33,
+    "custo": 30.83,
     "tipo": "caps"
   },
   "Biotina B7": {
-    "custo": 12.33,
+    "custo": 30.83,
     "tipo": "caps"
   },
   "B5": {
-    "custo": 12.33,
+    "custo": 30.83,
     "tipo": "caps"
   },
   "Vinagre Maçã Orgânico 400ml Pet": {
-    "custo": 16.05,
+    "custo": 40.13,
     "tipo": "caps"
   },
   "Vinagre Maçã Orgânico 500ml Vidro": {
-    "custo": 24.5,
+    "custo": 61.25,
     "tipo": "caps"
   },
   "Vinagre Maçã 400ml Pet": {
-    "custo": 5.05,
+    "custo": 12.63,
     "tipo": "caps"
   },
   "Mel Natural": {
-    "custo": 14.55,
+    "custo": 36.38,
     "tipo": "caps"
   },
   "Mel de Eucalipto 310g": {
-    "custo": 14.52,
+    "custo": 36.3,
     "tipo": "caps"
   },
   "Mel de Eucalipto 220g": {
-    "custo": 11.17,
+    "custo": 27.93,
     "tipo": "caps"
   },
   "Mel com Própolis e Eucalipto": {
-    "custo": 15.21,
+    "custo": 38.03,
     "tipo": "caps"
   },
   "Óleo de Coco 200ml": {
-    "custo": 18.64,
+    "custo": 46.6,
     "tipo": "caps"
   },
   "Fisiofor Premium": {
-    "custo": 7.64,
+    "custo": 19.1,
     "tipo": "caps"
   },
   "Fisiofort": {
-    "custo": 6.44,
+    "custo": 16.1,
     "tipo": "caps"
   },
   "Canela de Velho (caps)": {
-    "custo": 5.99,
+    "custo": 14.98,
     "tipo": "caps"
   },
   "Psyllium (caps)": {
-    "custo": 15.4,
+    "custo": 38.5,
     "tipo": "caps"
   },
   "Magnésio Dimalato": {
-    "custo": 25.2,
+    "custo": 63,
     "tipo": "caps"
   },
   "Vitamina C": {
-    "custo": 21.9,
+    "custo": 54.75,
     "tipo": "caps"
   },
   "Colágeno Tipo 2": {
-    "custo": 26.6,
+    "custo": 66.5,
     "tipo": "caps"
   },
   "Colágeno Hidrolisado": {
-    "custo": 15.6,
+    "custo": 39,
     "tipo": "caps"
   },
   "Magnésio Treonato": {
-    "custo": 24.1,
+    "custo": 60.25,
     "tipo": "caps"
   },
   "B12 (caps)": {
-    "custo": 22.72,
+    "custo": 56.8,
     "tipo": "caps"
   },
   "NAC": {
-    "custo": 24.5,
+    "custo": 61.25,
     "tipo": "caps"
   },
   "Moringa (caps)": {
-    "custo": 14.3,
+    "custo": 35.75,
     "tipo": "caps"
   },
   "Amora Branca": {
-    "custo": 12.3,
+    "custo": 30.75,
     "tipo": "caps"
   },
   "Castanha da Índia": {
-    "custo": 12.1,
+    "custo": 30.25,
     "tipo": "caps"
   },
   "Tríbulos + Maca Peruana": {
-    "custo": 14.2,
+    "custo": 35.5,
     "tipo": "caps"
   },
   "Isoflavona": {
-    "custo": 9.9,
+    "custo": 24.75,
     "tipo": "caps"
   },
   "Gotas do Zeca": {
-    "custo": 7.96,
+    "custo": 19.9,
     "tipo": "caps"
   },
   "Cura Tudo": {
-    "custo": 11.96,
+    "custo": 29.9,
     "tipo": "caps"
   },
   "Folha de Graviola": {
-    "custo": 15.59,
+    "custo": 4.99,
     "tipo": "granel"
   },
   "Pistache com Casca": {
-    "custo": 73.44,
+    "custo": 23.5,
     "tipo": "granel"
   },
   "Banana Chips Salsa e Cebola": {
-    "custo": 20.84,
+    "custo": 6.67,
     "tipo": "granel"
   },
   "Banana Chips Doce": {
-    "custo": 20.84,
+    "custo": 6.67,
     "tipo": "granel"
   },
   "Amendoim Xerém": {
-    "custo": 17.19,
+    "custo": 5.5,
     "tipo": "granel"
   },
   "Amendoim Pimenta": {
-    "custo": 17.41,
+    "custo": 5.57,
     "tipo": "granel"
   },
   "Amendoim Doce": {
-    "custo": 20.13,
+    "custo": 6.44,
     "tipo": "granel"
   },
   "Amendoim Torrado sem Sal": {
-    "custo": 17.81,
+    "custo": 5.7,
     "tipo": "granel"
   },
   "Cacau Black": {
-    "custo": 22.41,
+    "custo": 7.17,
     "tipo": "granel"
   }
 };
@@ -755,192 +755,192 @@ const CATS = [
     "nome": "Todos os Produtos",
     "desc": "Explore toda a nossa linha de produtos naturais",
     "prods": [
+      "Seca Barriga",
       "Alcachofra",
-      "Alecrim",
-      "Alho Frito",
-      "Alho em Pó",
-      "Ameixa",
-      "Amendoim Doce",
-      "Amendoim Pimenta",
-      "Amendoim Salsa",
-      "Amendoim Salsa e Cebola",
-      "Amendoim Torrado sem Sal",
-      "Amendoim Xerém",
-      "Amora Branca",
-      "Amêndoas",
-      "Ana Maria",
-      "Anis Estrelado",
-      "Argila Branca",
-      "Argila Cinza",
-      "Argila Preta",
-      "Argila Verde",
-      "Aveia Flocos Finos",
+      "Chá Verde",
+      "Hibisco",
+      "Sene",
+      "Dente de Leão",
+      "Carqueja Amarga",
+      "Canela em Pó",
+      "Canela em Rama",
+      "Gengibre",
+      "Guaraná em Pó",
+      "Curry Fit",
+      "Xilitol",
+      "Cacau 100%",
+      "Chia",
+      "Farinha Linhaça Marrom",
+      "Farinha Linhaça Dourada",
+      "Farelo de Aveia",
       "Aveia Flocos Grosso",
       "Aveia Flocos Médio",
-      "Açafrão da Terra",
-      "Açúcar Demerara",
-      "Açúcar Mascavo",
-      "B12 (caps)",
+      "Aveia Flocos Finos",
+      "Feno Grego",
+      "Psyllium",
+      "Moringa",
+      "Quinoa",
+      "Psyllium (caps)",
+      "Moringa (caps)",
+      "Tríbulos + Maca Peruana",
+      "Alecrim",
+      "Amendoim Salsa e Cebola",
+      "Amêndoas",
       "B5",
-      "Banana Chips Doce",
-      "Banana Chips Salsa e Cebola",
-      "Barbatimão",
-      "Bicarbonato",
-      "Biotina B7",
-      "Cacau 100%",
       "Cacau 50%",
       "Cacau 70%",
       "Cacau Black",
-      "Caldo de Carne",
-      "Caldo de Galinha",
-      "Camomila",
-      "Canela de Velho",
-      "Canela de Velho (caps)",
-      "Canela em Pó",
-      "Canela em Rama",
-      "Capim Limão",
-      "Cardo Mariano",
-      "Carqueja Amarga",
-      "Castanha da Índia",
       "Castanha de Caju",
-      "Castanha do Pará",
       "Catuaba",
-      "Cebola em Pó",
-      "Chapéu de Couro",
-      "Chia",
-      "Chimichurri Defumado",
-      "Chimichurri com Pimenta",
-      "Chimichurri sem Pimenta",
       "Chips de Banana",
-      "Chá Verde",
-      "Cloreto de Magnésio",
       "Coco Ralado",
       "Coco em Flocos",
-      "Coentro em Pó",
-      "Colorau Extra Fort",
-      "Colágeno Hidrolisado",
-      "Colágeno Tipo 2",
-      "Cominho",
       "Complexo B",
-      "Cravo da Índia",
       "Creatina",
-      "Creme de Cebola",
-      "Cura Tudo",
-      "Curry Fit",
-      "Dente de Leão",
-      "Edu Guedes",
-      "Endro",
-      "Erva Baleeira",
-      "Erva Cidreira",
-      "Erva Doce",
-      "Erva São João",
-      "Ervas Finas",
-      "Espinheira Santa",
+      "Ginseng",
+      "Granola",
+      "Maca Peruana",
+      "Mix de Castanhas",
+      "Nozes",
+      "Pepita de Girassol",
+      "Pistache com Casca",
+      "Tribulus Terrestris",
+      "Uva Passa",
+      "Vitamina C",
+      "Açafrão da Terra",
+      "Açúcar Demerara",
+      "Açúcar Mascavo",
+      "Bicarbonato",
+      "Cardo Mariano",
+      "Castanha do Pará",
+      "Chapéu de Couro",
+      "Cravo da Índia",
       "Eucalipto",
-      "Extrato de Soja",
-      "Farelo de Aveia",
-      "Farinha Linhaça Dourada",
-      "Farinha Linhaça Marrom",
-      "Farinha de Arroz",
-      "Farinha de Aveia",
-      "Farinha de Banana",
       "Farinha de Beterraba",
       "Farinha de Uva",
-      "Feno Grego",
-      "Fisiofor Premium",
-      "Fisiofort",
-      "Fit Frango",
-      "Folha de Amora",
       "Folha de Graviola",
-      "Fruta Cristalizada",
-      "Fumaça em Pó",
-      "Funcho",
-      "Gengibre",
       "Gergelim Branco",
       "Gergelim Preto",
-      "Gergelim Torrado",
-      "Ginseng",
-      "Gotas do Zeca",
-      "Granola",
       "Graviola",
       "Guaco",
-      "Guaraná em Pó",
-      "Hibisco",
-      "Hortelã",
       "Ipê Roxo",
-      "Isoflavona",
       "Jambolão",
-      "Lemon Pepper",
-      "Maca Peruana",
-      "Magnésio Dimalato",
-      "Magnésio Quelato",
-      "Magnésio Treonato",
       "Malva",
-      "Manjericão",
       "Mel Natural",
       "Mel com Própolis e Eucalipto",
       "Mel de Eucalipto 220g",
       "Mel de Eucalipto 310g",
-      "Melissa",
       "Melão São Caetano",
-      "Mix de Castanhas",
-      "Moringa",
-      "Moringa (caps)",
-      "NAC",
-      "Noz Moscada em Grão",
-      "Nozes",
       "Oliveira",
-      "Orégano",
-      "Pata de Vaca",
-      "Pega Marido",
-      "Pepita de Girassol",
-      "Pimenta Calabresa",
-      "Pimenta Preta Grão",
-      "Pimenta Preta Moída",
-      "Pistache com Casca",
       "Polivitamínico A-Z Homem",
       "Polivitamínico A-Z Idoso",
       "Polivitamínico A-Z Mulher",
       "Própolis Verde em Gotas",
-      "Psyllium",
-      "Psyllium (caps)",
-      "Páprica Defumada",
-      "Páprica Doce",
-      "Páprica Picante",
       "Quebra Pedra",
-      "Quinoa",
       "Sal Rosa Himalaia",
       "Salsa Desidratada",
-      "Seca Barriga",
       "Semente de Abóbora",
-      "Semente de Linhaça Dourada",
-      "Semente de Linhaça Marrom",
-      "Sene",
       "Spray Menta",
       "Spray Romã",
-      "Sálvia",
       "Tanchagem",
-      "Tempero Baiano",
-      "Tempero Mineiro",
-      "Tempero pra Feijão",
       "Tomilho",
-      "Tribulus Terrestris",
-      "Tríbulos + Maca Peruana",
       "Unha de Gato",
-      "Uva Passa",
+      "Vitamina A",
+      "Vitamina D3",
+      "Óleo de Alho",
+      "Óleo de Coco 200ml",
+      "Ômega 3",
+      "Sálvia",
+      "Folha de Amora",
+      "Pata de Vaca",
+      "Barbatimão",
       "Uxi Amarelo",
+      "Semente de Linhaça Marrom",
+      "Semente de Linhaça Dourada",
+      "Extrato de Soja",
+      "Isoflavona",
+      "Amora Branca",
+      "Colágeno Hidrolisado",
+      "Colágeno Tipo 2",
+      "Biotina B7",
+      "Ameixa",
+      "Anis Estrelado",
+      "Banana Chips Salsa e Cebola",
+      "Cominho",
+      "Endro",
+      "Erva Doce",
+      "Espinheira Santa",
+      "Fisiofor Premium",
+      "Fisiofort",
+      "Fruta Cristalizada",
+      "Funcho",
+      "Hortelã",
       "Vinagre Maçã 400ml Pet",
       "Vinagre Maçã Orgânico 400ml Pet",
       "Vinagre Maçã Orgânico 500ml Vidro",
-      "Vinagrete",
-      "Vitamina A",
+      "Canela de Velho",
+      "Erva Baleeira",
+      "Magnésio Quelato",
+      "Cloreto de Magnésio",
+      "Magnésio Dimalato",
+      "Magnésio Treonato",
+      "Castanha da Índia",
+      "Canela de Velho (caps)",
+      "Camomila",
+      "Melissa",
+      "Erva Cidreira",
+      "Capim Limão",
+      "Erva São João",
       "Vitamina B12",
-      "Vitamina C",
-      "Vitamina D3",
-      "Xilitol",
-      "Óleo de Alho",
-      "Óleo de Coco 200ml",
-      "Ômega 3"
+      "B12 (caps)",
+      "Farinha de Banana",
+      "Vinagrete",
+      "Tempero Baiano",
+      "Tempero Mineiro",
+      "Páprica Doce",
+      "Páprica Picante",
+      "Páprica Defumada",
+      "Ervas Finas",
+      "Orégano",
+      "Pega Marido",
+      "Chimichurri Defumado",
+      "Alho Frito",
+      "Pimenta Preta Grão",
+      "Pimenta Preta Moída",
+      "Cebola em Pó",
+      "Alho em Pó",
+      "Coentro em Pó",
+      "Creme de Cebola",
+      "Caldo de Carne",
+      "Caldo de Galinha",
+      "Noz Moscada em Grão",
+      "Fumaça em Pó",
+      "Pimenta Calabresa",
+      "Manjericão",
+      "Colorau Extra Fort",
+      "Tempero pra Feijão",
+      "Lemon Pepper",
+      "Ana Maria",
+      "Edu Guedes",
+      "Fit Frango",
+      "Chimichurri sem Pimenta",
+      "Chimichurri com Pimenta",
+      "Amendoim Salsa",
+      "Farinha de Aveia",
+      "Farinha de Arroz",
+      "Amendoim Doce",
+      "Amendoim Pimenta",
+      "Amendoim Torrado sem Sal",
+      "Amendoim Xerém",
+      "Banana Chips Doce",
+      "Gergelim Torrado",
+      "Argila Verde",
+      "Argila Cinza",
+      "Argila Preta",
+      "Argila Branca",
+      "Gotas do Zeca",
+      "Cura Tudo",
+      "NAC"
     ]
   },
   {

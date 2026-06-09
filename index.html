@@ -161,15 +161,7 @@ if (typeof INFO === 'undefined') { window.INFO = {}; }
 function calcPreco(nome) {
   const p = PRODUTOS[nome];
   if (!p) return 2;
-  if (p.tipo === 'caps') {
-    return p.custo * 2.5;
-  }
-  const c = p.custo / 10;
-  const m = c < 21 ? 3.2 : c <= 50 ? 2.5 : 2.0;
-  let v = c * m;
-  if (v < 2.0) v = 2.0;
-  if (v > 30.0) v = 25.0;
-  return v;
+  return p.custo;
 }
 
 function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }

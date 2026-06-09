@@ -679,8 +679,7 @@
             <tr>
               <th>Produto</th>
               <th>Tipo</th>
-              <th>Custo</th>
-              <th>Venda (Estimado)</th>
+              <th>Preço de Venda</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -797,15 +796,7 @@
     // Regra de precificação idêntica ao site para preview
     function calcPreco(custo, tipo) {
       if (!custo) return 0;
-      if (tipo === 'caps') {
-        return custo * 2.5;
-      }
-      const c = custo / 10; // custo por 100g
-      const m = c < 21 ? 3.2 : c <= 50 ? 2.5 : 2.0;
-      let v = c * m;
-      if (v < 2.0) v = 2.0;
-      if (v > 30.0) v = 25.0;
-      return v;
+      return custo;
     }
 
     function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
@@ -1008,10 +999,6 @@ CATS[0].prods = todosArr;
           ? `<img class="prod-thumb" src="${imgUrl}" alt="${nome}">`
           : `<div class="prod-thumb">${emoji}</div>`;
 
-        const precoVenda = calcPreco(prod.custo, prod.tipo);
-        const descVendaUnit = prod.tipo === 'granel' ? 'por 100g' : 'por un';
-        const descCustoUnit = prod.tipo === 'granel' ? 'por kg' : 'por un';
-
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td>
@@ -1024,12 +1011,8 @@ CATS[0].prods = todosArr;
             <span class="tag-type ${prod.tipo}">${prod.tipo === 'granel' ? 'Granel' : 'Suplemento'}</span>
           </td>
           <td>
-            <div style="font-weight: 500;">${fmtR(prod.custo)}</div>
-            <div style="font-size:11px; color:var(--texto-suave);">${descCustoUnit}</div>
-          </td>
-          <td>
-            <div class="price-badge">${fmtR(precoVenda)}</div>
-            <div class="price-cost">${descVendaUnit}</div>
+            <div class="price-badge">${fmtR(prod.custo)}</div>
+            <div class="price-cost">${prod.tipo === 'granel' ? 'por 100g' : 'por un'}</div>
           </td>
           <td>
             <div class="action-cells">
@@ -1057,9 +1040,9 @@ CATS[0].prods = todosArr;
       const tipo = document.getElementById('editTipo').value;
       const labelCusto = document.getElementById('labelCusto');
       if (tipo === 'granel') {
-        labelCusto.textContent = "Custo por kg (R$)";
+        labelCusto.textContent = "Preço de Venda por 100g (R$)";
       } else {
-        labelCusto.textContent = "Custo por unidade/frasco (R$)";
+        labelCusto.textContent = "Preço de Venda por unidade (R$)";
       }
       atualizarPrecoVendaEstimado();
     }
@@ -1068,13 +1051,13 @@ CATS[0].prods = todosArr;
     function atualizarPrecoVendaEstimado() {
       const tipo = document.getElementById('editTipo').value;
       const custo = parseFloat(document.getElementById('editCusto').value) || 0;
-      const precoVenda = calcPreco(custo, tipo);
+      const precoVenda = custo;
 
       document.getElementById('previewVendaText').textContent = fmtR(precoVenda);
       if (tipo === 'granel') {
-        document.getElementById('previewVendaDesc').textContent = `(Markup aplicado. Preço final de venda no site: ${fmtR(precoVenda)} por 100g)`;
+        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por 100g)`;
       } else {
-        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por unidade - Custo x 2.5)`;
+        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por unidade)`;
       }
     }
 
@@ -1246,7 +1229,7 @@ CATS[0].prods = todosArr;
         return;
       }
       if (custo <= 0) {
-        alert("O custo do produto precisa ser maior que zero.");
+        alert("O preço do produto precisa ser maior que zero.");
         return;
       }
 
