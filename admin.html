@@ -801,6 +801,32 @@
 
     function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
 
+    function getEmoji(nome) {
+      const n = nome.toLowerCase();
+      if (n.includes('argila')) return '🧴';
+      if (n.includes('vitamina') || n.includes('complexo') || n.includes('biotina') || n.includes('b12') || n.includes('b5') || n.includes('nac')) return '💊';
+      if (n.includes('magnés') || n.includes('cloreto')) return '⚗️';
+      if (n.includes('colágeno')) return '✨';
+      if (n.includes('ômega') || n.includes('omega')) return '🐟';
+      if (n.includes('mel')) return '🍯';
+      if (n.includes('vinagre')) return '🫙';
+      if (n.includes('óleo') || n.includes('oleo')) return '💧';
+      if (n.includes('spray') || n.includes('própolis') || n.includes('propolis')) return '🌺';
+      if (n.includes('polivita') || n.includes('isoflavona') || n.includes('amora') || n.includes('castanha da')) return '💊';
+      if (n.includes('fisio') || n.includes('canela de velho') || n.includes('psyllium') || n.includes('moringa') || n.includes('tríbulos')) return '🌿';
+      if (n.includes('castanha') || n.includes('nozes') || n.includes('amênd') || n.includes('amendoim')) return '🥜';
+      if (n.includes('chia') || n.includes('semente') || n.includes('linhaça') || n.includes('girassol') || n.includes('abóbora')) return '🌱';
+      if (n.includes('aveia') || n.includes('farinha') || n.includes('farelo') || n.includes('extrato')) return '🌾';
+      if (n.includes('cacau') || n.includes('chocolate')) return '🍫';
+      if (n.includes('açúcar') || n.includes('xilitol') || n.includes('coco') || n.includes('granola')) return '🍬';
+      if (n.includes('uva') || n.includes('ameixa') || n.includes('fruta') || n.includes('chips')) return '🍇';
+      if (n.includes('caldo') || n.includes('tempero') || n.includes('curry') || n.includes('chimichurri') || n.includes('páprica') || n.includes('pimenta') || n.includes('colorau')) return '🫙';
+      if (n.includes('sal')) return '🧂';
+      if (n.includes('guaraná') || n.includes('maca') || n.includes('catuaba') || n.includes('tribulus') || n.includes('creatina') || n.includes('ginseng')) return '💪';
+      if (n.includes('camomila') || n.includes('melissa') || n.includes('cidreira') || n.includes('capim')) return '😌';
+      return '🌿';
+    }
+
     // Verifica a permissão do diretório local
     async function verificarPermissao(fileHandle, readWrite) {
       const options = {};
