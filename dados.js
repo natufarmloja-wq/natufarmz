@@ -1546,456 +1546,548 @@ const IMGS = {
 
 const INFO = {
   "Alcachofra": {
-    "ben": "O chá de alcachofra auxilia na digestão, estimula o funcionamento do fígado e ajuda a reduzir o colesterol e a ureia. Possui ação diurética, combatendo a retenção de líquidos e auxiliando no controle de peso.",
-    "uso": "Adicione 1 colher de sopa de folhas secas em 200ml de água fervente. Abafe por 10 minutos, coe e beba antes das refeições principais."
+    "ben": "O chá de alcachofra é amplamente reconhecido por suas propriedades depurativas e digestivas. Ele estimula a produção e secreção de bile pelo fígado, otimizando a digestão de gorduras e aliviando a sensação de estômago cheio após as refeições. Também auxilia na redução dos níveis de colesterol ruim (LDL), triglicerídeos e ureia, exercendo uma excelente ação diurética que diminui a retenção de líquidos e o inchaço.",
+    "uso": "Adicione 1 colher de sopa de folhas secas de alcachofra em 200ml de água fervente. Abafe por cerca de 10 minutos, coe e beba ainda morno antes das refeições principais."
   },
   "Chá Verde": {
-    "ben": "Rico em antioxidantes e cafeína, acelera o metabolismo, auxilia na queima de gordura e melhora a concentração e o foco. Possui ação anti-inflamatória e protetora das células.",
-    "uso": "Infusão com 1 colher de chá de folhas secas em 200ml de água quente (antes de ferver, a cerca de 80°C). Deixe abafar por 3 a 5 minutos, coe e beba."
+    "ben": "O chá verde é uma excelente fonte de polifenóis e catequinas, substâncias com alto poder antioxidante que protegem as células contra os danos dos radicais livres. Com teor natural de cafeína, ele acelera o metabolismo de forma natural, favorece a queima de gorduras corporais e melhora significativamente a disposição física, o foco e a concentração mental ao longo do dia.",
+    "uso": "Aqueça 200ml de água até que comece a formar bolhas (cerca de 80°C, sem ferver) e adicione 1 colher de chá de folhas secas. Abafe por 3 a 5 minutos, coe e consuma."
   },
   "Sálvia": {
-    "ben": "Ajuda a aliviar sintomas da menopausa (como calorões), melhora a digestão, reduz gases e tem propriedades antissépticas e anti-inflamatórias úteis para a garganta.",
-    "uso": "Adicione 1 colher de sopa de folhas em 200ml de água fervente. Deixe abafar por 10 minutos. Para gargarejos ou ingestão."
+    "ben": "A sálvia é uma planta com ricas propriedades fitoterápicas, muito valorizada por aliviar ondas de calor (fogachos) e sudorese noturna típicas da menopausa. Suas propriedades digestivas reduzem a formação de gases e combatem a indigestão, enquanto suas substâncias anti-inflamatórias e antissépticas auxiliam no alívio de dores de garganta e inflamações na cavidade oral.",
+    "uso": "Adicione 1 colher de sopa de folhas secas em 200ml de água fervente. Abafe por 10 minutos. O líquido pode ser consumido morno ou utilizado para gargarejos em caso de inflamações na garganta."
   },
   "Erva Doce": {
-    "ben": "Combate cólicas, gases intestinais e má digestão. Possui efeito calmante suave, ideal para relaxar o estômago após as refeições ou antes de dormir.",
-    "uso": "Ferva 1 colher de chá de sementes em 200ml de água por 3 minutos. Deixe abafar por 5 minutos, coe e beba quente."
+    "ben": "A erva-doce é uma das ervas carminativas mais tradicionais, ideal para combater cólicas, espasmos digestivos, distensão abdominal e acúmulo de gases. Suas propriedades calmantes e relaxantes também favorecem uma digestão tranquila, atuando de forma benéfica na redução da ansiedade leve e na indução de um sono suave e reparador.",
+    "uso": "Ferva 1 colher de chá de sementes em 200ml de água por 3 minutos. Desligue o fogo, deixe abafar por mais 5 minutos, coe e tome preferencialmente após as refeições ou antes de dormir."
   },
   "Hibisco": {
-    "ben": "Famoso por sua ação diurética e antioxidante. Ajuda a regular a pressão arterial, combate a retenção de líquidos e auxilia no emagrecimento.",
-    "uso": "Adicione 1 colher de sopa de flores secas em 200ml de água quente. Deixe abafar por 5 a 10 minutos, coe e consuma quente ou gelado."
+    "ben": "O chá de hibisco é famoso por suas propriedades antioxidantes, anti-inflamatórias e diuréticas. Em nosso corpo, ele atua diretamente na eliminação de toxinas e na redução da retenção de líquidos, auxiliando de forma eficaz no processo de perda de peso e controle do inchaço. Seus compostos fenólicos ajudam também a regular a pressão arterial e a proteger a saúde cardiovascular.",
+    "uso": "Coloque 1 colher de sopa de flores secas de hibisco em 200ml de água fervente. Abafe por 5 a 10 minutos, coe e consuma quente ou gelado. Pode ser consumido ao longo do dia."
   },
   "Espinheira Santa": {
-    "ben": "Excelente protetor gástrico. Alivia sintomas de gastrite, azia, refluxo e úlceras, ajudando a regenerar a mucosa do estômago.",
-    "uso": "Adicione 1 colher de sopa em 200ml de água fervente. Abafar por 10 minutos e beber 30 minutos antes das refeições."
+    "ben": "A espinheira-santa é uma das melhores plantas para a proteção gástrica. Seus taninos e óleos essenciais reduzem a acidez estomacal e protegem a mucosa do estômago, agindo como um excelente remédio natural contra azia, refluxo gastroesofágico, gastrites e úlceras gástricas, além de favorecer a cicatrização celular.",
+    "uso": "Adicione 1 colher de sopa de espinheira-santa em 200ml de água fervente. Abafe por 10 minutos, coe e beba cerca de 30 minutos antes de almoçar e jantar."
   },
   "Capim Limão": {
-    "ben": "Possui propriedades calmantes, analgésicas e espasmolíticas. Ajuda a reduzir a ansiedade, melhora o sono e alivia dores estomacais.",
-    "uso": "Infusão de 1 colher de sopa de folhas secas em 200ml de água fervente. Abafar por 10 minutos e beber antes de dormir."
+    "ben": "O capim-limão possui propriedades calmantes, ansiolíticas e espasmolíticas, decorrentes da presença de citral e mirceno em seus óleos essenciais. É excelente para acalmar a mente, diminuir o estresse, melhorar a qualidade do sono e aliviar cólicas e dores estomacais associadas à ansiedade ou tensões nervosas.",
+    "uso": "Prepare por infusão adicionando 1 colher de sopa de folhas secas em 200ml de água fervente. Abafe por 10 minutos, coe e beba morno à noite ou em momentos de tensão."
   },
   "Eucalipto": {
-    "ben": "Altamente benéfico para o sistema respiratório. Alivia tosse, congestão nasal, sinusite e bronquite devido às suas propriedades expectorantes e antissépticas.",
-    "uso": "Para chá ou inalação: ferva 1 colher de sopa de folhas secas em 250ml de água por 5 minutos. Respire o vapor ou beba morno com mel."
+    "ben": "O eucalipto é extremamente benéfico para todo o sistema respiratório superior. Possui ação expectorante, mucolítica, antisséptica e anti-inflamatória, sendo ideal para ajudar a fluidificar o catarro, desobstruir as vias aéreas, aliviar a tosse persistente e atenuar sintomas de sinusite, gripe, bronquite e resfriados.",
+    "uso": "Para chá: infunda 1 colher de chá de folhas secas em 200ml de água fervente por 5 minutos, coe e consuma morno com mel. Para inalação: ferva 1 colher de sopa de folhas em 500ml de água e respire o vapor."
   },
   "Sene": {
-    "ben": "Laxante natural potente. Indicado para o tratamento de curto prazo da prisão de ventre ocasional, estimulando os movimentos intestinais.",
-    "uso": "Adicione 1 colher de chá rasa de folhas secas em 200ml de água fervente. Abafar por 5 minutos, coar e tomar preferencialmente à noite. Usar com moderação."
+    "ben": "O sene é um laxante natural com forte ação estimulante sobre os movimentos peristálticos do intestino (cólica e evacuação). Seus compostos ativos (senosídeos) evitam a absorção excessiva de água pelo cólon, facilitando a eliminação de fezes. É indicado especificamente para quadros de prisão de ventre e constipação intestinal crônica ou ocasional.",
+    "uso": "Adicione 1 colher de chá rasa de sene em 200ml de água fervente. Deixe abafar por 5 minutos, coe e tome à noite, antes de deitar. Deve ser consumido por no máximo 7 dias consecutivos."
   },
   "Hortelã": {
-    "ben": "Melhora a digestão, reduz azia, cólicas e náuseas. Possui ação descongestionante e refrescante, auxiliando na saúde das vias aéreas superiores.",
-    "uso": "Adicione 1 colher de sopa de folhas secas em 200ml de água fervente. Deixe abafar por 5 a 10 minutos, coe e tome após as refeições."
+    "ben": "A hortelã é rica em mentol, promovendo ação digestiva imediata, alívio de náuseas, azia, flatulências e cólicas digestivas. Sua propriedade analgésica e antiespasmódica relaxa os muscles do trato gastrointestinal. Possui também ação refrescante que ajuda a abrir as vias aéreas superiores, aliviando a congestão nasal.",
+    "uso": "Adicione 1 colher de sopa de folhas secas em 200ml de água fervente. Abafe por 5 a 10 minutos, coe e consuma morno após as refeições ou a qualquer hora do dia."
   },
   "Alecrim": {
-    "ben": "Estimulante mental, melhora a memória, a circulação sanguínea e combate a fadiga física e mental. Alivia gases e auxilia na digestão.",
-    "uso": "Adicione 1 colher de chá em 200ml de água fervente. Abafar por 5 a 10 minutos, coar e beber ao longo do dia."
+    "ben": "O alecrim atua como um tônico físico e mental completo. Ele melhora a circulação sanguínea periférica e cerebral, estimulando a concentração, a memória e combatendo a fadiga mental. Também possui propriedades carminativas que auxiliam na redução dos gases, no combate à azia e na melhora geral da digestão gástrica.",
+    "uso": "Coloque 1 colher de chá de alecrim seco em 200ml de água fervente. Deixe em infusão por 5 a 10 minutos, coe e beba morno. Evite o consumo no período da noite para não interferir no sono."
   },
   "Camomila": {
-    "ben": "Calmante natural consagrado. Alivia a ansiedade, a insônia, acalma dores estomacais de origem nervosa e reduz cólicas menstruais.",
-    "uso": "Adicione 1 colher de sopa de flores em 200ml de água fervente. Deixe em infusão por 10 minutos, coe e beba antes de deitar."
+    "ben": "A camomila é amplamente conhecida por suas propriedades ansiolíticas, calmantes e antiespasmódicas. Graças ao flavonoide apigenina, ela relaxa o sistema nervoso, acalma dores de cabeça causadas por estresse, melhora a qualidade do sono e atenua cólicas menstruais e espasmos digestivos decorrentes do nervosismo.",
+    "uso": "Adicione 1 colher de sopa de flores secas de camomila em 200ml de água fervente. Deixe abafar por 10 minutos, coe e tome antes de deitar ou em momentos de agitação."
   },
   "Pata de Vaca": {
-    "ben": "Conhecida por sua propriedade hipoglicemiante, auxiliando no controle das taxas de açúcar no sangue (glicemia). Tem ação diurética.",
-    "uso": "Ferva 1 colher de sopa de folhas trituradas em 200ml de água por 5 minutos. Deixe abafar, coe e tome após as refeições principais."
+    "ben": "A pata-de-vaca é muito estudada e consumida por suas propriedades hipoglicemiantes naturais. Ela auxilia na redução dos níveis de glicose no sangue, agindo de forma complementar no tratamento da diabetes. Além disso, apresenta efeitos diuréticos e depurativos que contribuem para a saúde dos rins e controle da pressão arterial.",
+    "uso": "Ferva 1 colher de sopa de folhas secas de pata-de-vaca trituradas em 200ml de água durante 5 minutos. Abafe, coe e tome de 2 a 3 vezes ao dia, preferencialmente após as refeições."
   },
   "Dente de Leão": {
-    "ben": "Poderoso depurativo do fígado e dos rins. Excelente diurético natural que elimina toxinas e combate a retenção de líquidos.",
-    "uso": "Adicione 1 colher de sopa em 200ml de água fervente. Abafar por 10 minutos, coar e consumir antes das refeições."
+    "ben": "O dente-de-leão é um poderoso desintoxicante natural do fígado e dos rins. Estimula a eliminação de toxinas do sangue, favorece a produção de bile e atua como um diurético potente e seguro, que remove o excesso de sódio e líquidos do organismo sem causar a perda excessiva de potássio, mineral do qual é muito rico.",
+    "uso": "Adicione 1 colher de sopa de dente-de-leão seco em 200ml de água fervente. Abafe por 10 minutos, coe e beba de 2 a 3 vezes ao dia antes das refeições principais."
   },
   "Tanchagem": {
-    "ben": "Excelente ação anti-inflamatória e cicatrizante. Indicado para inflamações na boca e garganta (aftas, amigdalite) e problemas respiratórios.",
-    "uso": "Ferva 1 colher de sopa em 200ml de água por 3 minutos. Abafar por 10 minutos. Pode ser ingerido ou usado para gargarejo."
+    "ben": "A tanchagem é uma planta com excelente ação anti-inflamatória, cicatrizante, expectorante e antibacteriana. É muito recomendada para tratar inflamações na boca e garganta (como aftas e amigdalites), aliviar tosses carregadas, auxiliar no tratamento de infecções urinárias e regenerar tecidos mucosos inflamados.",
+    "uso": "Ferva 1 colher de sopa de tanchagem em 200ml de água por 3 minutos. Abafe por 10 minutos e coe. Pode ser bebido morno ou usado na forma de gargarejos e bochechos diários."
   },
   "Melissa": {
-    "ben": "Conhecida como erva-cidreira verdadeira, acalma o sistema nervoso, reduz estresse, palpitações nervosas e induz ao sono reparador.",
-    "uso": "Infusão de 1 colher de sopa de folhas em 200ml de água fervente. Abafar por 10 minutos. Beber 2 a 3 vezes ao dia ou antes de dormir."
+    "ben": "A melissa (erva-cidreira verdadeira) é altamente recomendada para combater a insônia, ansiedade, agitação e palpitações de origem nervosa. Suas propriedades calmantes atuam tanto no sistema nervoso central quanto no digestivo, aliviando cólicas gastrointestinais causadas por tensões emocionais e melhorando o humor global.",
+    "uso": "Infuda 1 colher de sopa de folhas de melissa em 200ml de água fervente. Abafe por 10 minutos, coe e consuma morno de 2 a 3 vezes por dia ou antes de deitar."
   },
   "Melão São Caetano": {
-    "ben": "Auxilia na regulação da glicose sanguínea e purificação do sangue. Tem ação antiparasitária e antiviral suave.",
-    "uso": "Ferva 1 colher de sopa da planta seca em 200ml de água por 5 minutos. Coe e tome morno."
+    "ben": "O melão-são-caetano é um potente fitoterápico conhecido por auxiliar na regulação da glicemia e no controle dos níveis de açúcar no sangue. Possui propriedades purificadoras do sangue, ação antiparasitária (ajuda a combater vermes intestinais), antimicrobiana e cicatrizante celular em geral.",
+    "uso": "Ferva 1 colher de sopa da planta seca em 200ml de água por 5 minutos. Desligue o fogo, abafe por 10 minutos, coe e consuma morno, limitando o uso a até 2 xícaras por dia."
   },
   "Cardo Mariano": {
-    "ben": "O melhor protetor natural do fígado (hepático). Ajuda na regeneração das células do fígado, melhora a digestão de gorduras e combate a ressaca.",
-    "uso": "Esmague levemente 1 colher de chá de sementes e ferva em 200ml de água por 5 minutos. Deixe descansar por 10 minutos e beba."
+    "ben": "O cardo-mariano é rico em silimarina, um grupo de compostos que atua como protetor e regenerador das células do fígado (hepatócitos). Ajuda na desintoxicação hepática após consumo excessivo de álcool ou medicamentos, melhora a digestão de lipídios e previne contra os danos oxidativos causados por gordura no fígado.",
+    "uso": "Esmague levemente 1 colher de chá de sementes de cardo-mariano e ferva em 200ml de água por 5 minutos. Abafe por 10 minutos, coe e tome morno, duas vezes ao dia."
   },
   "Erva Cidreira": {
-    "ben": "Calmante, analgésico e digestivo. Ajuda a acalmar cólicas, reduz o estresse do dia a dia e promove um sono leve e tranquilo.",
-    "uso": "Infusão de 1 colher de sopa em 200ml de água fervente. Abafar por 10 minutos e beber quente."
+    "ben": "A erva-cidreira possui ação calmante, espasmolítica e digestiva. Ela relaxa a musculatura lisa do estômago e intestinos, combatendo cólicas e desconfortos abdominais causados por estresse. Também promove relaxamento mental suave, aliviando dores de cabeça leves e favorecendo o bem-estar.",
+    "uso": "Adicione 1 colher de sopa de erva-cidreira em 200ml de água fervente. Abafe por 10 minutos, coe e consuma após as refeições ou momentos antes de dormir para relaxar."
   },
   "Carqueja Amarga": {
-    "ben": "Auxiliar na digestão pesada, estimula a vesícula biliar e ajuda a desintoxicar o fígado. Ajuda a regular a glicemia e tem ação diurética.",
-    "uso": "Adicione 1 colher de sopa em 200ml de água fervente. Abafar por 10 minutos e tomar (apesar do sabor amargo, é muito eficaz)."
+    "ben": "A carqueja é muito apreciada por sua ação tônica estomacal e hepatoprotetora. Ela auxilia ativamente na digestão difícil, combate a má digestão crônica, estimula a eliminação de cálculos biliares e melhora o trânsito do fígado. Também tem ação diurética e ajuda no controle dos níveis de glicose em diabéticos.",
+    "uso": "Adicione 1 colher de sopa de carqueja em 200ml de água fervente. Abafe por 10 minutos e coe. Recomenda-se tomar morno após as refeições (embora amargo, seu efeito é excelente)."
   },
   "Jambolão": {
-    "ben": "Suas folhas contêm propriedades que auxiliam a reduzir os níveis de glicose no sangue, sendo muito indicado para diabéticos.",
-    "uso": "Ferva 1 colher de sopa em 200ml de água por 5 minutos. Abafar por 10 minutos e tomar após as refeições."
+    "ben": "As folhas do jambolão possuem princípios ativos com comprovada ação hipoglicemiante. O chá atua de forma muito positiva no controle da taxa de açúcar na circulação sanguínea, sendo um excelente suporte natural para indivíduos com pré-diabetes, diabetes tipo 2 e resistência à insulina.",
+    "uso": "Ferva 1 colher de sopa de folhas secas de jambolão em 200ml de água por 5 minutos. Abafe por 10 minutos, coe e beba morno logo após as principais refeições do dia."
   },
   "Canela de Velho": {
-    "ben": "Famoso anti-inflamatório natural para articulações. Alivia dores de artrose, artrite, tendinite, dores na coluna e inflamações gerais.",
-    "uso": "Ferva 1 colher de sopa em 200ml de água por 5 minutos. Abafar por 10 minutos. Recomenda-se tomar duas vezes ao dia."
+    "ben": "A canela-de-velho destaca-se por suas potentes propriedades anti-inflamatórias, analgésicas e antioxidantes. É amplamente utilizada para reduzir dores e processos inflamatórios nas articulações, trazendo alívio significativo em casos de artrose, artrite reumatoide, fibromialgia, tendinites e dores crônicas na coluna.",
+    "uso": "Ferva 1 colher de sopa da erva em 200ml de água durante 5 minutos. Abafe por 10 minutos, coe e tome quente ou morno duas vezes ao dia, de manhã e à noite."
   },
   "Unha de Gato": {
-    "ben": "Poderoso estimulante do sistema imunológico com forte ação anti-inflamatória. Indicado para artrite, infecções e inflamações do organismo.",
-    "uso": "Ferva 1 colher de sopa da casca/folhas secas em 250ml de água por 10 minutos. Abafar por 10 minutos, coar e tomar morno."
+    "ben": "A unha-de-gato é um poderoso modulador do sistema imunológico com forte ação anti-inflamatória e protetora das células. É amplamente recomendada para auxiliar no tratamento de artrites, artroses, tendinites e outras patologias inflamatórias, além de estimular a imunidade e ajudar na prevenção de infecções sazonais.",
+    "uso": "Ferva 1 colher de sopa da casca ou folhas de unha-de-gato em 250ml de água durante 10 minutos. Desligue, abafe por mais 10 minutos, coe e consuma morno duas vezes ao dia."
   },
   "Ipê Roxo": {
-    "ben": "Tem ação antifúngica, antiviral e antibacteriana natural. Fortalece o sistema de defesa e ajuda a combater inflamações e infecções recorrentes.",
-    "uso": "Ferva 1 colher de sopa da casca em 200ml de água por 10 minutos. Deixe amornar, coe e consuma."
+    "ben": "O ipê-roxo possui propriedades antifúngicas, antivirais, antibacterianas e anti-inflamatórias naturais de destaque. Ajuda a fortalecer o sistema imunológico contra patógenos oportunistas, auxilia no tratamento de candidíase recorrente, inflamações uterinas, infecções respiratórias e promove depuração do sangue.",
+    "uso": "Ferva 1 colher de sopa da casca seca em 200ml de água durante 10 minutos. Deixe amornar por 10 minutos, coe bem e tome. Pode ser consumido até 3 vezes ao dia."
   },
   "Graviola": {
-    "ben": "Auxilia na modulação do sistema imune, tem propriedades anti-inflamatórias, antireumáticas e contribui para a regulação da pressão arterial.",
-    "uso": "Infusão de 1 colher de sopa de folhas trituradas em 200ml de água fervente por 10 minutos. Coar e tomar."
+    "ben": "A graviola é rica em acetogeninas, substâncias bioativas com forte ação antioxidante, antitumoral e moduladora do sistema imunológico. O chá ajuda a reduzir a inflamação nas articulações (reumatismo), auxilia a regular a pressão arterial, acalma o sistema nervoso e combate infecções virais e bacterianas.",
+    "uso": "Adicione 1 colher de sopa de folhas de graviola trituradas em 200ml de água fervente. Deixe em infusão por 10 minutos, coe e beba ao longo do dia."
   },
   "Folha de Amora": {
-    "ben": "Rica em fitormônios naturais, ajuda a aliviar os sintomas do climatério e menopausa (ondas de calor, insônia). Combate a retenção de líquidos.",
-    "uso": "Adicione 1 colher de sopa de folhas trituradas em 200ml de água fervente. Abafar por 10 minutos, coar e tomar até 3 vezes ao dia."
+    "ben": "A folha de amora é uma fonte maravilhosa de fitormônios naturais, atuando de maneira muito eficiente na redução de ondas de calor, insônia, suores noturnos e irritabilidade associados à menopausa e climatério. Também possui propriedades diuréticas, auxilia na regulação da glicemia e é rica em cálcio e magnésio.",
+    "uso": "Adicione 1 colher de sopa de folhas trituradas em 200ml de água fervente. Deixe abafar por 10 minutos, coe e tome de 2 a 3 vezes ao dia, de preferência entre as refeições."
   },
   "Quebra Pedra": {
-    "ben": "Tradicionalmente usado para prevenir e auxiliar na eliminação de cálculos renais (pedras nos rins). Tem efeito relaxante nos canais urinários.",
-    "uso": "Ferva 1 colher de sopa da erva em 200ml de água por 5 minutos. Deixe abafar por 10 minutos, coe e consuma de 2 a 3 vezes ao dia."
+    "ben": "Como o próprio nome indica, o quebra-pedra auxilia na prevenção e no tratamento de cálculos renais (pedras nos rins e vesícula). Suas propriedades relaxam a musculatura dos canais urinários, facilitando a eliminação de pequenos cristais e reduzindo a dor provocada pela passagem de pedras, além de ter ação diurética.",
+    "uso": "Ferva 1 colher de sopa de quebra-pedra em 200ml de água por 5 minutos. Abafe por 10 minutos, coe e consuma morno de 2 a 3 vezes por dia para prevenção e alívio urinário."
   },
   "Uxi Amarelo": {
-    "ben": "Muito utilizado para a saúde do sistema reprodutor feminino, ajudando a tratar miomas, cistos, endometriose e inflamações uterinas.",
-    "uso": "Ferva 1 colher de sopa da casca em 200ml de água por 5 a 10 minutos. Abafar por 10 minutos, coar e tomar morno."
+    "ben": "O uxi-amarelo é um potente fitoterápico com reconhecida ação anti-inflamatória e imunoestimulante. É amplamente utilizado na medicina tradicional para a saúde reprodutiva feminina, auxiliando no tratamento complementar de miomas, cistos ovarianos, endometriose, SOP e inflamações do útero.",
+    "uso": "Ferva 1 colher de sopa da casca em 200ml de água por 5 a 10 minutos. Desligue, abafe por mais 10 minutos, coe e consuma ainda morno. Idealmente consumido de 1 a 2 vezes por dia."
   },
   "Ginseng": {
-    "ben": "Raiz adaptógena estimulante. Aumenta a resistência física e mental, combate o estresse, a fadiga e melhora a imunidade e libido.",
-    "uso": "Adicione 1 colher de chá do pó em sucos, vitaminas, sopas ou prepare como infusão fervendo o pó por 5 minutos."
+    "ben": "O ginseng é uma raiz adaptógena que atua como excelente restaurador da vitalidade e da energia. Melhora o desempenho físico e mental, estimula as funções cognitivas (foco, memória e raciocínio), ajuda o corpo a lidar melhor com o estresse físico e emocional, fortalece a imunidade e atua como revigorante sexual.",
+    "uso": "Para chá: infunda 1 colher de chá de ginseng em pó ou raiz fatiada em 200ml de água fervente por 5 minutos. Se preferir, misture o pó diretamente em sucos e shakes."
   },
   "Erva Baleeira": {
-    "ben": "Excelente anti-inflamatório e analgésico natural. Indicado para dores musculares, contusões, artrite, coluna e inflamações articulares.",
-    "uso": "Ferva 1 colher de sopa da erva seca em 200ml de água por 5 minutos. Abafe por 10 minutos, coe e consuma."
+    "ben": "A erva-baleeira é um dos mais potentes anti-inflamatórios e analgésicos naturais conhecidos da flora brasileira. Ajuda a combater com eficácia dores musculares crônicas, contusões, problemas articulares decorrentes de artrite, dores na coluna, inflamações musculares pós-treino e reumatismos.",
+    "uso": "Ferva 1 colher de sopa da erva-baleeira seca em 200ml de água por 5 minutos. Deixe abafar por mais 10 minutos, coe e beba. Recomenda-se tomar de 2 a 3 vezes por dia."
   },
   "Erva São João": {
-    "ben": "Conhecida como hipérico, auxilia no tratamento de quadros leves de depressão, ansiedade, estresse e alterações de humor.",
-    "uso": "Infusão com 1 colher de sobremesa em 200ml de água fervente por 10 minutos. Coar e tomar morno à noite. Evitar exposição excessiva ao sol durante o uso."
+    "ben": "Também conhecida como hipérico, a erva-de-são-joão é muito consagrada como um antidepressivo natural para quadros leves e moderados. Seus princípios ativos agem no cérebro estimulando neurotransmissores do bem-estar, ajudando a regular o humor, combater a ansiedade crônica, a apatia e o estresse recorrente.",
+    "uso": "Prepare por infusão despejando 200ml de água fervente sobre 1 colher de sobremesa da erva. Abafe por 10 minutos, coe e tome à noite. Evite a exposição ao sol durante tratamentos prolongados."
   },
   "Guaco": {
-    "ben": "Broncodilatador e expectorante natural excelente. Alivia gripes, tosses carregadas, asma, bronquite e facilita a eliminação de secreções.",
-    "uso": "Ferva 1 colher de sopa de folhas secas em 200ml de água por 3 minutos. Abafar por 10 minutos. Beber morno adoçado com mel."
+    "ben": "O guaco é um excelente expectorante e broncodilatador natural, graças ao princípio ativo cumarina. Ele relaxa a musculatura do sistema respiratório, facilitando a eliminação de secreções presas nos pulmões. É indicado no alívio de tosses com catarro, gripes, asma, bronquite e dores de garganta.",
+    "uso": "Ferva 1 colher de sopa de folhas secas de guaco em 200ml de água por 3 minutos. Abafe por 10 minutos, coe e tome morno. Pode ser adoçado com mel para potencializar a ação calmante."
   },
   "Oliveira": {
-    "ben": "Suas folhas ajudam no controle da pressão arterial e têm ação antioxidante e hipoglicemiante. Favorece a saúde cardiovascular.",
-    "uso": "Ferva 1 colher de sopa em 250ml de água por 5 minutos. Deixe abafar por 10 minutos e beba morno."
+    "ben": "As folhas de oliveira possuem alto teor de oleuropeína, um potente polifenol com ação antioxidante e hipotensora. O chá auxilia diretamente na redução e controle da pressão arterial elevada, favorece a saúde do sistema circulatório, ajuda a baixar as taxas de glicose no sangue e protege as células contra radicais livres.",
+    "uso": "Ferva 1 colher de sopa de folhas de oliveira secas in 250ml de água por 5 minutos. Abafe a mistura por 10 minutos, coe e consuma morno. Recomenda-se tomar ao longo do dia."
   },
   "Malva": {
-    "ben": "Rica em mucilagens protetoras, alivia dores de garganta, tosse seca, aftas e inflamações na mucosa da boca e estômago.",
-    "uso": "Infusão de 1 colher de sopa de malva em 200ml de água fervente por 10 minutos. Beba ou utilize para bochechos/gargarejos."
+    "ben": "A malva é rica em mucilagens que exercem ação protetora, suavizante, anti-inflamatória e expectorante. É ideal para acalmar a mucosa irritada da boca e da garganta em casos de tosse seca, rouquidão, aftas, gengivite e amigdalite. Também ajuda a acalmar cólicas estomacais e intestinais inflamadas.",
+    "uso": "Adicione 1 colher de sopa de malva seca em 200ml de água fervente. Deixe abafar por 10 minutos. O chá pode ser ingerido morno ou usado na forma de bochechos e gargarejos diários."
   },
   "Folha de Graviola": {
-    "ben": "Auxilia na modulação do sistema imune, tem propriedades anti-inflamatórias, antireumáticas e contribui para a regulação da pressão arterial.",
-    "uso": "Infusão de 1 colher de sopa de folhas trituradas em 200ml de água fervente por 10 minutos. Coar e tomar."
+    "ben": "A folha de graviola é rica em compostos ativos com forte ação antioxidante, moduladora do sistema imune e anti-inflamatória. Ela apoia a imunidade e auxilia na melhora da digestão, redução de dores causadas pelo reumatismo e controle natural dos níveis de pressão arterial no organismo.",
+    "uso": "Infuda 1 colher de sopa de folhas secas trituradas em 200ml de água fervente por 10 minutos. Coe bem e tome morno, de preferência no período da tarde ou noite."
   },
   "Barbatimão": {
-    "ben": "Forte ação adstringente, cicatrizante e antisséptica. Indicado para banhos de assento no combate a corrimentos e infecções genitais, ou cicatrização de feridas.",
-    "uso": "Ferva 2 colheres de sopa da casca em 500ml de água por 10 minutos. Deixe esfriar, coe e use para compressas ou banho de assento."
+    "ben": "O barbatimão destaca-se por seu alto teor de taninos, o que lhe confere fortíssimas propriedades cicatrizantes, adstringentes, anti-inflamatórias e antissépticas. É amplamente empregado em banhos de assento para combater infecções ginecológicas, corrimentos e candidíase, ou no tratamento externo de feridas.",
+    "uso": "Ferva 2 colheres de sopa da casca de barbatimão em 500ml de água por 10 minutos. Coe o preparado, deixe esfriar e utilize externamente para banhos de assento ou compressas na pele."
   },
   "Chapéu de Couro": {
-    "ben": "Diurético e depurativo do sangue. Auxilia no combate a problemas renais, reumatismo, artrite, ácido úrico alto e inflamações na garganta.",
-    "uso": "Ferva 1 colher de sopa da erva seca em 200ml de água por 5 minutos. Abafar por 10 minutos e beber."
+    "ben": "O chapéu-de-couro é um poderoso diurético e depurativo do sangue. Ele estimula a eliminação de toxinas e o funcionamento dos rins, sendo muito útil no alívio de sintomas de ácido úrico elevado, gota, dores reumáticas, artrite, infecções do trato urinário e inflamações de garganta.",
+    "uso": "Ferva 1 colher de sopa da erva desidratada em 200ml de água por 5 minutos. Abafe por 10 minutos, coe e tome morno. Pode ser consumido até 3 vezes ao dia."
   },
   "Seca Barriga": {
-    "ben": "Mistura concentrada de ervas diuréticas e laxativas suaves. Auxilia no bom funcionamento do intestino, eliminação de toxinas e combate ao inchaço abdominal.",
-    "uso": "Adicione 1 colher de sopa do composto em 200ml de água fervente. Deixe abafar por 10 minutos, coe e beba preferencialmente após o jantar."
+    "ben": "O composto de ervas Seca Barriga é uma seleção estratégica de plantas com alto poder termogênico, diurético e regulador intestinal. Ele promove a aceleração do metabolismo gástrico, a queima calórica, combate com eficácia o inchaço abdominal causado pela retenção de líquidos e favorece a eliminação de toxinas.",
+    "uso": "Adicione 1 colher de sopa do composto em 200ml de água fervente. Abafe por 10 minutos, coe e beba preferencialmente de 15 a 20 minutos após o almoço ou jantar."
   },
   "Anis Estrelado": {
-    "ben": "Melhora a digestão, reduz gases e alivia sintomas de resfriados e gripes devido à presença de ácido chiquímico, expectorante e calmante do estômago.",
-    "uso": "Ferva 2 estrelas de anis em 200ml de água por 5 minutos. Abafar por 10 minutos, coar e tomar."
+    "ben": "O anis-estrelado possui aroma e sabor deliciosos e é rico em anetol e ácido chiquímico. Facilita o processo digestivo, reduz cólicas intestinais e gases, e possui ação expectorante e antiviral útil contra sintomas de gripes, resfriados, acúmulo de secreção pulmonar e tosses irritativas.",
+    "uso": "Ferva de 2 a 3 estrelas de anis em 200ml de água por 5 minutos. Apague o fogo, abafe por mais 10 minutos, coe bem e consuma morno, de preferência após refeições fartas."
   },
   "Vinagrete": {
-    "ben": "Mix de vegetais desidratados (cebola, tomate, pimentão, alho e especiarias) pronto para temperar saladas, vinagrete fresco, carnes e recheios."
+    "ben": "Um mix clássico e colorido de vegetais desidratados como cebola, tomate, pimentão, alho e salsa. Livre de conservantes artificiais, é rico em fibras e antioxidantes naturais, trazendo sabor autêntico, praticidade e frescor para o dia a dia na cozinha.",
+    "uso": "Pode ser hidratado com um fio de azeite e vinagre ou adicionado diretamente aos pratos. Harmoniza perfeitamente com saladas de folhas frescas, vinagretes tradicionais, carnes vermelhas grelhadas, peixes assados, legumes cozidos e recheios de tortas."
   },
   "Tempero Baiano": {
-    "ben": "Mistura clássica e picante contendo cominho, pimenta preta, coentro, orégano, alho, cúrcuma e pimenta calabresa. Perfeito para feijão, ensopados e carnes fortes."
+    "ben": "Uma combinação intensa e picante que reúne cominho, pimenta preta, coentro, orégano, alho, cúrcuma e pimenta calabresa. Estimula a digestão, possui propriedades termogênicas que auxiliam o metabolismo e traz o calor característico da culinária baiana.",
+    "uso": "Adicione durante o cozimento dos alimentos ou para marinar. Combina de forma excelente com feijão carioca ou preto, ensopados de carne bovina, peixes e frutos do mar, moquecas, caldos espessos e aves assadas."
   },
   "Tempero Mineiro": {
-    "ben": "Tempero suave e aromático à base de alho, cebola, coentro, cominho, cúrcuma e sal. Traz o sabor caseiro da roça para arroz, feijão, frango e legumes."
+    "ben": "Uma mistura suave e acolhedora à base de alho, cebola, coentro, cominho, cúrcuma, salsa e sal. Oferece o clássico sabor da culinária caipira, estimulando o apetite de forma natural e promovendo uma digestão leve e equilibrada.",
+    "uso": "Utilize como tempero base para refogados e cozidos. Combina maravilhosamente bem com arroz branco, feijão fresco, carne de porco, frango caipira, polenta, legumes refogados como quiabo e abobrinha, e caldos caseiros."
   },
   "Páprica Doce": {
-    "ben": "Pó vermelho obtido de pimentões doces moídos. Dá cor vibrante e sabor suave e adocicado a batatas, aves, molhos e carnes."
+    "ben": "Pó vermelho vibrante obtido de pimentões vermelhos doces secos e moídos. Rica em vitamina A, vitamina C e carotenoides, ela adiciona uma cor belíssima e um sabor suave, adocicado e levemente terroso aos alimentos, sem qualquer picância.",
+    "uso": "Polvilhe sobre os alimentos antes ou após o preparo. Harmoniza muito bem com batatas assadas, purês, aves de carne branca (frango e peru), molhos cremosos, arroz, legumes cozidos e na decoração de homus e maioneses."
   },
   "Páprica Picante": {
-    "ben": "Derivada de pimentões mais ardidos secos e moídos. Proporciona um toque de picância marcante e cor avermelhada a carnes grelhadas e pratos espanhóis."
+    "ben": "Especiaria avermelhada obtida da moagem de pimentões vermelhos mais ardidos. Contém capsaicina, um composto termogênico que acelera o metabolismo, auxilia na queima de gorduras e atua como um excelente estimulante circulatório e digestivo.",
+    "uso": "Adicione com moderação no início ou meio da preparação dos pratos. Combina com carnes vermelhas grelhadas, batatas rústicas, peixes de água salgada, caldos apimentados, cozidos de carne bovina e pratos típicos como paella."
   },
   "Páprica Defumada": {
-    "ben": "Pimentões secos sob fumaça de madeira nobre e moídos. Garante um toque defumado irresistível e cor intensa para assados, molhos e churrasco vegetal."
+    "ben": "Produzida com pimentões vermelhos secos sob fumaça de madeira nobre e depois moídos. Garante um toque defumado irresistível e uma coloração profunda aos pratos, oferecendo ricos antioxidantes e compostos carotenoides saudáveis.",
+    "uso": "Ideal para marinar alimentos ou finalizar pratos. Harmoniza esplendidamente com batatas assadas, cogumelos refogados, feijoada vegetariana, carnes de churrasco, frango grelhado, tofu e legumes grelhados."
   },
   "Sal Rosa Himalaia": {
-    "ben": "Sal mineral puro colhido nas profundezas do Himalaia. Contém menos sódio que o sal refinado tradicional e preserva minerais essenciais ao organismo."
+    "ben": "Sal mineral de cor rosada colhido em depósitos subterrâneos antigos no Himalaia. Por ser menos processado, preserva minerais essenciais ao organismo, como cálcio, magnésio e ferro, contendo teor ligeiramente inferior de sódio comparado ao sal refinado.",
+    "uso": "Use para salgar e finalizar pratos, substituindo o sal refinado comum. Combina bem com absolutamente todos os alimentos: carnes grelhadas, legumes cozidos, peixes, saladas de folhas, arroz, sopas e massas."
   },
   "Ervas Finas": {
-    "ben": "Combinação harmoniosa de ervas secas aromáticas (manjericão, orégano, tomilho, alecrim e sálvia). Excelente para omeletes, saladas, carnes magras e molhos."
+    "ben": "Uma mistura clássica e aromática de manjericão, orégano, tomilho, alecrim e sálvia. Rica em antioxidantes, óleos essenciais digestivos e propriedades anti-inflamatórias, ela confere um aroma sofisticado sem a necessidade de adicionar sódio.",
+    "uso": "Polvilhe durante o cozimento ou na finalização. Harmoniza muito bem com omeletes, queijos frescos, aves assadas, carnes brancas magras, peixes grelhados, legumes assados no azeite e molhos à base de tomate."
   },
   "Orégano": {
-    "ben": "Especiaria essencial na culinária italiana, rica em antioxidantes. Combina perfeitamente com pizzas, queijos, massas, molhos de tomate e aves."
+    "ben": "Especiaria essencial na gastronomia, rica em carvacrol e timol, óleos essenciais com potentes ações bactericidas, fungicidas e anti-inflamatórias. Auxilia a acalmar cólicas estomacais e melhora o sistema digestivo.",
+    "uso": "Adicione nos momentos finais da receita ou polvilhe diretamente. Harmoniza com pizzas, massas com molho de tomate, queijo derretido, saladas de tomate, aves grelhadas, legumes assados e recheios de tortas."
   },
   "Pega Marido": {
-    "ben": "Tempero muito popular que leva cebola desidratada, alho, mostarda, pimentão, tomate, salsa e cúrcuma. Deixa o frango, molhos e vegetais incríveis."
+    "ben": "Mistura muito popular contendo cebola desidratada, alho, mostarda, pimentão, tomate, salsa e cúrcuma. Traz uma riqueza de sabores que estimula o paladar e ajuda a diminuir o uso de sal de cozinha, oferecendo ação digestiva e antioxidante.",
+    "uso": "Misture diretamente nas receitas ou use em marinadas. Fica excelente no tempero de frango grelhado, carnes bovinas assadas, molhos brancos e de tomate, ensopados, legumes cozidos no vapor e purês."
   },
   "Chimichurri Defumado": {
-    "ben": "Famoso molho argentino desidratado com toque defumado especial. Misture com azeite de oliva para criar o acompanhamento ideal para churrasco e carnes assadas."
+    "ben": "O clássico tempero argentino desidratado com um toque defumado exclusivo. Rico em ervas como orégano, salsa, alho e especiarias, fornece propriedades digestivas e diuréticas, além de um aroma defumado extremamente apetitoso.",
+    "uso": "Misture com azeite e vinagre para formar um molho ou use a seco. Harmoniza perfeitamente com carnes de churrasco, bifes na grelha, batatas rústicas assadas, pão de alho, hambúrgueres e vegetais grelhados."
   },
   "Alho Frito": {
-    "ben": "Lâminas de alho picadas e fritas até ficarem douradas e crocantes. Ideal para finalizar arroz, saladas, sopas, massas e pizzas com muito aroma."
+    "ben": "Lâminas crocantes de alho frito que facilitam o dia a dia. O alho é amplamente conhecido por sua ação de reforço ao sistema imunológico, regulação da pressão arterial e melhora da circulação sanguínea.",
+    "uso": "Polvilhe diretamente sobre o prato já pronto para manter a crocância. Fica ótimo em arroz branco, saladas verdes, massas (como alho e óleo), sopas de legumes, pizzas de queijo e no topo de purês."
   },
   "Tomilho": {
-    "ben": "Erva aromática de sabor levemente cítrico. Acompanha muito bem molhos de tomate, legumes assados, carnes grelhadas e sopas de inverno."
+    "ben": "Erva aromática rica em timol, ativo com propriedades antissépticas pulmonares e digestivas. Oferece um perfume herbáceo e sabor levemente cítrico aos pratos, auxiliando no combate à má digestão.",
+    "uso": "Adicione no início das preparações de cozimento lento. Combina incrivelmente bem com molhos de tomate, batatas assadas, legumes assados (como abóbora e cenoura), carnes vermelhas, aves e ensopados."
   },
   "Pimenta Preta Grão": {
-    "ben": "A pimenta do reino em sua forma natural. Moída na hora, confere o máximo de aroma e ardência suave a qualquer prato salgado."
+    "ben": "A pimenta-do-reino preta em sua forma integral preserva perfeitamente a piperina, composto que melhora a absorção de nutrientes, atua como termogênico acelerando o metabolismo e estimula enzimas digestivas.",
+    "uso": "Moa no momento do consumo diretamente nos alimentos. Harmoniza com carnes vermelhas grelhadas, peixes assados, ovos, molhos escuros, massas (como cacio e pepe) e ensopados."
   },
   "Pimenta Preta Moída": {
-    "ben": "Praticidade para o dia a dia. Pimenta do reino moída de qualidade para temperar carnes, caldos, ovos, molhos e saladas."
+    "ben": "Pimenta-do-reino preta moída com altíssima praticidade. Fornece piperina que melhora a biodisponibilidade de outros temperos (como a cúrcuma) e estimula a digestão saudável, trazendo uma ardência agradável.",
+    "uso": "Adicione durante a preparação ou na finalização do prato. Ideal para temperar bifes, caldos de legumes, ovos mexidos, molhos cremosos, saladas de grãos e marinadas."
   },
   "Cominho": {
-    "ben": "Tempero de sabor marcante, terroso e caloroso. Indispensável na preparação de feijão, picadinho de carne, cozidos e pratos nordestinos."
+    "ben": "Tempero de sabor quente e terroso, muito consumido no Nordeste. Estimula a secreção de enzimas pancreáticas, melhorando a digestão, prevenindo a formação de gases e aliviando a sensação de inchaço estomacal.",
+    "uso": "Use em pequenas quantidades durante o cozimento dos alimentos. Combina com feijão preto ou carioca, picadinho de carne bovina, ensopados de bode ou carneiro, lentilhas, grão-de-bico e chilli."
   },
   "Cebola em Pó": {
-    "ben": "Cebola desidratada e moída fina. Distribui o sabor adocicado e característico da cebola de forma homogênea em massas, caldos e recheios."
+    "ben": "Cebola desidratada moída fina de forma super prática. Concentra compostos alicinas que auxiliam na imunidade e na saúde cardiovascular, oferecendo sabor adocicado e aromático de maneira homogênea e sem pedaços.",
+    "uso": "Adicione diretamente em caldos, massas e molhos. Perfeita para sopas, cremes salgados, hambúrgueres caseiros, almôndegas, recheios de tortas, pipocas salgadas e molhos para salada."
   },
   "Alho em Pó": {
-    "ben": "Alho desidratado concentrado. Traz praticidade sem arder e sem deixar pedaços, ideal para dry rubs, carnes, hambúrgueres e pipocas gourmet."
+    "ben": "Alho concentrado desidratado e moído. É rico em alicina, com excelente efeito antibacteriano e imunoestimulante, ideal para dar sabor marcante de alho de forma prática nas receitas diárias.",
+    "uso": "Utilize como tempero seco direto nos alimentos. Harmoniza perfeitamente com batatas assadas, pipoca, carnes para grelhar (dry rubs), frango, pão de alho caseiro e molhos de iogurte."
   },
   "Coentro em Pó": {
-    "ben": "Sementes de coentro secas e moídas. Possui sabor levemente cítrico e adocicado, bem diferente das folhas frescas, perfeito para temperar peixes, sopas e pães."
+    "ben": "Obtido a partir da moagem das sementes de coentro secas, oferece sabor cítrico, levemente amadeirado e muito suave, bem diferente das folhas frescas. Ajuda a reduzir gases e apoia o controle da glicose.",
+    "uso": "Adicione durante o cozimento ou cozimento lento. Perfeito para peixes grelhados, caldeiradas, ensopados de aves, sopas de lentilha, pães artesanais e no preparo de misturas de curry."
   },
   "Creme de Cebola": {
-    "ben": "Pó solúvel multifuncional. Utilizado para engrossar caldos, sopas, dar liga em almôndegas e hambúrgueres, e criar cremes rápidos de cebola."
+    "ben": "Pó solúvel multifuncional com sabor concentrado de cebola. Facilita o preparo de receitas que necessitam de consistência, além de trazer sabor aromático e rico aos pratos salgados de forma rápida.",
+    "uso": "Use dissolvido em líquidos quentes ou misturado a seco para dar liga. Harmoniza bem com almôndegas de carne bovina ou frango, hambúrgueres, sopas cremosas, caldos e assados de carne."
   },
   "Caldo de Carne": {
-    "ben": "Tempero concentrado desidratado sabor carne. Ideal para dar profundidade e riqueza a molhos, risotos, sopas e refogados rápidos."
+    "ben": "Tempero em pó concentrado sabor carne desidratada de forma prática. Proporciona um toque umami rico que acentua os sabores naturais dos pratos salgados, facilitando a redução do tempo na cozinha.",
+    "uso": "Dissolva em água fervente ou adicione diretamente nos cozidos. Fica excelente em molhos de carne vermelha, risotos, sopas de legumes e carnes cozidas com batatas."
   },
   "Caldo de Galinha": {
-    "ben": "Tempero em pó concentrado sabor galinha. Perfeito para enriquecer caldos de cozimento, arroz, canjas e refogados de legumes."
+    "ben": "Caldo de galinha desidratado e concentrado em pó. Proporciona sabor salgado, aconchegante e completo a preparações líquidas e cozidos, facilitando a execução de pratos rápidos do cotidiano.",
+    "uso": "Dissolva em água quente ou polvilhe nas preparações. Harmoniza com arroz de galinha, canjas, sopas de capeletti, cozidos de legumes variados, polenta e risotos de frango."
   },
   "Noz Moscada em Grão": {
-    "ben": "Semente aromática adocicada e amadeirada. Ralada na hora, é essencial para molho branco (béchamel), purês de batata, massas e doces finos."
+    "ben": "Semente aromática de sabor quente, adocicado e levemente picante. Possui propriedades relaxantes e estimulantes da digestão gástrica, além de atuar no alívio de cólicas abdominais.",
+    "uso": "Rale na hora diretamente na finalização das receitas. Harmoniza de forma clássica com molho branco (béchamel), purê de batatas, massas recheadas com queijos, suflês e doces finos."
   },
   "Fumaça em Pó": {
-    "ben": "Condimento concentrado que confere sabor e aroma de defumado instantâneo a hambúrgueres, maioneses, carnes grelhadas e churrasco."
+    "ben": "Condimento obtido a partir da condensação da fumaça de queima de madeira nobre. Confere sabor defumado instantâneo de churrasco sem adição de calorias, facilitando a criação de pratos aromáticos.",
+    "uso": "Adicione em pequenas quantidades no final da preparação. Combina maravilhosamente com hambúrgueres bovinos ou vegetarianos, maioneses caseiras, feijoada, costelinhas suínas, tofu e cogumelos."
   },
   "Pimenta Calabresa": {
-    "ben": "Flocos de pimentas vermelhas secas. Ideal para dar um toque de picância vibrante a pizzas, linguiças, molhos e massas ao alho e óleo."
+    "ben": "Flocos secos de pimentas vermelhas picantes. Rica em capsaicina, possui ação termogênica que apoia o emagrecimento, atua como analgésico natural e estimula a secreção salivar e gástrica para a digestão.",
+    "uso": "Polvilhe sobre os pratos com moderação. Harmoniza perfeitamente com pizzas de queijo ou calabresa, massas com alho e óleo, molhos de tomate picantes, peixes assados, carnes suínas e linguiças."
   },
   "Manjericão": {
-    "ben": "Erva aromática doce e refrescante. Combina perfeitamente com pratos à base de tomate, molho pesto, queijos, massas e carnes brancas."
+    "ben": "Erva aromática doce e refrescante, rica em óleos essenciais como linalol e eugenol, que combatem infecções e inflamações. Ajuda na digestão pós-refeição e alivia gases.",
+    "uso": "Adicione preferencialmente no final do cozimento ou fresco para preservar o aroma. Harmoniza com molho de tomate fresco, massas, pizzas margherita, queijo muçarela de búfala, aves e peixes assados."
   },
   "Salsa Desidratada": {
-    "ben": "serve para realçar o sabor de sopas, molhos, carnes, saladas e grãos, oferecendo praticidade e maior durabilidade que a erva fresca. É rica em nutrientes (vitaminas A, C, E, complexo B e ferro) e possui propriedades diuréticas, ajudando na digestão e no controle da pressão arterial."
+    "ben": "Erva desidratada rica em ferro, cálcio, vitaminas A, C e E. Possui excelente ação diurética que previne a retenção de líquidos corporais e ajuda a purificar o sistema renal, facilitando a digestão dos pratos.",
+    "uso": "Use para temperar no início ou salpicar na hora de servir. Harmoniza com arroz, caldos, sopas, purês de batata, peixes grelhados, omeletes, saladas de folhas e massas em geral."
   },
   "Bicarbonato": {
-    "ben": "Produto multiuso na cozinha e higiene. Serve como agente fermentador em bolos e pães, amaciante de carnes, removedor de odores e na limpeza ecológica."
+    "ben": "O bicarbonato de sódio é um composto mineral alcalino multiuso. Na culinária, ajuda a neutralizar a acidez excessiva de molhos, atua como agente fermentador que deixa massas fofas e amacia fibras de carnes.",
+    "uso": "Use uma pitada para amaciar carnes, reduzir a acidez de molhos de tomate ou junto com fermentos em bolos. Harmoniza como agente técnico em massas de bolos, biscoitos, caldos e cozidos de feijão."
   },
   "Colorau Extra Fort": {
-    "ben": "Pó obtido da trituração das sementes de urucum com farinha. Dá uma bela cor dourada ou avermelhada a cozidos, ensopados e carnes vermelhas."
+    "ben": "Pó obtido da moagem fina das sementes de urucum. Rico em carotenoides antioxidantes (bixina), é ideal para dar uma coloração avermelhada ou dourada linda e saudável às comidas, sem interferir no sabor.",
+    "uso": "Adicione no refogado inicial de óleo ou azeite para liberar a cor. Harmoniza perfeitamente com cozidos de carne bovina, ensopados de frango, peixes cozidos, arroz caipira, caldos e molhos vermelhos."
   },
   "Tempero pra Feijão": {
-    "ben": "Combinação especial de ervas e especiarias (como bacon vegetal, alho, cebola, louro e cominho) para deixar o feijão do dia a dia encorpado e saboroso."
+    "ben": "Mistura completa que reúne especiarias como bacon vegetal, alho, cebola, louro e cominho. Deixa o feijão muito encorpado, estimula a digestão e reduz a sensação de estufamento frequentemente causada por leguminosas.",
+    "uso": "Adicione no cozimento do feijão ou na hora do refogado final. Combina perfeitamente com feijão preto, feijão carioca, sopa de feijão, feijoada completa, lentilhas e cozidos de grãos."
   },
   "Açafrão da Terra": {
-    "ben": "Conhecido também como cúrcuma. É um poderoso anti-inflamatório natural e antioxidante, dando cor amarela brilhante e sabor terroso a arroz, aves e molhos."
+    "ben": "Também conhecido como cúrcuma. É riquíssimo em curcumina, um dos mais poderosos anti-inflamatórios e antioxidantes da natureza. Apoia a saúde das articulações, a imunidade e a digestão de gorduras.",
+    "uso": "Adicione no preparo do arroz ou refogados de óleo para ativar suas propriedades (melhor quando associado a pimenta preta). Harmoniza com arroz branco ou integral, frango, legumes assados, ovos mexidos, peixes e sopas."
   },
   "Curry Fit": {
-    "ben": "Mistura termogênica e funcional de especiarias orientais (cúrcuma, gengibre, coentro, pimenta, feno-grego). Ideal para frango, legumes e grão-de-bico."
+    "ben": "Mistura termogênica e funcional de cúrcuma, gengibre, coentro, feno-grego, pimenta e especiarias. Otimiza o metabolismo calórico, ajuda na queima de gorduras e tem excelente ação anti-inflamatória.",
+    "uso": "Adicione durante o refogado ou cozimento de pratos quentes. Fica excelente com peitos de frango, grão-de-bico ensopado, legumes assados no forno, molhos à base de leite de coco e sopas de lentilha."
   },
   "Fit Frango": {
-    "ben": "Tempero sem sal focado em realçar o sabor de peitos de frango e aves grelhadas, usando cúrcuma, alho, cebola e ervas finas."
+    "ben": "Tempero funcional sem sal desenvolvido para enriquecer aves de forma saudável. Leva cúrcuma, alho, cebola e uma seleção de ervas finas ricas em antioxidantes e com propriedades que facilitam a digestão.",
+    "uso": "Esfregue o tempero diretamente na carne do frango antes de grelhar, assar ou cozinhar. Harmoniza perfeitamente com filés de peito de frango, frango assado inteiro, coxas e sobrecoxas, e legumes refogados."
   },
   "Chimichurri sem Pimenta": {
-    "ben": "Versão suave do famoso chimichurri argentino, contendo cebola, alho, salsa, orégano e manjericão, sem ardência. Ótimo para saladas e grelhados."
+    "ben": "Uma combinação herbácea muito suave que reúne cebola, alho, salsa, orégano, manjericão e louro. Oferece ricos óleos essenciais digestivos e diuréticos sem causar ardência no estômago.",
+    "uso": "Hidrate em azeite de oliva e vinagre ou use seco diretamente. Harmoniza com saladas verdes, legumes grelhados, carnes grelhadas de boi ou frango, omeletes e fatias de pão italiano."
   },
   "Chimichurri com Pimenta": {
-    "ben": "A receita tradicional argentina com flocos de pimenta calabresa, garantindo sabor herbáceo e picância média ideal para carnes assadas."
+    "ben": "O clássico tempero argentino contendo flocos de pimenta calabresa que proporcionam picância moderada. Estimula a circulação sanguínea, acelera o metabolismo e facilita a digestão de pratos proteicos pesados.",
+    "uso": "Prepare um molho misturando com azeite e vinagre ou adicione diretamente nos alimentos. Perfeito para carnes de churrasco (parrilla), hambúrgueres na chapa, batatas assadas com casca e linguiças grelhadas."
   },
   "Lemon Pepper": {
-    "ben": "Condimento refrescante e picante à base de raspas de limão desidratadas e pimenta preta. Excelente para peixes, aves, batatas e pipocas."
+    "ben": "Uma combinação irresistível de raspas de limão desidratadas e pimenta-do-reino preta moída. Oferece ação antioxidante, digestiva e refrescante, promovendo sensação de saciedade e reduzindo a necessidade de uso de sódio.",
+    "uso": "Salpique sobre os alimentos antes ou na finalização do preparo. Harmoniza maravilhosamente com filés de peixe, peito de frango grelhado, batatas fritas ou assadas, pipoca salgada e saladas de folhas."
   },
   "Ana Maria": {
-    "ben": "Tempero completo e suave com alho, cebola, coentro, cúrcuma, sal e ervas. Combina muito bem com ensopados, aves e arroz de todo dia."
+    "ben": "Tempero completo e aromático contendo alho, cebola, coentro, cúrcuma, salsa, sal e condimentos. Auxilia na digestão, combate radicais livres devido à presença de ervas e traz um sabor caseiro especial.",
+    "uso": "Adicione durante a preparação dos alimentos. Harmoniza com ensopados de frango, arroz do dia a dia, caldos cremosos, recheios de empadões, sopas de legumes e carnes assadas na panela."
   },
   "Edu Guedes": {
-    "ben": "Tempero rico em vegetais desidratados (cenoura, pimentão, cebola, alho, tomate) e condimentos. Traz cor e sabor completo a molhos, arroz e caldos."
+    "ben": "Tempero rico em vegetais desidratados como cenoura, pimentão, cebola, alho, tomate, salsa e especiarias. Fonte de vitaminas e sais minerais em flocos, traz sabor adocicado, complexidade e cor às receitas de forma prática.",
+    "uso": "Use na preparação de molhos ou refogados. Harmoniza perfeitamente com arroz colorido, caldos de vegetais, molho de tomate caseiro, ensopados de carne bovina, omeletes recheadas e tortas salgadas."
   },
   "Amendoim Salsa": {
-    "ben": "Petisco de amendoim crocante revestido com tempero sabor salsa e cebola. Ideal para aperitivos e reuniões informais."
+    "ben": "Snack crocante de amendoim envolto em uma saborosa casquinha salgada sabor salsa. O amendoim fornece proteínas vegetais de alta qualidade, gorduras monoinsaturadas saudáveis para o coração e fibras.",
+    "uso": "Consuma diretamente como petisco ou aperitivo em reuniões. Harmoniza muito bem como snack de fim de semana acompanhado de sucos naturais, em tábuas de frios ou consumido após o treino para energia rápida."
   },
   "Gergelim Branco": {
-    "ben": "Sementes cruas de sabor suave e amanteigado. Ricas em cálcio e gorduras saudáveis, perfeitas para pães, saladas, pratos orientais e tahine."
+    "ben": "Sementes cruas de gergelim branco, excelentes fontes de cálcio biodisponível, fibras alimentares e gorduras insaturadas. Ajudam no bom funcionamento do intestino e no fortalecimento da saúde óssea.",
+    "uso": "Salpique sobre os pratos ou misture em massas. Harmoniza com pães caseiros, saladas de folhas verdes, arroz integral, pratos orientais (como sushis e yakissobas) e no preparo de tahine caseiro."
   },
   "Gergelim Torrado": {
-    "ben": "Sementes tostadas de gergelim que liberam um aroma e sabor amendoado marcante. Excelentes para finalizar pratos japoneses, saladas e grelhados."
+    "ben": "Sementes de gergelim tostadas que intensificam o aroma e o sabor amendoado. Ricas em fitosteróis que ajudam a controlar o colesterol sanguíneo, cálcio e antioxidantes importantes.",
+    "uso": "Polvilhe diretamente sobre receitas finalizadas para manter o aroma tostado. Harmoniza de forma ideal com pratos da culinária asiática, yakisoba, saladas de folhas, grelhados de frango e peixes como salmão e atum."
   },
   "Gergelim Preto": {
-    "ben": "Sementes de gergelim de cor escura intensa e sabor mais pronunciado. Muito decorativas, ricas em antioxidantes, ótimas para pratos orientais."
+    "ben": "Sementes de gergelim preto que contêm maior concentração de antioxidantes (antocianinas) comparadas às versões claras. Ajudam a combater o estresse oxidativo e favorecem a saúde cardiovascular e intestinal.",
+    "uso": "Use para decorar e finalizar pratos salgados. Harmoniza com peixes grelhados, pratos da culinária japonesa, saladas de folhas e legumes, biscoitos salgados e arroz integral."
   },
   "Feno Grego": {
-    "ben": "Sementes aromáticas de sabor levemente amargo e adocicado (lembrando xarope de bordo). Auxilia na regulação hormonal e do apetite."
+    "ben": "Sementes aromáticas ricas em fibras solúveis (galactomananas) e compostos bioativos. Auxiliam na regulação dos níveis de açúcar no sangue, no controle do apetite e promovem a digestão saudável.",
+    "uso": "Utilize as sementes inteiras no cozimento lento ou moídas no preparo de molhos. Harmoniza com curries indianos, ensopados de grão-de-bico, pães artesanais, cozidos de carne bovina ou frango e lentilhas."
   },
   "Amendoim Salsa e Cebola": {
-    "ben": "Delicioso amendoim crocante com casquinha saborizada de salsa e cebola, perfeito para um lanche rápido ou petisco de fim de semana."
+    "ben": "Delicioso amendoim crocante revestido com tempero natural sabor salsa e cebola. Excelente fonte de energia, magnésio, potássio e antioxidantes que apoiam a saúde muscular e promovem saciedade.",
+    "uso": "Consuma diretamente do pacote a qualquer hora do dia. Harmoniza perfeitamente como aperitivo com bebidas frias, compondo tábuas de frios e queijos ou para lanches rápidos entre refeições."
   },
   "Amendoim Xerém": {
-    "ben": "Amendoim torrado e picado em pequenos pedaços (granulado). Ideal para finalizar doces, coberturas de sorvete, saladas e pratos orientais."
+    "ben": "Amendoim torrado de alta qualidade, descascado e granulado em pequenos pedaços. Rico em proteínas, gorduras boas e vitamina E, confere textura crocante e alto valor nutritivo de maneira prática.",
+    "uso": "Polvilhe sobre pratos doces ou salgados. Harmoniza de forma fantástica com sorvetes, doces como pé de moleque, bolos, saladas de folhas, pratos tailandeses (como Pad Thai) e carnes grelhadas com crosta."
   },
   "Amendoim Pimenta": {
-    "ben": "Amendoim crocante com uma casca picante e salgada. Uma opção irresistível de snack para quem gosta de petiscos condimentados."
+    "ben": "Amendoim crocante revestido com casca picante e salgada saborizada com pimenta vermelha. A combinação oferece propriedades termogênicas da pimenta e o alto valor proteico e energético do amendoim.",
+    "uso": "Consuma diretamente como aperitivo salgado. Harmoniza com bebidas frias, petiscos variados, queijos amarelos e como ingrediente crocante em saladas tropicais."
   },
   "Amendoim Doce": {
-    "ben": "Amendoim praliné, torrado e envolto em uma casquinha de açúcar doce e crocante. Clássica guloseima caseira muito querida."
+    "ben": "Amendoim praliné torrado e envolto em uma calda de açúcar caramelizada e super crocante. Oferece energia rápida e o sabor aconchegante dos doces tradicionais de festas populares brasileiras.",
+    "uso": "Consuma como sobremesa ou lanche doce no cotidiano. Harmoniza como acompanhamento de cafés pretos, chás de ervas sem açúcar, recheios de bolos caseiros e sobremesas à base de sorvete."
   },
   "Amendoim Torrado sem Sal": {
-    "ben": "Amendoim inteiro, torrado e descascado, sem adição de sódio. Fonte de proteínas e gorduras boas para consumo direto ou receitas."
+    "ben": "Amendoim inteiro torrado e descascado sem qualquer adição de sódio. Fonte rica em gorduras monoinsaturadas saudáveis, proteínas vegetais, potássio, magnésio e fibras benéficas para o coração.",
+    "uso": "Consuma diretamente ou moa para preparar manteiga de amendoim caseira. Harmoniza com saladas de frutas, iogurtes, shakes funcionais, frango xadrez e no preparo de cookies e bolos saudáveis."
   },
   "Guaraná em Pó": {
-    "ben": "Pó natural obtido das sementes de guaraná. Rico em cafeína, atua como excelente estimulante físico e mental, reduz a fadiga e dá mais disposição.",
-    "uso": "Misture 1 colher de café (cerca de 2g) em água, sucos, vitaminas ou shakes pela manhã ou antes dos treinos."
+    "ben": "O pó de guaraná é um potente energético natural rico em cafeína pura, teobromina e antioxidantes. Ele age estimulando o sistema nervoso central, reduzindo a fadiga física e mental, aumentando o foco cerebral e acelerando o metabolismo energético.",
+    "uso": "Misture 1 colher de café (cerca de 2g) em 200ml de água, suco natural, vitamina de frutas ou shake pré-treino, preferencialmente pela manhã ou no início da tarde."
   },
   "Maca Peruana": {
-    "ben": "Raiz peruana reconhecida como superalimento adaptógeno. Auxilia no equilíbrio hormonal, aumenta a libido, melhora o vigor físico, energia e disposição.",
-    "uso": "Adicione de 1 a 2 colheres de chá (5g a 10g) em sucos, vitaminas, iogurtes ou shakes diariamente."
+    "ben": "Superalimento adaptógeno de origem andina reconhecido por seu alto teor de minerais, vitaminas e fibras. Auxilia no equilíbrio hormonal natural, promove o ganho de vitalidade física, reduz o cansaço crônico e estimula a libido de forma saudável.",
+    "uso": "Adicione de 1 a 2 colheres de chá (5g a 10g) diariamente em iogurtes, frutas picadas, sucos verdes, vitaminas de banana ou massas de panquecas e bolos funcionais."
   },
   "Tribulus Terrestris": {
-    "ben": "Fitoterápico natural tradicionalmente associado ao aumento de energia, melhora da libido, vigor físico e auxílio no ganho de massa muscular.",
-    "uso": "Misture 1 colher de chá do pó em sucos, água ou shakes funcionais uma vez ao dia."
+    "ben": "Suplemento fitoterápico rico em saponinas esteroidais. É amplamente utilizado para otimizar os níveis de energia celular, apoiar o ganho de massa magra corporal, melhorar o vigor físico e promover o equilíbrio da libido.",
+    "uso": "Misture 1 colher de chá (cerca de 3g a 5g) do pó em 200ml de água, suco funcional ou shake proteico, consumindo uma vez ao dia, preferencialmente pela manhã."
   },
   "Moringa": {
-    "ben": "Superalimento rico em ferro, cálcio, proteínas, vitaminas e minerais essenciais. Fortalece o sistema imune e tem forte ação antioxidante.",
-    "uso": "Adicione 1 colher de chá do pó de folhas secas em vitaminas, sopas, sucos verdes ou beba como chá."
+    "ben": "Folha verde desidratada considerada um dos vegetais mais nutritivos da terra. Concentra altíssimas quantidades de ferro, cálcio, proteínas vegetais, vitamina C, vitamina A e compostos antioxidantes que blindam a imunidade celular.",
+    "uso": "Adicione 1 colher de chá do pó em vitaminas de frutas, sopas cremosas no final do preparo, sucos verdes ou infusione em água quente para beber como chá."
   },
   "Farinha de Beterraba": {
-    "ben": "Rica em nitratos que melhoram a oxigenação muscular e a circulação sanguínea. Excelente pré-treino natural que melhora a performance física."
+    "ben": "Excelente fonte de nitratos naturais que aumentam a produção de óxido nítrico no organismo, promovendo a vasodilatação. Isso melhora a circulação sanguínea, otimiza o aporte de oxigênio muscular e turbina o rendimento em treinos físicos.",
+    "uso": "Misture 1 colher de sopa (cerca de 10g) em sucos naturais, vitaminas ou shakes pré-treino de 30 a 40 minutos antes das atividades físicas, ou incorpore em receitas de pães e bolos."
   },
   "Farinha de Uva": {
-    "ben": "Excelente fonte de fibras e polifenóis (antioxidantes) como o resveratrol. Auxilia na saúde cardiovascular e combate os radicais livres."
+    "ben": "Super concentrado de polifenóis antioxidantes, com destaque para o resveratrol. Auxilia ativamente no combate ao envelhecimento celular, protege a saúde do coração ao melhorar a elasticidade vascular e fornece ótimas fibras intestinais.",
+    "uso": "Consuma 1 colher de sopa por dia misturada em iogurtes, saladas de frutas, sucos, ou substitua uma parte da farinha de trigo em receitas de pães e tortas saudáveis."
   },
   "Mix de Castanhas": {
-    "ben": "Seleção saudável de oleaginosas (castanha-do-pará, castanha de caju, amêndoas e nozes). Fonte rica de selênio, zinco, gorduras boas e energia."
+    "ben": "Seleção premium que reúne castanha-do-pará, castanha de caju, nozes e amêndoas. Fonte espetacular de ácidos graxos essenciais (gorduras boas), selênio, magnésio, zinco e vitamina E, promovendo a saúde do cérebro e do coração.",
+    "uso": "Consuma uma porção diária de até 30g (um punhado) como lanche saudável nos intervalos das refeições principais ou adicione picadas sobre iogurtes e saladas."
   },
   "Castanha do Pará": {
-    "ben": "A maior fonte natural de selênio, mineral essencial para a tireoide, cérebro e imunidade. Bastam de 1 a 2 unidades por dia."
+    "ben": "A maior e melhor fonte natural de selênio do planeta, mineral vital para o bom funcionamento da glândula tireoide, proteção do cérebro e fortalecimento da imunidade. Também é rica em gorduras mono e poli-insaturadas excelentes.",
+    "uso": "Consuma de 1 a 2 unidades de castanha-do-pará crua todos os dias para atingir a recomendação diária de selênio."
   },
   "Castanha de Caju": {
-    "ben": "Deliciosa castanha rica em gorduras monoinsaturadas boas para o coração, além de magnésio, ferro e zinco. Ótimo lanche saudável."
+    "ben": "Excelente oleaginosa rica em gorduras monoinsaturadas (benéficas para o controle do colesterol LDL), proteínas, magnésio (aliado muscular), ferro e zinco. Promove saciedade prolongada e fornece bastante energia saudável.",
+    "uso": "Coma um pequeno punhado (cerca de 5 a 10 unidades) como snack saudável ou adicione em receitas de arrozes festivos, saladas tropicais e pratos orientais."
   },
   "Amêndoas": {
-    "ben": "Excelente fonte de vitamina E, cálcio e magnésio. Auxilia no controle da glicose e promove a saciedade, sendo um ótimo lanche."
+    "ben": "Uma das oleaginosas mais ricas em vitamina E (potente antioxidante para a pele e células), cálcio biodisponível e magnésio. Auxilia na regulação das taxas de glicose e ajuda no controle do apetite devido às suas fibras.",
+    "uso": "Consuma de 10 a 15 unidades ao dia como lanche saudável, ou utilize picadas sobre saladas de folhas e no topo de iogurtes e frutas cozidas."
   },
   "Nozes": {
-    "ben": "A oleaginosa mais rica em ômega 3 vegetal (ALA), benéfico para a saúde do cérebro, memória e combate de processos inflamatórios."
+    "ben": "Oleaginosa com o maior teor de ômega 3 de origem vegetal (ácido alfa-linolênico - ALA). Seus nutrientes apoiam as funções cognitivas, memória, saúde dos vasos sanguíneos e exercem um papel anti-inflamatório geral no corpo.",
+    "uso": "Consuma de 3 a 5 metades de nozes por dia cruas como lanche, ou adicione em saladas de folhas verdes, risotos, queijos e iogurtes."
   },
   "Semente de Linhaça Marrom": {
-    "ben": "Rica em fibras solúveis que regulam o intestino, ômega 3 vegetal e lignanas. Auxilia no controle do colesterol."
+    "ben": "Semente rica em fibras solúveis e insolúveis, mucilagens protetoras gástricas, ômega 3 vegetal e lignanas. Auxilia no bom funcionamento do intestino, na redução do colesterol ruim e no equilíbrio hormonal geral.",
+    "uso": "Adicione 1 colher de sopa diariamente em iogurtes, frutas, ou triture na hora do consumo para melhor absorção dos óleos de ômega 3."
   },
   "Semente de Linhaça Dourada": {
-    "ben": "Produzida em climas mais frios, tem sabor mais suave que a marrom e é excelente fonte de ômega 3, fibras e gorduras poli-insaturadas."
+    "ben": "Cultivada em regiões frias, possui casca mais fina que facilita a digestão de seus nutrientes. Oferece alto teor de ômega 3, proteínas, fibras saciantes e antioxidantes benéficos para a saúde cardiovascular.",
+    "uso": "Adicione 1 colher de sopa de sementes inteiras ou moídas sobre saladas, iogurtes, frutas picadas ou no preparo de bolos, pães e cookies funcionais."
   },
   "Farinha Linhaça Marrom": {
-    "ben": "Linhaca marrom moída de forma prática. Ideal para polvilhar sobre frutas, iogurtes ou incluir em receitas de pães de baixo carboidrato (low carb)."
+    "ben": "Farinha obtida a partir da moagem das sementes de linhaça marrom. Extremamente prática, é rica em fibras e gorduras saudáveis, sendo muito utilizada para substituir a farinha de trigo em receitas com baixo teor de carboidratos (low carb).",
+    "uso": "Utilize 1 a 2 colheres de sopa sobre frutas picadas, açaí, iogurtes ou incorpore na massa de pães, panquecas de frigideira e muffins saudáveis."
   },
   "Farinha Linhaça Dourada": {
-    "ben": "Farinha obtida da moagem da semente de linhaça dourada, facilitando a absorção de seus nutrientes. Muito usada para substituir ovos em receitas veganas."
+    "ben": "Farinha fina obtida da semente de linhaça dourada. Apresenta sabor suave e amendoado. Excelente para formar o 'gel de linhaça' (substituto vegetal para ovos em receitas veganas), além de fornecer fibras e ômega 3.",
+    "uso": "Misture 1 colher de sopa da farinha em 3 colheres de sopa de água para substituir 1 ovo em receitas veganas, ou polvilhe diretamente sobre iogurtes e frutas."
   },
   "Granola": {
-    "ben": "Mix crocante e nutritivo de cereais (aveia, sementes, castanhas e mel). Excelente fonte de energia e fibras para o café da manhã ou lanches."
+    "ben": "Mix super nutritivo e crocante de aveia em flocos, sementes, castanhas e frutas desidratadas. Fornece carboidratos complexos de liberação gradual, fibras que regulam o intestino, gorduras boas das oleaginosas e muita energia.",
+    "uso": "Consuma de 2 a 3 colheres de sopa ao dia misturadas com iogurte natural, leite vegetal, açaí ou como acompanhamento para frutas picadas como banana e mamão."
   },
   "Chia": {
-    "ben": "Supersemente que forma um gel no estômago, promovendo saciedade prolongada. Rica em cálcio, fibras, proteínas e ômega 3 vegetal."
+    "ben": "Supersemente com capacidade única de absorver água e formar um gel viscoso no estômago. Isso atrasa o esvaziamento gástrico, prolongando a sensação de saciedade, além de ser riquíssima em fibras, cálcio, proteínas e ômega 3.",
+    "uso": "Adicione 1 colher de sopa em sucos, iogurtes, pudins de chia (chia pudding) com leite vegetal ou polvilhe sobre saladas de frutas. Deixe hidratar por 15 minutos."
   },
   "Aveia Flocos Grosso": {
-    "ben": "Aveia prensada em flocos maiores. Mantém o máximo de fibras intactas, ideal para mingaus consistentes, granolas caseiras e cookies."
+    "ben": "Grão de aveia prensado mantendo sua estrutura e casca íntegras. Concentra fibras insolúveis e solúveis (beta-glucanas) excelentes para regular o colesterol, diminuir picos glicêmicos no sangue e melhorar o fluxo intestinal.",
+    "uso": "Use no preparo de mingaus consistentes, granolas feitas em casa, biscoitos crocantes ou misturada em iogurtes e frutas aquecidas no micro-ondas."
   },
   "Aveia Flocos Médio": {
-    "ben": "Flocos de tamanho intermediário. Versátil para consumo direto com frutas, iogurtes ou preparo rápido de papinhas e panquecas."
+    "ben": "Flocos de aveia em tamanho intermediário muito versáteis. Preservam as fibras essenciais beta-glucanas que promovem a saciedade e a saúde digestiva, com uma textura equilibrada de fácil dissolução e mastigação.",
+    "uso": "Adicione de 2 a 3 colheres de sopa diretamente em vitaminas, shakes funcionais, misture com iogurte ou utilize na massa de panquecas de banana."
   },
   "Aveia Flocos Finos": {
-    "ben": "Flocos finos de cozimento e diluição instantânea. Fácil de misturar em shakes, vitaminas, caldos ou receitas de bolos saudáveis."
+    "ben": "Aveia prensada e cortada em pedaços bem pequenos para dissolução instantânea. Excelente fonte de fibras e carboidratos de baixo índice glicêmico, ideais para o dia a dia e de fácil digestão para crianças e idosos.",
+    "uso": "Misture facilmente em vitaminas, shakes proteicos, caldos de sopas para engrossar de forma saudável ou polvilhe sobre saladas de frutas."
   },
   "Farinha de Aveia": {
-    "ben": "Farinha integral obtida da moagem da aveia. Substituta saudável para a farinha de trigo em receitas de bolos, tortas, pães e panquecas."
+    "ben": "Farinha obtida da moagem integral dos grãos de aveia. Substituta altamente nutritiva da farinha de trigo comum, rica em fibras beta-glucanas, vitaminas do complexo B e ferro. Auxilia no controle da glicose e colesterol.",
+    "uso": "Substitua a farinha de trigo comum na mesma proporção em receitas de bolos saudáveis, panquecas de frigideira, waffles, muffins e pães integrais."
   },
   "Farelo de Aveia": {
-    "ben": "A casca externa do grão de aveia, extremamente rica em fibras solúveis beta-glucanas que auxiliam na redução do colesterol e saciedade."
+    "ben": "Extraído da camada externa do grão de aveia, possui a maior concentração de fibras solúveis beta-glucanas. O farelo forma um gel digestivo que reduz a absorção de gorduras e açúcares, promovendo emagrecimento saudável e controle do colesterol.",
+    "uso": "Consuma 1 a 2 colheres de sopa por dia misturadas na sopa, caldos salgados, iogurtes, frutas ou adicione nas massas de pães e panquecas funcionais."
   },
   "Fruta Cristalizada": {
-    "ben": "Pedaços de frutas cozidos em calda de açúcar concentrada, mantendo a maciez e o doce. Muito usada em bolos de natal e panetones."
+    "ben": "Pedaços de frutas cozidos e conservados em calda de açúcar. Fornecem carboidratos de rápida absorção, ideais para reposição de energia rápida após treinos ou como ingrediente tradicional e adocicado para panificações.",
+    "uso": "Utilize como ingrediente no preparo de bolos natalinos, panetones caseiros, cookies de frutas secas ou adicione pequenas porções em mixes de castanhas para energia extra."
   },
   "Uva Passa": {
-    "ben": "Uvas desidratadas naturalmente doces. Fonte de energia rápida, fibras e antioxidantes, ideais para lanches, saladas e pratos festivos."
+    "ben": "Uva desidratada que concentra todos os minerais (como boro e ferro), vitaminas do complexo B e antioxidantes da fruta fresca. Fornece energia rápida de forma natural, além de conter fibras solúveis que apoiam a saúde do intestino.",
+    "uso": "Adicione um punhado pequeno em iogurtes, aveias adocicadas, receitas de arroz festivo, saladas verdes, pães artesanais ou consuma pura como doce saudável."
   },
   "Cacau 50%": {
-    "ben": "Pó de cacau misturado com açúcar, mantendo o sabor marcante e os benefícios flavonoides do cacau de forma equilibrada para receitas diárias."
+    "ben": "Pó de cacau de alta qualidade equilibrado com açúcar. Mantém parte das propriedades antioxidantes (flavonoides) do cacau que promovem a saúde cardiovascular, com um sabor mais doce e agradável para paladares sensíveis.",
+    "uso": "Adicione 1 a 2 colheres de sopa em leite quente ou vegetal, vitaminas de banana, massas de bolos de chocolate simples e coberturas saudáveis."
   },
   "Cacau 70%": {
-    "ben": "Alto teor de cacau com pouco açúcar. Ótimo sabor amargo e benefícios antioxidantes e cardiovasculares do cacau puro para bolos e shakes."
+    "ben": "Pó de cacau com alto teor de pureza e mínimo açúcar. Excelente fonte de antioxidantes que combatem o envelhecimento das células e magnésio, auxiliando na liberação de endorfinas que promovem bem-estar e relaxamento.",
+    "uso": "Misture 1 colher de sopa em shakes proteicos, iogurtes naturais com mel, ou utilize no preparo de brownies saudáveis e coberturas fit de chocolate."
   },
   "Cacau 100%": {
-    "ben": "Pó de cacau puro, sem açúcar. Altamente antioxidante, melhora o humor (estimula endorfina) e favorece a saúde cardíaca. Perfeito para culinária funcional."
+    "ben": "Pó de cacau puro, sem adição de açúcares. Riquíssimo em polifenóis, flavonoides, potássio, magnésio e ferro. Melhora a saúde das artérias, auxilia na circulação, promove a sensação de felicidade e não altera a glicemia.",
+    "uso": "Use 1 colher de sopa em massas de bolos funcionais, shakes proteicos, trufas saudáveis de tâmara, mingau de aveia fit ou misturado em leite vegetal quente."
   },
   "Açúcar Mascavo": {
-    "ben": "Açúcar bruto obtido da cana sem refino químico. Preserva ferro, cálcio, magnésio e minerais que dão a cor escura e sabor de melaço."
+    "ben": "Açúcar de cana integral obtido sem refino químico. Por não passar por processos industriais de branqueamento, preserva sais minerais como ferro, cálcio, magnésio, potássio e fósforo, possuindo sabor marcante de melaço.",
+    "uso": "Utilize para adoçar de maneira natural chás, cafés, sucos e receitas doces na mesma proporção do açúcar refinado."
   },
   "Açúcar Demerara": {
-    "ben": "Açúcar em cristais amarelados que passa por refino leve sem aditivos químicos, preservando minerais de forma mais suave que o mascavo."
+    "ben": "Açúcar com cristais dourados que passa por um processo de refino leve, sem adição de produtos químicos clarificantes. Preserva nutrientes minerais da cana em nível intermediário, com sabor mais suave que o mascavo.",
+    "uso": "Ideal para adoçar sucos, bolos, tortas doces, cafés e sobremesas finas no cotidiano, substituindo o açúcar refinado comum."
   },
   "Xilitol": {
-    "ben": "Adoçante natural de baixo índice glicêmico obtido de fontes vegetais. Tem poder adoçante similar ao açúcar de mesa com metade das calorias."
+    "ben": "Adoçante de origem natural de baixo índice glicêmico e pouquíssimas calorias. Não eleva os níveis de insulina no sangue, sendo ideal para diabéticos, além de prevenir o aparecimento de cáries dentárias por não ser fermentado na boca.",
+    "uso": "Utilize para adoçar de maneira natural bebidas quentes ou frias e receitas doces. Tem poder adoçante semelhante ao do açúcar comum (1:1)."
   },
   "Coco Ralado": {
-    "ben": "Coco seco desidratado e ralado. Sem adição de açúcar, fonte de gorduras boas e fibras que enriquecem bolos, doces e iogurtes."
+    "ben": "Coco seco desidratado e ralado sem adição de açúcares. Fonte riquíssima de gorduras boas de cadeia média (TCM), que são facilmente digeridas e utilizadas pelo organismo como fonte direta de energia, além de conter excelentes fibras.",
+    "uso": "Salpique sobre iogurtes, saladas de frutas, açaí, mingaus de aveia ou incorpore na preparação de bolos fit, cocadas sem açúcar e pães saudáveis."
   },
   "Coco em Flocos": {
-    "ben": "Coco seco ralado em flocos maiores e crocantes. Excelente para finalizar sobremesas, dar textura a granolas e receitas saudáveis."
+    "ben": "Coco seco ralado em flocos maiores e crocantes, sem adição de açúcar. Conserva as gorduras saturadas saudáveis (TCM) que apoiam o sistema imunológico e promove alta saciedade, sendo perfeito para texturizar pratos doces.",
+    "uso": "Use para decorar tortas, bolos, misturar na granola caseira antes de assar, adicionar sobre o iogurte natural ou consumir como snack crocante."
   },
   "Pepita de Girassol": {
-    "ben": "Sementes de girassol descascadas e prontas para consumo. Excelentes fontes de vitamina E (antioxidante), magnésio e gorduras saudáveis."
+    "ben": "Sementes de girassol sem casca ricas em vitamina E (poderoso antioxidante celular), gorduras monoinsaturadas e minerais como magnésio e selênio. Auxiliam no combate a inflamações e na manutenção da saúde do sistema nervoso.",
+    "uso": "Consuma tostadas na frigideira com uma pitada de sal como snack, ou adicione sobre saladas verdes, sopas de legumes e massas de pães integrais."
   },
   "Semente de Abóbora": {
-    "ben": "Riquíssima em zinco, magnésio e compostos bioativos associados à saúde da próstata, bexiga e eliminação de parasitas intestinais."
+    "ben": "Sementes sem casca riquíssimas em zinco (aliado da imunidade e próstata), magnésio, ferro vegetal e fitoesteróis. Possuem também propriedades antiparasitárias tradicionais e ajudam no controle da ansiedade devido ao triptofano.",
+    "uso": "Coma de 1 a 2 colheres de sopa por dia tostadas puras, salpique sobre sopas de legumes, saladas de folhas verdes, risotos ou misture em massas de pães."
   },
   "Quinoa": {
-    "ben": "Grão considerado um superalimento completo, contendo todos os aminoácidos essenciais, proteínas de alta qualidade, fibras e ferro."
+    "ben": "Considerado um superalimento completo, a quinoa é fonte de proteínas vegetais contendo todos os aminoácidos essenciais que o corpo necessita. É rica em fibras, ferro, magnésio e fósforo, e livre de glúten por natureza.",
+    "uso": "Cozinhe em água fervente com uma pitada de sal por 15 minutos (proporção de 2 partes de água para 1 de quinoa). Use em saladas frias, risotos ou como substituta do arroz."
   },
   "Ameixa": {
-    "ben": "Ameixas pretas desidratadas e secas. Excelentes reguladoras do trânsito intestinal devido à presença natural de sorbitol e fibras."
+    "ben": "Ameixas pretas desidratadas ricas em fibras solúveis e insolúveis, sorbitol (laxante natural) e antioxidantes. São amplamente indicadas para melhorar o trânsito intestinal lento, combater a constipação e fortalecer a saúde óssea.",
+    "uso": "Coma de 3 a 5 ameixas secas ao longo do dia, adicione picadas em iogurtes, saladas de frutas ou deixe hidratar em água à noite para consumir o líquido pela manhã."
   },
   "Psyllium": {
-    "ben": "Fibra solúvel natural de altíssima absorção de água. Expande no estômago promovendo saciedade, auxilia no controle do colesterol e função intestinal."
+    "ben": "Fibra solúvel natural extraída da casca das sementes da planta Plantago ovata. Tem altíssima capacidade de absorção de líquidos, expandindo no trato digestivo para promover saciedade intensa, regular o trânsito intestinal e ajudar a reduzir o colesterol.",
+    "uso": "Misture 1 colher de sopa (cerca de 10g) em 200ml de água ou suco e beba imediatamente (consuma bastante água depois), ou use como espessante natural em pães low carb."
   },
   "Farinha de Banana": {
-    "ben": "Obtida da banana verde. Rica em amido resistente, um tipo de carboidrato que atua como prebiótico fortalecendo as bactérias boas do intestino."
+    "ben": "Farinha produzida a partir da banana verde desidratada. É rica em amido resistente, um tipo de fibra prebiótica que serve de alimento para as bactérias boas do intestino, melhorando a saúde intestinal, a imunidade e regulando a glicose.",
+    "uso": "Adicione 1 colher de sopa em vitaminas de frutas, iogurtes, shakes funcionais ou utilize para substituir parcialmente outras farinhas em bolos e pães."
   },
   "Extrato de Soja": {
-    "ben": "Conhecido como leite de soja em pó. Excelente alternativa vegetal e proteica ao leite de vaca para intolerantes à lactose e veganos."
+    "ben": "Conhecido como leite de soja em pó, obtido dos grãos de soja. Excelente alternativa vegetal, proteica e livre de lactose para substituir o leite de vaca tradicional, fornecendo proteínas, cálcio e ferro importantes para a manutenção muscular.",
+    "uso": "Dissolva 2 colheres de sopa do extrato de soja em pó em 200ml de água morna ou fria. Utilize no preparo de shakes, vitaminas de frutas, receitas de bolos ou cafés."
   },
   "Farinha de Arroz": {
-    "ben": "Farinha leve, livre de glúten por natureza. Ideal para preparar bolos, panquecas, cremes e empanados de textura crocante e sequinha."
+    "ben": "Farinha leve, de fácil digestão e totalmente livre de glúten por natureza. Ideal para preparações culinárias de pessoas com doença celíaca ou sensibilidade ao glúten, proporcionando maciez e leveza às massas sem alterar o sabor.",
+    "uso": "Utilize como substituta da farinha de trigo em receitas de bolos, tortas salgadas, panquecas de frigideira, cremes para engrossar e empanados crocantes."
   },
   "Argila Verde": {
-    "ben": "Argila rica em silício e zinco, ideal para peles oleosas e acneicas devido à sua forte ação purificante, secativa, adstringente e tensora."
+    "ben": "Argila mineral altamente purificante rica em silício, ferro e zinco. Possui potente ação secativa, adstringente, bactericida e tonificante, sendo muito indicada para peles oleosas e com tendência a cravos e espinhas (acne).",
+    "uso": "Misture 1 colher de sopa de argila verde com água mineral ou chá de camomila frio até formar uma pasta consistente. Aplique no rosto limpo, deixe agir por 15 a 20 minutos e enxágue bem."
   },
   "Argila Cinza": {
-    "ben": "Argila indicada para peles com manchas ou edemas. Auxilia na circulação e tem efeito clareador, esfoliante suave e anti-inflamatório."
+    "ben": "Argila rica em titânio e minerais clareadores. Auxilia na melhora da circulação sanguínea local, possui efeito clareador de manchas na pele, age como esfoliante físico suave e ajuda a reduzir edemas e inchaços na pele e couro cabeludo.",
+    "uso": "Misture com água mineral ou soro fisiológico até formar uma pasta lisa. Aplique sobre a pele do rosto ou corpo, deixe secar por 15 a 20 minutos e retire com água morna abundante."
   },
   "Argila Preta": {
-    "ben": "Conhecida como lama negra, é a argila mais nobre e rica em enxofre e minerais. Tem poderosa ação desintoxicante (detox) e rejuvenescedora."
+    "ben": "Conhecida como lama negra, é a argila mais nobre e rica em enxofre e matéria orgânica mineral. Tem poderosa ação desintoxicante profunda (detox), cicatrizante, anti-inflamatória e rejuvenescedora, estimulando a renovação celular.",
+    "uso": "Prepare uma pasta homogênea misturando a argila preta com água mineral. Aplique na pele do rosto ou corpo limpos, deixe agir por 15 a 20 minutos e enxágue totalmente."
   },
   "Argila Branca": {
-    "ben": "A argila mais suave de todas, indicada para peles sensíveis e desidratadas. Tem efeito clareador de manchas, suavizante e cicatrizante."
+    "ben": "A argila mais suave de todas, com pH muito próximo ao da pele. É rica em alumínio e caulinita, indicada para peles sensíveis, secas e desidratadas. Suaviza linhas finas, cicatriza irritações leves e tem efeito clareador suave.",
+    "uso": "Misture com água mineral ou água de rosas até obter consistência pastosa. Aplique suavemente na pele limpa, deixe agir de 15 a 20 minutos e enxágue com água fresca."
   },
   "Chips de Banana": {
-    "ben": "Fatias de banana desidratadas e crocantes. Um snack leve e energético rico em potássio para lanches rápidos ou decoração de sobremesas."
+    "ben": "Fatias finas de banana desidratadas e levemente adoçadas. Um snack prático que fornece carboidratos de absorção equilibrada e potássio, mineral essencial que previne cãibras musculares e apoia o controle da pressão arterial.",
+    "uso": "Consuma diretamente como lanche prático ao longo do dia, misture em mixes de sementes e castanhas ou use como acompanhamento crocante para iogurtes."
   },
   "Banana Chips Salsa e Cebola": {
-    "ben": "Fatias salgadas de banana da terra assadas ou fritas e temperadas com salsa e cebola, uma opção crocante, diferente e deliciosa de petisco."
+    "ben": "Chips salgados de banana-da-terra desidratados e temperados com cebola e salsa. Oferecem energia rápida de forma deliciosa, com excelente teor de potássio e fibras, livre de conservantes e corantes artificiais.",
+    "uso": "Perfeito para consumir como petisco salgado crocante durante a tarde, como aperitivo saudável em reuniões ou para acompanhar saladas tropicais no almoço."
   },
   "Banana Chips Doce": {
-    "ben": "Fatias doces e crocantes de banana desidratada, ideais para satisfazer a vontade de comer doce de forma saudável e prática no dia a dia."
+    "ben": "Chips de banana desidratados naturalmente doces. Fornecem carboidratos energéticos saudáveis para o cérebro e músculos, potássio e fibras, sendo uma excelente opção para matar a vontade de comer doce de forma saudável.",
+    "uso": "Consuma como snack de lanche rápido, pré-treino para energia instantânea ou adicione picados sobre mingau de aveia e tigelas de açaí."
   },
   "Creatina": {
-    "ben": "Suplemento à base de aminoácidos com ampla comprovação científica. Melhora a força física, resistência muscular, foco cerebral e hidratação celular.",
-    "uso": "Recomenda-se tomar de 3g a 5g diariamente (inclusive nos dias sem treino), dissolvida em água ou bebida de sua preferência."
+    "ben": "Suplemento de aminoácidos exaustivamente estudado e de altíssima eficácia. Aumenta os estoques musculares de fosfocreatina, promovendo explosão de força física nos treinos, maior ganho de massa magra, hidratação celular e suporte cognitivo cerebral.",
+    "uso": "Consuma de 3g a 5g diariamente (todos os dias, inclusive nos dias sem treino), dissolvida em água mineral, suco de frutas ou shake proteico, de preferência associada a um carboidrato para melhorar a absorção celular."
   },
   "Cacau Black": {
-    "ben": "Cacau em pó intensamente alcalinizado, resultando em cor preta muito escura e sabor marcante lembrando biscoitos de chocolate tradicionais."
+    "ben": "Pó de cacau intensamente alcalinizado que adquire uma cor preta profunda e sabor encorpado característico, livre de açúcares. Rico em antioxidantes cardiovasculares, confere cor escura linda e sabor nobre de chocolates gourmet a receitas.",
+    "uso": "Use 1 colher de sopa em receitas de biscoitos de chocolate escuro (estilo Oreo), bolos pretos, coberturas finas, trufas saudáveis ou misturado em shakes proteicos."
   }
 };
 
