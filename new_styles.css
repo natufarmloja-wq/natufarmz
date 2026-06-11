@@ -257,7 +257,8 @@ header {
 
 .det-header { padding: 18px 24px; border-bottom: 1px solid #f3f4f6; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--verde-mint); }
 .det-header-info { display: flex; align-items: center; gap: 16px; flex: 1; }
-.det-emoji { width: 90px; height: 90px; flex-shrink: 0; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); overflow: hidden; border-radius: 50%; }
+.det-emoji { width: 90px; height: 90px; flex-shrink: 0; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); overflow: hidden; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: white; }
+.det-emoji img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 .det-nome { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--verde-escuro); line-height: 1.2; }
 .det-tipo { font-size: 11px; font-weight: 700; color: var(--verde-escuro); background: white; padding: 3px 8px; border-radius: 50px; display: inline-block; margin-top: 4px; border: 1px solid var(--verde-suave); }
 .det-tipo.caps { color: #4F46E5; border-color: #E0E7FF; }
