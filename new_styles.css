@@ -353,8 +353,10 @@ footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; hei
 @media (max-width: 900px) {
   .main-layout { grid-template-columns: 1fr; padding: 32px 24px; }
   .sidebar { position: static; margin-bottom: 24px; }
-  .cat-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
-  .cat-btn { padding: 10px 14px; font-size: 14px; background: white; border: 1px solid #f3f4f6; }
+  .cat-list { display: flex; flex-direction: row; gap: 8px; overflow-x: auto; padding-bottom: 8px; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  .cat-list::-webkit-scrollbar { height: 5px; }
+  .cat-list::-webkit-scrollbar-thumb { background: var(--verde-suave); border-radius: 10px; }
+  .cat-btn { padding: 10px 14px; font-size: 14px; background: white; border: 1px solid #f3f4f6; white-space: nowrap; flex-shrink: 0; }
   .hero { padding: 60px 24px; }
   .hero h1 { font-size: 40px; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
