@@ -1701,6 +1701,38 @@ const INFO = {
     "ben": "O anis-estrelado possui aroma e sabor deliciosos e é rico em anetol e ácido chiquímico. Facilita o processo digestivo, reduz cólicas intestinais e gases, e possui ação expectorante e antiviral útil contra sintomas de gripes, resfriados, acúmulo de secreção pulmonar e tosses irritativas.",
     "uso": "Ferva de 2 a 3 estrelas de anis em 200ml de água por 5 minutos. Apague o fogo, abafe por mais 10 minutos, coe bem e consuma morno, de preferência após refeições fartas."
   },
+  "Catuaba": {
+    "ben": "A catuaba é um clássico afrodisíaco e estimulante do sistema nervoso central muito conhecido na flora brasileira. Ajuda a combater o cansaço físico e mental, reduz a fadiga, melhora a memória e concentração, e estimula a energia e libido.",
+    "uso": "Ferva 1 colher de sopa de catuaba seca em 250ml de água por 5 a 10 minutos (decocção). Abafe por 10 minutos, coe e beba de preferência pela manhã ou tarde. Evite o uso no final do dia para não afetar o sono."
+  },
+  "Canela em Pó": {
+    "ben": "A canela em pó é uma especiaria termogênica rica em antioxidantes e compostos fenólicos como o cinamaldeído. Ela auxilia no controle dos níveis de açúcar no sangue (melhorando a sensibilidade à insulina), acelera o metabolismo de gorduras e possui propriedades anti-inflamatórias e digestivas de destaque.",
+    "uso": "Consuma salpicada sobre frutas picadas (como banana e maçã), aveia, iogurtes, no café com leite ou no preparo de bolos e pães saudáveis. Harmoniza muito bem em pratos doces e também pode ser usada para temperar aves e carnes no estilo árabe."
+  },
+  "Canela em Rama": {
+    "ben": "A canela em rama preserva os óleos essenciais aromáticos de forma integral. Auxilia na melhora da digestão gástrica, combate gases e flatulências, possui propriedades termogênicas e estimulantes do metabolismo, além de ajudar a aliviar cólicas e fortalecer a imunidade.",
+    "uso": "Ferva 1 a 2 ramas de canela em 250ml de água por 5 a 10 minutos para preparar chá, ou utilize no cozimento de arroz-doce, canjicas, compotas de frutas ou caldos aromáticos."
+  },
+  "Cravo da Índia": {
+    "ben": "O cravo-da-índia é riquíssimo em eugenol, um poderoso composto antisséptico, anestésico e anti-inflamatório. Auxilia a melhorar a digestão, reduz gases intestinais, combate dores de garganta e na boca, e oferece forte proteção antioxidante celular.",
+    "uso": "Para chá: infunda 4 a 6 cravos em 200ml de água fervente por 5 minutos e coe. Na culinária: utilize inteiro no preparo de doces como beijinho, compotas, arroz-doce, ou em pratos salgados como arroz temperado, carnes assadas e molhos aromatizados."
+  },
+  "Gengibre": {
+    "ben": "O gengibre é uma raiz termogênica altamente anti-inflamatória e antioxidante, graças ao gingerol. Auxilia no alívio de náuseas e enjoos, otimiza o metabolismo de queima calórica, atua no combate a inflamações na garganta e ajuda a desobstruir vias aéreas.",
+    "uso": "Para chá: ferva 2 a 3 cm de gengibre fatiado em 250ml de água por 5 a 10 minutos. Na culinária: rale para temperar aves, peixes, legumes refogados, sopas ou adicione pedaços em sucos verdes e vitaminas."
+  },
+  "Endro": {
+    "ben": "Também conhecido como dill, o endro é uma erva aromática rica em flavonoides e minerais. Possui excelente ação digestiva, ajuda a combater cólicas estomacais e espasmos intestinais, reduz gases e tem propriedades diuréticas e calmantes suaves.",
+    "uso": "Adicione na finalização dos pratos para manter o frescor de seu aroma levemente cítrico. Harmoniza maravilhosamente bem com peixes (especialmente salmão), molhos à base de iogurte ou creme de leite, batatas cozidas, saladas de pepino e patês de queijo."
+  },
+  "Funcho": {
+    "ben": "O funcho é uma erva carminativa clássica com propriedades muito semelhantes às da erva-doce. Ajuda a relaxar os músculos do trato digestivo, aliviando cólicas abdominais, inchaços, gases intestinais e estimulando a digestão leve e eficiente.",
+    "uso": "Ferva 1 colher de sobremesa de sementes de funcho em 200ml de água por 3 minutos. Abafe por 5 a 10 minutos, coe e beba quente após as refeições ou antes de dormir."
+  },
+  "Pistache com Casca": {
+    "ben": "O pistache é uma oleaginosa altamente nutritiva, excelente fonte de gorduras monoinsaturadas e poliinsaturadas saudáveis para o coração, além de proteínas, fibras e antioxidantes como a luteína. Auxilia no controle do colesterol e na saciedade.",
+    "uso": "Consuma diretamente como um snack salgado saudável entre as principais refeições ou adicione descascado em tábuas de frios, saladas finas de folhas e pratos de arroz festivo."
+  },
   "Vinagrete": {
     "ben": "Um mix clássico e colorido de vegetais desidratados como cebola, tomate, pimentão, alho e salsa. Livre de conservantes artificiais, é rico em fibras e antioxidantes naturais, trazendo sabor autêntico, praticidade e frescor para o dia a dia na cozinha.",
     "uso": "Pode ser hidratado com um fio de azeite e vinagre ou adicionado diretamente aos pratos. Harmoniza perfeitamente com saladas de folhas frescas, vinagretes tradicionais, carnes vermelhas grelhadas, peixes assados, legumes cozidos e recheios de tortas."
