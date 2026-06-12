@@ -467,7 +467,7 @@ const PRODUTOS = {
     "tipo": "granel"
   },
   "Ana Maria": {
-    "custo": 5.41,
+    "custo": 5.79,
     "tipo": "granel"
   },
   "Edu Guedes": {
