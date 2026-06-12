@@ -1157,7 +1157,7 @@ CATS[0].prods = todosArr;
 
       document.getElementById('editOriginalName').value = nome;
       document.getElementById('editNome').value = nome;
-      document.getElementById('editNome').setAttribute('readonly', 'true'); // impede renomear se quiser (seguro contra quebra de chaves)
+      document.getElementById('editNome').removeAttribute('readonly');
       document.getElementById('editTipo').value = prod.tipo;
       document.getElementById('editCusto').value = prod.custo;
       document.getElementById('editImgUrl').value = img;
