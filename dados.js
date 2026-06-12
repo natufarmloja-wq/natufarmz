@@ -39,7 +39,7 @@ const PRODUTOS = {
     "tipo": "granel"
   },
   "Pega Marido": {
-    "custo": 7.1,
+    "custo": 7.49,
     "tipo": "granel"
   },
   "Chimichurri Defumado": {
