@@ -733,6 +733,7 @@ const CATS = [
       "Vinagrete",
       "Xilitol",
       "cavalinha cha",
+      "damasco turco n2",
       "farinha integral",
       "mix salsa tomate e alho",
       "sucrilho sem açúcar",
@@ -1101,6 +1102,7 @@ const CATS = [
       "Pistache com Casca",
       "Semente de Abóbora",
       "Uva Passa",
+      "damasco turco n2",
       "sucrilho sem açúcar",
       "uva passa branca"
     ]
@@ -1127,6 +1129,7 @@ const CATS = [
       "Granola",
       "Uva Passa",
       "Xilitol",
+      "damasco turco n2",
       "uva passa branca"
     ]
   },
