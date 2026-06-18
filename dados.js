@@ -175,23 +175,23 @@ const PRODUTOS = {
     "tipo": "granel"
   },
   "Aveia Flocos Grosso": {
-    "custo": 2,
+    "custo": 2.5,
     "tipo": "granel"
   },
   "Aveia Flocos Médio": {
-    "custo": 2,
+    "custo": 2.5,
     "tipo": "granel"
   },
   "Aveia Flocos Finos": {
-    "custo": 2,
+    "custo": 2.5,
     "tipo": "granel"
   },
   "Farinha de Aveia": {
-    "custo": 2,
+    "custo": 2.5,
     "tipo": "granel"
   },
   "Farelo de Aveia": {
-    "custo": 2,
+    "custo": 2.5,
     "tipo": "granel"
   },
   "Canela em Pó": {
