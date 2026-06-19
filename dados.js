@@ -644,6 +644,174 @@ const PRODUTOS = {
   "lemon peper defumado": {
     "custo": 7.2,
     "tipo": "granel"
+  },
+  "B12 gotas": {
+    "custo": 22.8,
+    "tipo": "caps"
+  },
+  "BRONCO IMUNI+NAC": {
+    "custo": 31,
+    "tipo": "caps"
+  },
+  "BRONCO IMUNI XAROPE": {
+    "custo": 38,
+    "tipo": "caps"
+  },
+  "POMADA CANELA DE VELHO": {
+    "custo": 12.99,
+    "tipo": "caps"
+  },
+  "pomada canela de velho premium": {
+    "custo": 15.99,
+    "tipo": "caps"
+  },
+  "CLORETO DE MAGNESIO P.A": {
+    "custo": 28.9,
+    "tipo": "caps"
+  },
+  "COMPLEXO B": {
+    "custo": 24.99,
+    "tipo": "caps"
+  },
+  "Extrato Aquoso de Própolis Verde": {
+    "custo": 34.99,
+    "tipo": "caps"
+  },
+  "Suplemento Mineral De Ferro 60 Cáps": {
+    "custo": 26.68,
+    "tipo": "caps"
+  },
+  "FISIOFORT": {
+    "custo": 12.88,
+    "tipo": "caps"
+  },
+  "fisio forte GOLD": {
+    "custo": 26.49,
+    "tipo": "caps"
+  },
+  "fisio forte PREMIUM": {
+    "custo": 16.57,
+    "tipo": "caps"
+  },
+  "Guaraná 60 Cáps": {
+    "custo": 25.6,
+    "tipo": "caps"
+  },
+  "MAG-4 com Treonina": {
+    "custo": 47.17,
+    "tipo": "caps"
+  },
+  "MAG-4 com Treonina 780mg 60 Cáps": {
+    "custo": 47.17,
+    "tipo": "caps"
+  },
+  "Magnésio Malato 600mg 60 Cáps": {
+    "custo": 42,
+    "tipo": "caps"
+  },
+  "magnésio quelato": {
+    "custo": 29.9,
+    "tipo": "caps"
+  },
+  "Mel de Laranjeira Bisnaga 220g": {
+    "custo": 28.9,
+    "tipo": "caps"
+  },
+  "mel flores eucalipto 310ml bisnaga": {
+    "custo": 32,
+    "tipo": "caps"
+  },
+  "Mel Composto Própolis e Eucalipto 300g": {
+    "custo": 31.99,
+    "tipo": "caps"
+  },
+  "Mel Composto Própolis Euc. Agrião e Copaíba 300g": {
+    "custo": 34.99,
+    "tipo": "caps"
+  },
+  "MELATONINA": {
+    "custo": 24.99,
+    "tipo": "caps"
+  },
+  "NAC 600mg 30 Cápsulas": {
+    "custo": 29.9,
+    "tipo": "caps"
+  },
+  "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": {
+    "custo": 49.9,
+    "tipo": "caps"
+  },
+  "Óleo De Alho 250mg 60 Cáps": {
+    "custo": 39.99,
+    "tipo": "caps"
+  },
+  "Óleo de Coco Extra Virgem 200ml - ApisNutri": {
+    "custo": 36.99,
+    "tipo": "caps"
+  },
+  "omega 3 caps": {
+    "custo": 25.99,
+    "tipo": "caps"
+  },
+  "Óleo De Menta 10ml": {
+    "custo": 22,
+    "tipo": "caps"
+  },
+  "Spray de Própolis e Menta 30m": {
+    "custo": 19.99,
+    "tipo": "caps"
+  },
+  "Spray de Própolis, Gengibre e Romã 30ml": {
+    "custo": 19.99,
+    "tipo": "caps"
+  },
+  "HOMEM Polivitamínico 500mg 30 Cáps": {
+    "custo": 36.32,
+    "tipo": "caps"
+  },
+  "NutriDaily MULHER Polivitamínico 500mg 30 Cáps": {
+    "custo": 32,
+    "tipo": "caps"
+  },
+  "NutriDaily Sênior 610mg 60 Cápsulas": {
+    "custo": 41.99,
+    "tipo": "caps"
+  },
+  "vinagre de maça almaromi 400 ml": {
+    "custo": 12,
+    "tipo": "caps"
+  },
+  "vinagre de maça almaromi orgânico 400ml": {
+    "custo": 32.5,
+    "tipo": "caps"
+  },
+  "vinagre de maça almaromi beneficios 500": {
+    "custo": 48,
+    "tipo": "caps"
+  },
+  "Vitamina A 280mg 60 Cápsulas": {
+    "custo": 24.99,
+    "tipo": "caps"
+  },
+  "Vitamina B12 280mg 60 Cáps": {
+    "custo": 22,
+    "tipo": "caps"
+  },
+  "B7 280mg 60 Cáps": {
+    "custo": 27.99,
+    "tipo": "caps"
+  },
+  "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps": {
+    "custo": 42.99,
+    "tipo": "caps"
+  },
+  "Vitamina D3 280mg 60 Cáps": {
+    "custo": 25.99,
+    "tipo": "caps"
+  },
+  "Suplemento Mineral de Zinco 280mg 60 Cáps": {
+    "custo": 25.6,
+    "tipo": "granel"
   }
 };
 
@@ -677,11 +845,17 @@ const CATS = [
       "Açafrão da Terra",
       "Açúcar Demerara",
       "Açúcar Mascavo",
+      "B12 gotas",
+      "B7 280mg 60 Cáps",
+      "BRONCO IMUNI XAROPE",
+      "BRONCO IMUNI+NAC",
       "Banana Chips Doce",
       "Banana Chips Salsa e Cebola",
       "Barbatimão",
       "Bicarbonato",
       "CACAU BLACK",
+      "CLORETO DE MAGNESIO P.A",
+      "COMPLEXO B",
       "CURCUMA RAIZ",
       "Cacau 100%",
       "Cacau 50%",
@@ -724,10 +898,12 @@ const CATS = [
       "Ervas Finas",
       "Espinheira Santa",
       "Eucalipto",
+      "Extrato Aquoso de Própolis Verde",
       "Extrato de Soja",
       "FARINHA DE MANDIOCA",
       "FENO GEREGO EM PO",
       "FIBRA DE MAÇA",
+      "FISIOFORT",
       "Farelo de Aveia",
       "Farinha Linhaça Dourada",
       "Farinha Linhaça Marrom",
@@ -752,27 +928,41 @@ const CATS = [
       "Granola",
       "Graviola",
       "Guaco",
+      "Guaraná 60 Cáps",
       "Guaraná em Pó",
+      "HOMEM Polivitamínico 500mg 30 Cáps",
       "Hibisco",
       "Hortelã",
       "Ipê Roxo",
       "Jambolão",
       "LOURO FOLHA",
       "Lemon Pepper",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
       "MANJERONA",
+      "MELATONINA",
       "Maca Peruana",
+      "Magnésio Malato 600mg 60 Cáps",
       "Malva",
       "Manjericão",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "Mel Composto Própolis e Eucalipto 300g",
+      "Mel de Laranjeira Bisnaga 220g",
       "Melissa",
       "Melão São Caetano",
       "Mix de Castanhas",
       "Moringa",
+      "NAC 600mg 30 Cápsulas",
       "Noz Moscada em Grão",
       "Nozes",
+      "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri",
+      "NutriDaily MULHER Polivitamínico 500mg 30 Cáps",
+      "NutriDaily Sênior 610mg 60 Cápsulas",
       "Oliveira",
       "Orégano",
       "PASSIFLORA",
       "PAU ANDRADE",
+      "POMADA CANELA DE VELHO",
       "Pata de Vaca",
       "Pega Marido",
       "Pepita de Girassol",
@@ -793,6 +983,11 @@ const CATS = [
       "Semente de Linhaça Dourada",
       "Semente de Linhaça Marrom",
       "Sene",
+      "Spray de Própolis e Menta 30m",
+      "Spray de Própolis, Gengibre e Romã 30ml",
+      "Suplemento Mineral De Ferro 60 Cáps",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps",
       "Sálvia",
       "Tanchagem",
       "Tempero Baiano",
@@ -804,16 +999,31 @@ const CATS = [
       "Uxi Amarelo",
       "VALERIANA raiz",
       "Vinagrete",
+      "Vitamina A 280mg 60 Cápsulas",
+      "Vitamina B12 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
       "Xilitol",
       "alfavaca",
       "cavalinha cha",
       "damasco turco n2",
       "farinha integral",
+      "fisio forte GOLD",
+      "fisio forte PREMIUM",
       "lemon peper defumado",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
       "mix salsa tomate e alho",
       "mulungu",
+      "omega 3 caps",
+      "pomada canela de velho premium",
       "sucrilho sem açúcar",
-      "uva passa branca"
+      "uva passa branca",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo De Alho 250mg 60 Cáps",
+      "Óleo De Menta 10ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
     ]
   },
   {
@@ -826,6 +1036,7 @@ const CATS = [
       "Aveia Flocos Finos",
       "Aveia Flocos Grosso",
       "Aveia Flocos Médio",
+      "COMPLEXO B",
       "Cacau 100%",
       "Canela em Pó",
       "Canela em Rama",
@@ -841,14 +1052,27 @@ const CATS = [
       "Farinha Linhaça Marrom",
       "Feno Grego",
       "Gengibre",
+      "Guaraná 60 Cáps",
       "Guaraná em Pó",
       "Hibisco",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "Mel de Laranjeira Bisnaga 220g",
       "Moringa",
       "Psyllium",
       "Quinoa",
       "Seca Barriga",
       "Sene",
-      "Xilitol"
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Vitamina B12 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
+      "Xilitol",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml"
     ]
   },
   {
@@ -860,7 +1084,10 @@ const CATS = [
       "Alecrim",
       "Amendoim Salsa e Cebola",
       "Amêndoas",
+      "B12 gotas",
       "CACAU BLACK",
+      "CLORETO DE MAGNESIO P.A",
+      "COMPLEXO B",
       "Cacau 50%",
       "Cacau 70%",
       "Castanha de Caju",
@@ -871,19 +1098,44 @@ const CATS = [
       "Coco em Flocos",
       "Creatina",
       "FENO GEREGO EM PO",
+      "FISIOFORT",
       "GINKGO BILOBA",
       "Ginseng",
       "Granola",
+      "Guaraná 60 Cáps",
       "Guaraná em Pó",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
       "Maca Peruana",
+      "Magnésio Malato 600mg 60 Cáps",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "Mel Composto Própolis e Eucalipto 300g",
+      "Mel de Laranjeira Bisnaga 220g",
       "Mix de Castanhas",
       "Moringa",
+      "NAC 600mg 30 Cápsulas",
       "Nozes",
+      "NutriDaily MULHER Polivitamínico 500mg 30 Cáps",
+      "POMADA CANELA DE VELHO",
       "Pepita de Girassol",
       "Pistache com Casca",
       "Quinoa",
+      "Suplemento Mineral De Ferro 60 Cáps",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps",
       "Tribulus Terrestris",
-      "Uva Passa"
+      "Uva Passa",
+      "Vitamina B12 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
+      "fisio forte GOLD",
+      "fisio forte PREMIUM",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "pomada canela de velho premium",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
     ]
   },
   {
@@ -896,7 +1148,12 @@ const CATS = [
       "Açafrão da Terra",
       "Açúcar Demerara",
       "Açúcar Mascavo",
+      "B7 280mg 60 Cáps",
+      "BRONCO IMUNI XAROPE",
+      "BRONCO IMUNI+NAC",
       "Bicarbonato",
+      "CLORETO DE MAGNESIO P.A",
+      "COMPLEXO B",
       "CURCUMA RAIZ",
       "Cacau 50%",
       "Cacau 70%",
@@ -905,6 +1162,7 @@ const CATS = [
       "Chia",
       "Cravo da Índia",
       "Eucalipto",
+      "Extrato Aquoso de Própolis Verde",
       "FIBRA DE MAÇA",
       "Farinha de Beterraba",
       "Farinha de Uva",
@@ -917,9 +1175,17 @@ const CATS = [
       "Guaco",
       "Ipê Roxo",
       "Jambolão",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "Magnésio Malato 600mg 60 Cáps",
       "Malva",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "Mel Composto Própolis e Eucalipto 300g",
+      "Mel de Laranjeira Bisnaga 220g",
       "Melão São Caetano",
       "Moringa",
+      "NAC 600mg 30 Cápsulas",
+      "NutriDaily Sênior 610mg 60 Cápsulas",
       "Oliveira",
       "PAU ANDRADE",
       "Pepita de Girassol",
@@ -928,10 +1194,24 @@ const CATS = [
       "Sal Rosa Himalaia",
       "Salsa Desidratada",
       "Semente de Abóbora",
+      "Spray de Própolis e Menta 30m",
+      "Spray de Própolis, Gengibre e Romã 30ml",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps",
       "Tanchagem",
       "Tomilho",
+      "Vitamina A 280mg 60 Cápsulas",
+      "Vitamina B12 280mg 60 Cáps",
       "alfavaca",
-      "cavalinha cha"
+      "cavalinha cha",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo De Alho 250mg 60 Cáps",
+      "Óleo De Menta 10ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
     ]
   },
   {
@@ -954,8 +1234,10 @@ const CATS = [
       "Semente de Abóbora",
       "Semente de Linhaça Dourada",
       "Semente de Linhaça Marrom",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Sálvia",
       "Uxi Amarelo",
+      "Vitamina D3 280mg 60 Cáps",
       "cavalinha cha"
     ]
   },
@@ -987,11 +1269,24 @@ const CATS = [
       "Hortelã",
       "LOURO FOLHA",
       "MANJERONA",
+      "Mel de Laranjeira Bisnaga 220g",
       "Psyllium",
       "Sene",
+      "Spray de Própolis e Menta 30m",
+      "Spray de Própolis, Gengibre e Romã 30ml",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
       "alfavaca",
       "cavalinha cha",
-      "uva passa branca"
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "uva passa branca",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo De Menta 10ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
     ]
   },
   {
@@ -1003,14 +1298,30 @@ const CATS = [
       "Alecrim",
       "Açafrão da Terra",
       "Barbatimão",
+      "CLORETO DE MAGNESIO P.A",
       "CURCUMA RAIZ",
       "Canela de Velho",
       "Chapéu de Couro",
       "Cravo da Índia",
       "Erva Baleeira",
+      "FISIOFORT",
       "Gengibre",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "NutriDaily Sênior 610mg 60 Cápsulas",
       "PAU ANDRADE",
-      "Uxi Amarelo"
+      "POMADA CANELA DE VELHO",
+      "Spray de Própolis e Menta 30m",
+      "Spray de Própolis, Gengibre e Romã 30ml",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Uxi Amarelo",
+      "Vitamina D3 280mg 60 Cáps",
+      "fisio forte GOLD",
+      "fisio forte PREMIUM",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "pomada canela de velho premium"
     ]
   },
   {
@@ -1019,15 +1330,23 @@ const CATS = [
     "nome": "Sono e Ansiedade",
     "desc": "Relaxe e durma melhor de forma natural",
     "prods": [
+      "B12 gotas",
       "Camomila",
       "Capim Limão",
       "Erva Cidreira",
       "Erva São João",
       "Graviola",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "MELATONINA",
+      "Magnésio Malato 600mg 60 Cáps",
       "Melissa",
       "PASSIFLORA",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Sálvia",
       "VALERIANA raiz",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
       "mulungu"
     ]
   },
@@ -1052,7 +1371,8 @@ const CATS = [
       "Pata de Vaca",
       "Psyllium",
       "Xilitol",
-      "sucrilho sem açúcar"
+      "sucrilho sem açúcar",
+      "vinagre de maça almaromi beneficios 500"
     ]
   },
   {
@@ -1092,6 +1412,7 @@ const CATS = [
       "LOURO FOLHA",
       "MANJERONA",
       "Malva",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
       "Melissa",
       "Melão São Caetano",
       "Moringa",
@@ -1250,9 +1571,13 @@ const CATS = [
       "Gergelim Branco",
       "Gergelim Preto",
       "Granola",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "Mel Composto Própolis e Eucalipto 300g",
+      "Mel de Laranjeira Bisnaga 220g",
       "Uva Passa",
       "Xilitol",
       "damasco turco n2",
+      "mel flores eucalipto 310ml bisnaga",
       "uva passa branca"
     ]
   },
@@ -1266,13 +1591,31 @@ const CATS = [
       "Argila Cinza",
       "Argila Preta",
       "Argila Verde",
+      "B12 gotas",
+      "B7 280mg 60 Cáps",
       "Bicarbonato",
       "CACAU BLACK",
       "FENO GEREGO EM PO",
       "GINKGO BILOBA",
       "Gergelim Branco",
       "Gergelim Preto",
-      "cavalinha cha"
+      "Guaraná 60 Cáps",
+      "MAG-4 com Treonina",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri",
+      "NutriDaily MULHER Polivitamínico 500mg 30 Cáps",
+      "Suplemento Mineral De Ferro 60 Cáps",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Vitamina A 280mg 60 Cápsulas",
+      "Vitamina B12 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
+      "cavalinha cha",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
     ]
   },
   {
@@ -1280,7 +1623,49 @@ const CATS = [
     "emoji": "💊",
     "nome": "Encapsulados e Suplementos",
     "desc": "Vitaminas, minerais e suplementos naturais",
-    "prods": []
+    "prods": [
+      "B12 gotas",
+      "B7 280mg 60 Cáps",
+      "BRONCO IMUNI XAROPE",
+      "BRONCO IMUNI+NAC",
+      "CLORETO DE MAGNESIO P.A",
+      "COMPLEXO B",
+      "Extrato Aquoso de Própolis Verde",
+      "FISIOFORT",
+      "Guaraná 60 Cáps",
+      "HOMEM Polivitamínico 500mg 30 Cáps",
+      "MAG-4 com Treonina 780mg 60 Cáps",
+      "MELATONINA",
+      "Magnésio Malato 600mg 60 Cáps",
+      "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
+      "Mel Composto Própolis e Eucalipto 300g",
+      "Mel de Laranjeira Bisnaga 220g",
+      "NAC 600mg 30 Cápsulas",
+      "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri",
+      "NutriDaily MULHER Polivitamínico 500mg 30 Cáps",
+      "NutriDaily Sênior 610mg 60 Cápsulas",
+      "POMADA CANELA DE VELHO",
+      "Spray de Própolis e Menta 30m",
+      "Spray de Própolis, Gengibre e Romã 30ml",
+      "Suplemento Mineral De Ferro 60 Cáps",
+      "Suplemento Mineral de Zinco 280mg 60 Cáps",
+      "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps",
+      "Vitamina A 280mg 60 Cápsulas",
+      "Vitamina B12 280mg 60 Cáps",
+      "Vitamina D3 280mg 60 Cáps",
+      "fisio forte GOLD",
+      "fisio forte PREMIUM",
+      "magnésio quelato",
+      "mel flores eucalipto 310ml bisnaga",
+      "omega 3 caps",
+      "pomada canela de velho premium",
+      "vinagre de maça almaromi 400 ml",
+      "vinagre de maça almaromi beneficios 500",
+      "vinagre de maça almaromi orgânico 400ml",
+      "Óleo De Alho 250mg 60 Cáps",
+      "Óleo De Menta 10ml",
+      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+    ]
   }
 ];
 
@@ -1444,7 +1829,49 @@ const IMGS = {
   "FARINHA DE MANDIOCA": "data:image/jpeg;base64,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",
   "FENO GEREGO EM PO": "data:image/jpeg;base64,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",
   "ALHO EM PO": "data:image/jpeg;base64,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",
-  "lemon peper defumado": "data:image/jpeg;base64,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"
+  "lemon peper defumado": "data:image/jpeg;base64,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",
+  "B12 gotas": "https://lojaapisnutri.fbitsstatic.net/media/conta-gotas-30ml-com-caixa-b120-gotas-exibi%C3%A7%C3%A3o-atual.png?v=202405101531",
+  "BRONCO IMUNI+NAC": "data:image/jpeg;base64,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",
+  "BRONCO IMUNI XAROPE": "https://lojaapisnutri.fbitsstatic.net/media/bronco-imuni-350g.png?v=202503201511",
+  "POMADA CANELA DE VELHO": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTGnUID5i7tnJWv6z46lQOPD8KdgJ0h1eP1U367Ijmq3crX-TuS9DlRmkb9YW1Bu5mja_-nD5tA5wch-9FfHqjhDPCarvrqNhOPICGix79Qe3CnmLrjhS3IqNlznvQ2vSqfznjDNwySMg&usqp=CAc",
+  "pomada canela de velho premium": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfeYG62uMlkS0jck4QlOnL5pQm2mv4klhfaaOeqdklg&s",
+  "CLORETO DE MAGNESIO P.A": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-cloreto-de-magn%C3%A9sio-pa_120_caps.png?v=202405291152",
+  "COMPLEXO B": "https://lojaapisnutri.fbitsstatic.net/img/p/complexo-b-concentracao-maxima-500mg-60-comp-apisnutri-150177/336688-1.jpg?w=440&h=440&v=202604241556",
+  "Extrato Aquoso de Própolis Verde": "https://lojaapisnutri.fbitsstatic.net/media/extrato-de-propolis-aquoso_2semfundo.png?v=202501241155",
+  "Suplemento Mineral De Ferro 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-ferro-60-caps---225-exibi%C3%A7%C3%A3o-atual.png?v=202405271655",
+  "FISIOFORT": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSsDJmdrJbJ41sNrXVn7Umepna5h_T0VgY3ud8Of0vuCxBEGt1wLr9xUGwiSEqEt2WjmwEAfO75fZ7owabKT6SYuilLkUrRDrh8GoQb2qcWlSnPiL_Ze1ay7QzEOHXH5-vNWqoiPBU&usqp=CAc",
+  "fisio forte GOLD": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTKvX_ZqNx_gFw5PlDepMw6Jt5FSZ0MPY09x-x6ZXPbPPnzyKaM3BZwhs1Xae3OvOxeuSbofRQbxqJ5HoPcx5ZiRiSj8-4C7J39TJc7lGeaYHiWTyH4WtBOSpi9s258KBFOJaZQ5A&usqp=CAc",
+  "fisio forte PREMIUM": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdmifoDQFjLFw78t5OHmIbDpPvc9Nq5NECwFchvzumg&s=10",
+  "Guaraná 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/guaran%C3%A1-60-c%C3%A1ps---96-exibi%C3%A7%C3%A3o-atual.png?v=202406071557",
+  "MAG-4 com Treonina": "https://lojaapisnutri.fbitsstatic.net/media/01mag-4-treonina-610mg-60caps---5239-exibi%C3%A7%C3%A3o-atual.png?v=202406121742",
+  "MAG-4 com Treonina 780mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/01mag-4-treonina-610mg-60caps---5239-exibi%C3%A7%C3%A3o-atual.png?v=202406121742",
+  "Magnésio Malato 600mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-malato-de-magn%C3%A9sio-60-caps---2654-exibi%C3%A7%C3%A3o-atual.png?v=202405221739",
+  "magnésio quelato": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-magn%C3%A9sio-60-caps---231-exibi%C3%A7%C3%A3o-atual.png?v=202405241412",
+  "Mel de Laranjeira Bisnaga 220g": "https://lojaapisnutri.fbitsstatic.net/media/mel_laranjeira_bisnaga_310g_frontal.png?v=202405291512",
+  "mel flores eucalipto 310ml bisnaga": "https://lojaapisnutri.fbitsstatic.net/media/mel_eucalipto_bisnaga_310g_frontal.png?v=202405291023",
+  "Mel Composto Própolis e Eucalipto 300g": "https://lojaapisnutri.fbitsstatic.net/media/apisnutri_mel_frontal_pote_verde_300g.png?v=202406131035",
+  "Mel Composto Própolis Euc. Agrião e Copaíba 300g": "https://lojaapisnutri.fbitsstatic.net/media/apisnutri_mel_frontal_pote_roxo_300g.png?v=202406131041",
+  "MELATONINA": "https://lojaapisnutri.fbitsstatic.net/media/melatonina-300mg-60-c%C3%A1ps---5259-exibi%C3%A7%C3%A3o-atual.png?v=202406100830",
+  "NAC 600mg 30 Cápsulas": "https://lojaapisnutri.fbitsstatic.net/media/pg4kw0hu_41hijocae7ipg_9.png?v=202604091843",
+  "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": "https://lojaapisnutri.fbitsstatic.net/media/01_nutri-daily-hair-exibi%C3%A7%C3%A3o-atual.png?v=202407021501",
+  "Óleo De Alho 250mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/01oleo-de-alho-250mg-60-caps---127-exibi%C3%A7%C3%A3o-atual.png?v=202406121630",
+  "Óleo de Coco Extra Virgem 200ml - ApisNutri": "https://lojaapisnutri.fbitsstatic.net/media/pote-%C3%B3leo-de-coco-200ml-exibi%C3%A7%C3%A3o-atual.png?v=202604281728",
+  "omega 3 caps": "https://lojaapisnutri.fbitsstatic.net/media/%C3%B3leo-de-peixe-1g-(%C3%B4mega-3)-120-caps---177-exibi%C3%A7%C3%A3o-atual.png?v=202405100958",
+  "Óleo De Menta 10ml": "https://lojaapisnutri.fbitsstatic.net/media/oleo-de-menta-10ml---2492-exibi%C3%A7%C3%A3o-atual.png?v=202406101621",
+  "Spray de Própolis e Menta 30m": "https://lojaapisnutri.fbitsstatic.net/media/01pr%C3%B3prolis_menta_30ml_frontal.png?v=202406140918",
+  "Spray de Própolis, Gengibre e Romã 30ml": "https://lojaapisnutri.fbitsstatic.net/media/pr%C3%B3prolis_gengibre_e_rom%C3%A3_30ml_frontal.png?v=202405291737",
+  "HOMEM Polivitamínico 500mg 30 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-homem-500mg-30-cps---5615-exibi%C3%A7%C3%A3o-atual.png?v=202405241016",
+  "NutriDaily MULHER Polivitamínico 500mg 30 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-mulher-500mg-30-cps---5612-exibi%C3%A7%C3%A3o-atual.png?v=202405241122",
+  "NutriDaily Sênior 610mg 60 Cápsulas": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-senior-610mg-60-cps---5609-exibi%C3%A7%C3%A3o-atual.png?v=202405241038",
+  "vinagre de maça almaromi 400 ml": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1_QVwLDUYB_fSbXozHKH5Xoz_DV9Xi501YSJgP-hkg&s=10",
+  "vinagre de maça almaromi orgânico 400ml": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNBR7hiPW-sijSaMKF-Y2obH3PFyGETceoMlXF60yeg&s",
+  "vinagre de maça almaromi beneficios 500": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILvkNjukTs9vtdzVxXPkIyvFYy5yRkn2ZM-8S1TPC4w&s",
+  "Vitamina A 280mg 60 Cápsulas": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-de-vitamina-a-60-caps---190-exibi%C3%A7%C3%A3o-atual.png?v=202406101417",
+  "Vitamina B12 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/b12-60-caps-sem-fundo.png?v=202508071102",
+  "B7 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-de-vitamina-b7-60-caps---203-exibi%C3%A7%C3%A3o-atual.png?v=202406121008",
+  "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/vitamina-c-zinco-60-caps-1100mg---4689-exibi%C3%A7%C3%A3o-atual.png?v=202405210834",
+  "Vitamina D3 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-de-vitamina-d3-60-caps---213-exibi%C3%A7%C3%A3o-atual.png?v=202406111656",
+  "Suplemento Mineral de Zinco 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-zinco-60-caps---243-exibi%C3%A7%C3%A3o-atual.png?v=202405221453"
 };
 
 const INFO = {
@@ -2078,6 +2505,137 @@ const INFO = {
   },
   "lemon peper defumado": {
     "ben": "O lemon pepper defumado é um blend de especiarias que combina o frescor cítrico do limão e a picância da pimenta-do-reino com um toque defumado. É ideal para temperar ou finalizar aves, peixes, frutos do mar e vegetais."
+  },
+  "B12 gotas": {
+    "ben": "A vitamina B12 (cobalamina) é um nutriente essencial do complexo B que nosso corpo não produz. Ela atua na formação do DNA, na produção de glóbulos vermelhos e na manutenção do sistema nervoso. A ingestão diária recomendada varia, mas muitas vezes utiliza-se a forma ativa metilcobalamina"
+  },
+  "BRONCO IMUNI+NAC": {
+    "ben": "Elaborado com Mel, Extrato de Própolis, Hera, Eucalipto, Equinácea, Assa peixe, Grindélia, Alcaçuz, Menta e o aminoácido Cisteína, o Xarope Bronco Imuni oferece toda a tradicional ação dos seus ingredientes em benefício da Saúde do Trato Respiratório e do Sistema Imune."
+  },
+  "BRONCO IMUNI XAROPE": {
+    "ben": "Bronco Imuni é um xarope elaborado com Mel e extrato de Própolis, e os saborizantes naturais hera, eucalipto, equinácea, assa peixe, grindélia, alcaçuz e menta."
+  },
+  "POMADA CANELA DE VELHO": {
+    "ben": "A Pomada Desodorante Massageadora para Canela de Velho com Sebo de Carneiro Bio Instinto é um produto cosmético elaborado com extratos vegetais típicos da flora brasileira. Possui eficácia desodorante comprovada por 12 horas, mantendo a pele livre de microrganismos causadores de maus odores durante a prática de esportes ou esforços físicos. Melhora o relaxamento corporal e auxilia no alívio da sensação de cansaço após atividades físicas, má postura ou esforço exagerado."
+  },
+  "pomada canela de velho premium": {
+    "ben": "A Pomada Canela de Velho Premium 150g da Bio Instinto é um produto cosmético enriquecido com extratos vegetais (incluindo Ora-Pro-Nóbis e Sebo de Carneiro). É ideal para massagens corporais para promover relaxamento e aliviar a sensação de cansaço e peso nas pernas após esforços físicos."
+  },
+  "CLORETO DE MAGNESIO P.A": {
+    "ben": "Mineral vital para o desempenho de inúmeras atividades dentro do organismo humano, o Magnésio ocupa lugar de destaque e importância na manutenção da vida, possibilitando o equilíbrio eletrolítico, o metabolismo energético, de proteínas, carboidratos e gorduras, auxilia no funcionamento muscular e neuromuscular, além de ser valioso na divisão celular e na formação de ossos e dentes."
+  },
+  "COMPLEXO B": {
+    "ben": "Composto pelas 8 vitaminas que integram o Complexo B - B1 (Tiamina), B2 (Riboflavina), B3 (Niacina), B5 (Ácido Pantotênico), B6 (Piridoxina), B7 (Biotina), B9 (Ácido Fólico) e B12 (Cianocobalamina), o novo Complexo B ApisNutri está sob a forma farmacêutica de comprimidos. Elaborado com a \"Concentração Máxima\" permitida por dose dessas vitaminas para suplementos alimentares, representa um aporte muito maior e prático dessas substâncias tão importantes para o metabolismo fisiológico, desempenho físico e mental, saúde do Sistema Imune e metabolismo energético, de carboidratos, gorduras e proteína."
+  },
+  "Extrato Aquoso de Própolis Verde": {
+    "ben": "extrato aquoso de própolis verde é uma opção natural e suave para quem busca os benefícios da própolis. Obtido através de um processo de extração com água, ele preserva os compostos bioativos da própolis verde, como os flavonoides, sem a presença de álcool."
+  },
+  "Suplemento Mineral De Ferro 60 Cáps": {
+    "ben": "Disponibilizando alto teor de Ferro Quelato, a nova apresentação Ferro ApisNutri supre quase 250% o valor diário recomendado do mineral. Vital para a síntese de hemácias, as células vermelhas do sangue, e para o transporte de oxigênio para todas as células do organismo, o Ferro faz parte da composição da Hemoglobina, a real responsável por esse transporte."
+  },
+  "FISIOFORT": {
+    "ben": "Fisiofort é uma linha de pomadas massageadoras da Bio Instinto indicada para aliviar tensões, dores musculares e cansaço corporal. Sua fórmula combina ativos como arnica, cânfora e mentol para estimular a circulação periférica, proporcionando rápida sensação de relaxamento"
+  },
+  "fisio forte GOLD": {
+    "ben": "A Pomada Massageadora Fisiofort + Gold (da Bio Instinto) é indicada para aliviar a sensação de cansaço muscular e desconfortos após exercícios físicos intensos. Sua fórmula com extratos vegetais e capsaicina ativa a circulação periférica e proporciona alívio e aquecimento prolongado por até 12 horas."
+  },
+  "fisio forte PREMIUM": {
+    "ben": "O Fisiofort Premium (produzido pela Bio Instinto) é um gel/pomada massageadora formulada com extratos vegetais, como arnica, mastruz, copaíba e mentol. É muito utilizado para aliviar o cansaço corporal, desconfortos musculares e articulares, além de ajudar a melhorar a circulação periférica após exercícios ou esforço excessivo"
+  },
+  "Guaraná 60 Cáps": {
+    "ben": "O Guaraná é conhecido por suas propriedades estimulantes, seu principal componente é a Cafeína em alta concentração, contém também fibras vegetais, Amido, Ácido Tânico, Cálcio, Ferro, Fósforo, Potássio, Tiamina e Vitamina A."
+  },
+  "MAG-4 com Treonina": {
+    "ben": "Estrategicamente elaborado com 4 sais de Magnésio, MAG-4 consegue oferecer alto teor desse mineral e o máximo dos seus benefícios à saúde do organismo, como favorecer o funcionamento muscular e neuromuscular, auxiliar no metabolismo de gorduras, carboidratos e proteínas, dentre outras atividades."
+  },
+  "MAG-4 com Treonina 780mg 60 Cáps": {
+    "ben": "Estrategicamente elaborado com 4 sais de Magnésio, MAG-4 consegue oferecer alto teor desse mineral e o máximo dos seus benefícios à saúde do organismo, como favorecer o funcionamento muscular e neuromuscular, auxiliar no metabolismo de gorduras, carboidratos e proteínas, dentre outras atividades."
+  },
+  "Magnésio Malato 600mg 60 Cáps": {
+    "ben": "O uso do Dimalato de Magnésio está ligado a vários benefícios à saúde, como metabolismo de energia, funcionamento neuromuscular, divisão celular, melhorias no humor, controle de açúcar no sangue, melhor desempenho nos exercícios e no tratamento de dores crônicas, como a fibromialgia."
+  },
+  "magnésio quelato": {
+    "ben": "Mineral vital para o desempenho de inúmeras atividades dentro do organismo humano, o Magnésio ocupa lugar de destaque e importância na manutenção da vida, possibilidade o equilíbrio eletrolítico, o metabolismo energético de proteínas, carboidratos e gorduras, auxilia no funcionamento muscular e neuromuscular, além de ser valioso na divisão celular e na formação de ossos e dentes.\nEnvolvido em mais de 300 reações, o Magnésio atua na contração e relaxamento muscular e possui ação antioxidante. evitando a produção excessiva de radicais livres pelo organismo, prevenindo doenças e o envelhecimento. Magnésio ApisNutri está sob a forma quelata do mineral, promovendo maior absorção e biodisponibilidade."
+  },
+  "Mel de Laranjeira Bisnaga 220g": {
+    "ben": "O Mel pode variar bastante de acordo com a flor que as abelhas buscam o néctar, proporcionando diferenças dos seus constituintes e, em características como o aroma, sabor e coloração.\nO Mel de Flores de Laranjeira, possui coloração mais clara, o sabor é floral, mais suave e delicado, além de levemente cítrico, sendo muito apreciado por chefes de cozinha em pratos sofisticados.",
+    "uso": "Dentre suas propriedades farmacológicas, podemos destacar sua ação como antioxidante, antibacteriano, antisséptico, anti-inflamatório e antibiótico. Por isso, é um excelente estimulante imunológico, auxilia no combate a gripes, resfriados, dores de garganta e doenças do trato respiratório de modo geral; além de ajudar na cicatrização e hidratação da pele. É um ótimo aliado na saúde e regulação intestinal, e devidos os princípios ativos da flor de laranjeira, é reconhecidamente um tranquilizante natural."
+  },
+  "mel flores eucalipto 310ml bisnaga": {
+    "ben": "O Mel de Flores de Eucalipto, é extraído de uma grande diversidade de flores e que pode variar de acordo com a flora da região de produção. Sua coloração é mais intensa e escura, o aroma é diversificado e o sabor é mais acentuado. É a variedade mais produzida e consumida no Brasil.",
+    "uso": "Dentre suas propriedades farmacológicas, podemos destacar sua ação como antimicrobiano, antisséptico, anti-inflamatório, antibiótico e imunoestimulante. Ótimo antioxidante, é um importante aliado contra o envelhecimento precoce, prevenindo doenças degenerativas, como aterosclerose, doenças cardiovasculares e neurológicas; além de favorecer a saúde e beleza da pele, unhas e cabelos."
+  },
+  "Mel Composto Própolis e Eucalipto 300g": {
+    "ben": "O Mel utilizado é de origem silvestre, fonte de vitaminas, minerais e fonte de energia. A Própolis é uma resina fabricada pelas abelhas que possui inúmeras propriedades, dentre elas a de ser imunoestimulante, contribuindo para fortalecer as defesas do organismo. O eucalipto possui ação expectorante e traz refrescância.",
+    "uso": "Os benefícios do composto para a saúde e bem-estar, estão voltados para o tratamento de doenças do trato respiratório com ação descongestionante, expectorante, antissépticas, antibacteriana, anti-inflamatória e analgésica. Assim, é uma excelente escolha no tratamento dos sintomas da gripe, asma, bronquite, faringite e rinite, e nas dores de garganta, trazendo alívio e refrescância."
+  },
+  "Mel Composto Própolis Euc. Agrião e Copaíba 300g": {
+    "ben": "O Mel utilizado é de origem silvestre, fonte de vitaminas, minerais e fonte de energia. A Própolis é uma resina fabricada pelas abelhas que possui inúmeras propriedades, dentre elas a de ser imunoestimulante, contribuindo para fortalecer as defesas do organismo. O eucalipto, é expectorante e traz refrescância; o gengibre, fortalece a imunidade e alivia a dor; já a romã possui poderosa ação anti-inflamatória.",
+    "uso": "Os benefícios do composto para a saúde e bem-estar, estão voltados para o tratamento de doenças do trato respiratório com ação descongestionante, expectorante, antissépticas, antibacteriana, anti-inflamatória e analgésica. Assim, é uma excelente escolha no tratamento dos sintomas da gripe, asma, bronquite, faringite e rinite, e nas dores de garganta, trazendo alívio e refrescância."
+  },
+  "MELATONINA": {
+    "ben": "A Melatonina é um hormônio produzido naturalmente pela Glândula Pineal localizada no cérebro. Possui como principal função regular o Ciclo Circadiano (funções biológicas que acontecem no período de 24h) que está inteiramente ligada ao sono, por isso é considerado o hormônio do sono; além disso, a Melatonina atua como antioxidante e auxilia em várias funções do organismo."
+  },
+  "NAC 600mg 30 Cápsulas": {
+    "ben": "A N-acetil L-cisteína é uma forma estável do aminoácido L-cisteína, utilizada na suplementação nutricional como fonte desse nutriente.\nA L-cisteína é um aminoácido que participa de processos no organismo, estando associada à formação de compostos antioxidantes.\nO NAC possui ação antioxidante, auxiliando na proteção contra os danos causados pelos radicais livres.\nSua apresentação em cápsulas facilita o consumo no dia a dia, contribuindo para a praticidade da suplementação."
+  },
+  "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": {
+    "ben": "Propondo uma suplementação direcionada à nutrição capilar e ungueal, NutriDaily Cabelos e Unhas é composto por ingredientes que são a base nutricional para uma boa construção, fortalecimento, pigmentação e crescimento dos fios de cabelos, bem como das unhas.",
+    "uso": "Com 12 vitaminas e 6 minerais, conta com o diferencial do ingrediente SilíciuMax, um Ácido Ortosilício orgânico altamente biodisponível, que atua diretamente na síntese de proteínas, renovando as fibras de Colágeno, Queratina e Elastina; além de promover intensa hidratação cutânea."
+  },
+  "Óleo De Alho 250mg 60 Cáps": {
+    "ben": "O Óleo de Alho se destaca por proporcionar uma concentração significativamente maior de Alicina quando comparado ao alimento in natura, um princípio ativo cujas propriedades antioxidantes podem trazer muitos benefícios para a saúde do nosso organismo."
+  },
+  "Óleo de Coco Extra Virgem 200ml - ApisNutri": {
+    "ben": "O Óleo de Coco é extraído mediante prensagem da polpa ou carne dos cocos (Cocos Nucifera). São encontradas diversas substâncias no Óleo de Coco, entre elas os Ácidos Graxos essenciais e o Glicerol, que é importante para o organismo. Com ele o corpo produz Ácidos Graxos saturados e insaturados de acordo com suas necessidades."
+  },
+  "omega 3 caps": {
+    "ben": "É um suplemento à base de Óleo de Peixe, contendo EPA e DHA, considerado uma 'gordura boa' e essencial, pois não pode ser produzido naturalmente pelo organismo, devendo, portanto, ser obtido através da alimentação e/ou suplementação."
+  },
+  "Óleo De Menta 10ml": {
+    "ben": "Planta aromática conhecida popularmente como hortelã-pimenta, menta ou hortelã das damas, a Mentha Piperita L. é de origem europeia e largamente utilizada na indústria de medicamentos, alimentícia e de cosméticos, principalmente devido ao seu principal constituinte, o Mentol.",
+    "uso": "Refrescante e revigorante, tem ação vasoconstritora, anti-inflamatória e analgésica, melhora a respiração, alivia dores de cabeça e tensões, estresse e cansaço. Pode ser usado diretamente sob a pele para massagens ou no processo de vaporização, auxiliando no tratamento da obstrução nasal, rinites, sinusites e enjôos."
+  },
+  "Spray de Própolis e Menta 30m": {
+    "ben": "O Própolis sabor menta apresenta em sua composição ingredientes naturais, como Mel Silvestre e Extrato de Própolis e é também enriquecido com vitaminas B9, B12 e o mineral Selênio.\n\nO Extrato de Própolis utilizado é padronizado em compostos Fenólicos, a principal substância bioativa do Própolis.\n\nDevido ao sabor característico do Extrato de Própolis, o produto foi desenvolvido com aroma natural de menta, trazendo todo o frescor da planta e visando facilitar seu consumo diário."
+  },
+  "Spray de Própolis, Gengibre e Romã 30ml": {
+    "ben": "O Própolis sabor gengibre e romã apresenta em sua composição ingredientes naturais, como Mel Silvestre e Extrato de Própolis e é também enriquecido com vitaminas B9, B12 e o mineral Selênio.\n\nO Extrato de Própolis utilizado é padronizado em compostos Fenólicos, a principal substância bioativa do Própolis.\n\nDevido ao sabor característico do Extrato de Própolis, o produto foi desenvolvido com aroma natural de gengibre e romã, visando facilitar seu consumo diário."
+  },
+  "HOMEM Polivitamínico 500mg 30 Cáps": {
+    "ben": "A Família NutriDaily ApisNutri, disponibiliza produtos balanceados, para homens e mulheres ativos e produtivos, com necessidades específicas de nutrientes, que suprem de forma personalizada suas demandas nutricionais.",
+    "uso": "com a proposta de proporcionar dia após dia mais energia, vitalidade, qualidade de vida e longevidade sem descuidar da prevenção, NutriDaily Homem contém Licopeno de tomate, alto teor de Selênio e Vitamina D, além de contar com 19 vitaminas e minerais. NutriDaily é a sua dose diária de saúde!"
+  },
+  "NutriDaily MULHER Polivitamínico 500mg 30 Cáps": {
+    "ben": "A Família NutriDaily ApisNutri, disponibiliza produtos balanceados, para homens e mulheres ativos e produtivos, com necessidades específicas de nutrientes, que suprem de forma personalizada suas demandas nutricionais.",
+    "uso": "Com a proposta de proporcionar dia após dia prevenção, vitalidade, qualidade de vida e longevidade sem descuidar da beleza, NutriDaily Mulher contém Ácido Hialurônico, alto teor de Biotina (B7), Ácido Fólico (B9) e Ferro, além de contar com 17 vitaminas e minerais. NutriDaily é a sua dose diária de saúde!"
+  },
+  "NutriDaily Sênior 610mg 60 Cápsulas": {
+    "ben": "A Família NutriDaily ApisNutri, disponibiliza produtos balanceados, para homens e mulheres ativos e produtivos, com necessidades específicas de nutrientes, que suprem de forma personalizada suas demandas nutricionais.\n\nCom a proposta de proporcionar dia após dia mais energia, vitalidade, qualidade de vida e longevidade sem descuidar da prevenção, NutriDaily Sênior contém Coenzima Q10, Cálcio Marinho, Luteína e Boro, além de contar com mais 23 vitaminas e minerais. NutriDaily é a sua dose diária de saúde!"
+  },
+  "vinagre de maça almaromi 400 ml": {
+    "ben": "O vinagre de maçã Almaromi é um produto 100% natural e livre de conservantes. Ele auxilia no controle da glicemia, melhora a digestão, ajuda na perda de peso e atua como antioxidante. Além disso, é muito usado em cuidados estéticos capilares e faciais"
+  },
+  "vinagre de maça almaromi orgânico 400ml": {
+    "ben": "O Vinagre de Maçã Almaromi Orgânico é 100% natural, certificado, livre de álcool e sem bisfenol-A. Ele oferece benefícios como regulação dos níveis de açúcar no sangue, auxílio no emagrecimento, melhora da digestão e ação antioxidante e anti-inflamatória."
+  },
+  "vinagre de maça almaromi beneficios 500": {
+    "ben": "O Vinagre de Maçã Orgânico Almaromi 500ml é um produto 100% natural, sem álcool e sem bisfenol-A. Ele mantém a \"mãe do vinagre\", garantindo"
+  },
+  "Vitamina A 280mg 60 Cápsulas": {
+    "ben": "Encontrada tanto em alimentos de origem animal como fígado, gema de ovo e leite, quanto em fontes vegetais, como manga, cenoura e mamão o retinol está sob a forma de seus precursores, ou seja, substâncias que dentro do organismo se transformam em Vitamina A.\nFundamental para a manutenção da vida, é importante para a Saúde da Visão e da Pele, no funcionamento do Sistema Imune, contribui para o metabolismo do Ferro e manutenção das mucosas além de ajudar no processo de diferenciação celular."
+  },
+  "Vitamina B12 280mg 60 Cáps": {
+    "ben": "Reconhecida como uma das vitaminas mais importantes para a existência da vida, as principais fontes de Metilcobalamina são: fígado bovino, ostras, queijo, carne de frango, de boi e de peixe, leite e verduras.\n\nA atuação e os benefícios da B12 para o organismo são mesmo imensuráveis, pois é responsável pela formação das células vermelhas do sangue, na divisão celular, no bom funcionamento do Sistema Imune, no metabolismo energético de proteínas, carboidratos e gorduras."
+  },
+  "B7 280mg 60 Cáps": {
+    "ben": "Conhecida como a vitamina da beleza, a Biotina ou Vitamina B7 pode ser encontrada na gema do ovo, leite, peixe, fígado, arroz integral, tomate, banana, cebola, dentre tantas outras fontes.\n\nContribui para a manutenção dos cabelos, da pele e mucosas, além de ser muito importante no metabolismo de proteínas, carboidratos, gorduras e energético."
+  },
+  "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps": {
+    "ben": "Formulado com Ácido Ascórbico e Bisglicinato de Zinco, é a composição perfeita para melhorar a resposta de defesa do organismo a micro-organismos invasores, fortalecendo o Sistema Imunológico.\n\nPoderoso antioxidante, a Vitamina C atua no fortalecimento do Sistema Imune, favorece a absorção do Ferro e atua no metabolismo energético. Já o Zinco Quelato ou Bisglicinato, é essencial para que inúmeras reações químicas e metabólicas aconteçam no organismo, indispensável à síntese de proteínas, à reprodução e ao correto funcionamento do Sistema Imunológico."
+  },
+  "Suplemento Mineral de Zinco 280mg 60 Cáps": {
+    "ben": "Presente em centenas de enzimas, o Zinco é essencial para que inúmeras reações químicas e metabólicas aconteçam no organismo, sendo importante no funcionamento de certos hormônios, indispensável à síntese de proteínas, à reprodução e ao correto funcionamento do Sistema Imune.\n\nFornecendo alto teor do mineral, o novo Zinco ApisNutri oferece 29,90mg de Zinco Quelato com maior biodisponibilidade, favorecendo o Sistema Imune e contribuindo para a manutenção da pele, unhas e cabelos"
   }
 };
 
