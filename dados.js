@@ -280,8 +280,7 @@ const PRODUTOS = {
   },
   "Pata de Vaca": {
     "custo": 7.37,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Dente de Leão": {
     "custo": 9.49,
@@ -508,9 +507,8 @@ const PRODUTOS = {
     "tipo": "granel"
   },
   "Erva Baleeira": {
-    "custo": 9.18,
-    "tipo": "granel",
-    "semEstoque": true
+    "custo": 9.8,
+    "tipo": "granel"
   },
   "Erva São João": {
     "custo": 4.22,
@@ -812,6 +810,10 @@ const PRODUTOS = {
   "Suplemento Mineral de Zinco 280mg 60 Cáps": {
     "custo": 25.6,
     "tipo": "granel"
+  },
+  "enxofre": {
+    "custo": 6.94,
+    "tipo": "granel"
   }
 };
 
@@ -1006,6 +1008,7 @@ const CATS = [
       "alfavaca",
       "cavalinha cha",
       "damasco turco n2",
+      "enxofre",
       "farinha integral",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
@@ -1610,6 +1613,7 @@ const CATS = [
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
       "cavalinha cha",
+      "enxofre",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
       "omega 3 caps",
@@ -1871,7 +1875,8 @@ const IMGS = {
   "B7 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-de-vitamina-b7-60-caps---203-exibi%C3%A7%C3%A3o-atual.png?v=202406121008",
   "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/vitamina-c-zinco-60-caps-1100mg---4689-exibi%C3%A7%C3%A3o-atual.png?v=202405210834",
   "Vitamina D3 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-de-vitamina-d3-60-caps---213-exibi%C3%A7%C3%A3o-atual.png?v=202406111656",
-  "Suplemento Mineral de Zinco 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-zinco-60-caps---243-exibi%C3%A7%C3%A3o-atual.png?v=202405221453"
+  "Suplemento Mineral de Zinco 280mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/suplemento-mineral-de-zinco-60-caps---243-exibi%C3%A7%C3%A3o-atual.png?v=202405221453",
+  "enxofre": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ80ifZDb3pfK620ZNKMLINxn8oPUhlA24iqutG2wv7-g&s=10"
 };
 
 const INFO = {
@@ -2636,6 +2641,10 @@ const INFO = {
   },
   "Suplemento Mineral de Zinco 280mg 60 Cáps": {
     "ben": "Presente em centenas de enzimas, o Zinco é essencial para que inúmeras reações químicas e metabólicas aconteçam no organismo, sendo importante no funcionamento de certos hormônios, indispensável à síntese de proteínas, à reprodução e ao correto funcionamento do Sistema Imune.\n\nFornecendo alto teor do mineral, o novo Zinco ApisNutri oferece 29,90mg de Zinco Quelato com maior biodisponibilidade, favorecendo o Sistema Imune e contribuindo para a manutenção da pele, unhas e cabelos"
+  },
+  "enxofre": {
+    "ben": "O enxofre é um mineral versátil essencial para a vida, atuando principalmente na saúde humana (na forma de enxofre orgânico), na agricultura como nutriente e defensivo natural, e na dermatologia no controle de oleosidade",
+    "uso": "Como usar: Faça uma espuma e aplique suavemente nas áreas afetadas, deixando agir por cerca de 1 a 3 minutos (dependendo da tolerância e da área do corpo). Enxágue abundantemente."
   }
 };
 
