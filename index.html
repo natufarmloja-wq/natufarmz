@@ -169,7 +169,7 @@ if (typeof INFO === 'undefined') { window.INFO = {}; }
 function calcPreco(nome) {
   const p = PRODUTOS[nome];
   if (!p) return 2;
-  return p.custo;
+  return (p.precoPromo && p.precoPromo > 0) ? p.precoPromo : p.custo;
 }
 
 function fmtR(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
@@ -434,7 +434,9 @@ let detNomeAtual = '';
 function abrirDetalhes(nome) {
   const p = PRODUTOS[nome];
   if (!p) return;
-  const preco = calcPreco(nome);
+  const precoOriginal = p.custo;
+  const precoPromo = p.precoPromo && p.precoPromo > 0 ? p.precoPromo : 0;
+  const precoExibido = precoPromo > 0 ? precoPromo : precoOriginal;
   const tipo = p.tipo || 'granel';
   const emoji = getEmoji(nome);
   const info = INFO[nome] || {};
@@ -447,7 +449,15 @@ function abrirDetalhes(nome) {
   tipoEl.textContent = tipo === 'caps' ? 'SUPLEMENTO' : 'GRANEL';
   tipoEl.className = 'det-tipo' + (tipo === 'caps' ? ' caps' : '');
   
-  document.getElementById('detPreco').textContent = fmtR(preco) + (tipo === 'caps' ? '/un' : '/100g');
+  if (precoPromo > 0) {
+    document.getElementById('detPreco').innerHTML = `
+      <span class="preco-antigo" style="text-decoration: line-through; opacity: 0.6; font-size: 14px; margin-right: 8px;">${fmtR(precoOriginal)}</span>
+      <span class="preco-novo" style="color: #ef4444; font-weight: 800;">${fmtR(precoPromo)}</span>
+      <span style="font-size: 12px; color: var(--texto-suave); font-weight: normal;">${tipo === 'caps' ? '/un' : '/100g'}</span>
+    `;
+  } else {
+    document.getElementById('detPreco').textContent = fmtR(precoOriginal) + (tipo === 'caps' ? '/un' : '/100g');
+  }
   
   let html = '';
   if (info.ben) {
@@ -561,9 +571,11 @@ function renderProdutos() {
   sem.style.display = 'none';
 
   grid.innerHTML = lista.map(nome => {
-    const preco = calcPreco(nome);
-    const tipo = PRODUTOS[nome]?.tipo || 'granel';
-    const semEstoque = !!PRODUTOS[nome]?.semEstoque;
+    const p = PRODUTOS[nome] || {};
+    const precoPromo = p.precoPromo && p.precoPromo > 0 ? p.precoPromo : 0;
+    const precoOriginal = p.custo;
+    const tipo = p.tipo || 'granel';
+    const semEstoque = !!p.semEstoque;
     const noCarrinho = !semEstoque && !!carrinho[nome];
     const tagLabel = tipo === 'caps' ? 'SUPLEMENTO' : 'GRANEL';
     const tagClass = tipo === 'caps' ? 'caps' : '';
@@ -583,15 +595,24 @@ function renderProdutos() {
       </button>`;
     }
 
+    const promoBadge = precoPromo > 0 
+      ? `<span class="produto-tag promo">🏷️ Promoção</span>` 
+      : '';
+
+    const precoHtml = precoPromo > 0
+      ? `<div class="produto-preco"><span class="preco-antigo">${fmtR(precoOriginal)}</span><span class="preco-novo">${fmtR(precoPromo)}</span></div>`
+      : `<div class="produto-preco">${fmtR(precoOriginal)}</div>`;
+
     return `<div class="produto-card ${noCarrinho ? 'no-carrinho' : ''} ${semEstoque ? 'sem-estoque' : ''}">
       <div class="produto-img">
         <img src="${imgSrc}" alt="${nome}" loading="lazy" onerror="this.style.display='none';this.parentNode.innerHTML+='<span style=font-size:38px>${getEmoji(nome)}</span>'">
+        ${promoBadge}
         <span class="produto-tag ${tagClass}">${tagLabel}</span>
       </div>
       <div class="produto-body">
         <div class="produto-nome">${nome}</div>
         <div class="produto-info">${infoText}</div>
-        <div class="produto-preco">${fmtR(preco)}</div>
+        ${precoHtml}
         <div class="produto-preco-unit">${precoUnit}</div>
         ${btnHtml}
         <button class="btn-detalhes" onclick="abrirDetalhes('${nome.replace(/'/g,"\\'")}')">

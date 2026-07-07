@@ -720,6 +720,11 @@
             <label for="editCusto" id="labelCusto">Custo por kg (R$)</label>
             <input type="number" class="form-control" id="editCusto" step="0.01" min="0" oninput="atualizarPrecoVendaEstimado()">
           </div>
+          
+          <div class="form-group">
+            <label for="editPrecoPromo">Preço de Promoção (R$ - Opcional)</label>
+            <input type="number" class="form-control" id="editPrecoPromo" step="0.01" min="0" oninput="atualizarPrecoVendaEstimado()" placeholder="Ex: 8.90">
+          </div>
         </div>
 
         <div class="form-group" style="flex-direction: row; align-items: center; gap: 10px; background: #fee2e2; padding: 12px; border-radius: 8px; border: 1px solid #fca5a5;">
@@ -1045,7 +1050,14 @@ CATS[0].prods = todosArr;
             <span class="tag-type ${prod.tipo}">${prod.tipo === 'granel' ? 'Granel' : 'Suplemento'}</span>
           </td>
           <td>
-            <div class="price-badge">${fmtR(prod.custo)}</div>
+            ${prod.precoPromo && prod.precoPromo > 0 
+              ? `<div class="price-badge" style="background: #fef2f2; color: #ef4444; border: 1px solid #fee2e2; display: flex; flex-direction: column; align-items: center; padding: 4px 8px; border-radius: 8px;">
+                   <span style="text-decoration: line-through; font-size: 11px; opacity: 0.6; color: var(--texto);">${fmtR(prod.custo)}</span>
+                   <span style="font-weight: 700;">${fmtR(prod.precoPromo)}</span>
+                   <span style="font-size: 8px; background: #ef4444; color: white; padding: 1px 4px; border-radius: 3px; margin-top: 2px; text-transform: uppercase;">Promo</span>
+                 </div>`
+              : `<div class="price-badge">${fmtR(prod.custo)}</div>`
+            }
             <div class="price-cost">${prod.tipo === 'granel' ? 'por 100g' : 'por un'}</div>
           </td>
           <td>
@@ -1085,13 +1097,19 @@ CATS[0].prods = todosArr;
     function atualizarPrecoVendaEstimado() {
       const tipo = document.getElementById('editTipo').value;
       const custo = parseFloat(document.getElementById('editCusto').value) || 0;
-      const precoVenda = custo;
+      const precoPromo = parseFloat(document.getElementById('editPrecoPromo').value) || 0;
 
-      document.getElementById('previewVendaText').textContent = fmtR(precoVenda);
-      if (tipo === 'granel') {
-        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por 100g)`;
+      if (precoPromo > 0) {
+        document.getElementById('previewVendaText').innerHTML = `<span style="text-decoration: line-through; opacity: 0.6; font-size: 14px; margin-right: 8px;">${fmtR(custo)}</span><span style="color: #ef4444;">${fmtR(precoPromo)} Promoção</span>`;
       } else {
-        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoVenda)} por unidade)`;
+        document.getElementById('previewVendaText').textContent = fmtR(custo);
+      }
+
+      const precoExibido = precoPromo > 0 ? precoPromo : custo;
+      if (tipo === 'granel') {
+        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoExibido)} por 100g)`;
+      } else {
+        document.getElementById('previewVendaDesc').textContent = `(Preço final de venda no site: ${fmtR(precoExibido)} por unidade)`;
       }
     }
 
@@ -1132,6 +1150,7 @@ CATS[0].prods = todosArr;
       document.getElementById('editNome').removeAttribute('readonly');
       document.getElementById('editTipo').value = "granel";
       document.getElementById('editCusto').value = "";
+      document.getElementById('editPrecoPromo').value = "";
       document.getElementById('editImgUrl').value = "";
       document.getElementById('editImgFile').value = "";
       arquivoImagemSelecionado = null;
@@ -1160,6 +1179,7 @@ CATS[0].prods = todosArr;
       document.getElementById('editNome').removeAttribute('readonly');
       document.getElementById('editTipo').value = prod.tipo;
       document.getElementById('editCusto').value = prod.custo;
+      document.getElementById('editPrecoPromo').value = prod.precoPromo || "";
       document.getElementById('editImgUrl').value = img;
       document.getElementById('editImgFile').value = "";
       arquivoImagemSelecionado = null;
@@ -1256,6 +1276,7 @@ CATS[0].prods = todosArr;
       const nome = document.getElementById('editNome').value.trim();
       const tipo = document.getElementById('editTipo').value;
       const custo = parseFloat(document.getElementById('editCusto').value) || 0;
+      const precoPromo = parseFloat(document.getElementById('editPrecoPromo').value) || 0;
       let imgUrl = document.getElementById('editImgUrl').value.trim();
       const ben = document.getElementById('editBeneficios').value.trim();
       const uso = document.getElementById('editUso').value.trim();
@@ -1266,6 +1287,10 @@ CATS[0].prods = todosArr;
       }
       if (custo <= 0) {
         alert("O preço do produto precisa ser maior que zero.");
+        return;
+      }
+      if (precoPromo > 0 && precoPromo >= custo) {
+        alert("Atenção: O preço promocional deve ser menor que o preço de venda original.");
         return;
       }
 
@@ -1325,6 +1350,9 @@ CATS[0].prods = todosArr;
       // Adiciona/Atualiza PRODUTOS
       const semEstoque = document.getElementById('editSemEstoque').checked;
       PRODUTOS[nome] = { custo: custo, tipo: tipo };
+      if (precoPromo > 0) {
+        PRODUTOS[nome].precoPromo = precoPromo;
+      }
       if (semEstoque) {
         PRODUTOS[nome].semEstoque = true;
       }

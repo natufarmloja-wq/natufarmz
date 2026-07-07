@@ -225,12 +225,19 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); z-index: 2;
 }
 .produto-tag.caps { color: #4F46E5; }
+.produto-tag.promo { 
+  left: 12px; right: auto; 
+  background: linear-gradient(135deg, #EF4444, #F59E0B); 
+  color: white; 
+}
 
 .produto-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
 .produto-nome { font-size: 16px; font-weight: 700; color: var(--texto); margin-bottom: 6px; line-height: 1.3; font-family: 'Playfair Display', serif; }
 .produto-info { font-size: 13px; color: var(--texto-suave); margin-bottom: 12px; flex: 1; }
 .produto-preco-box { margin-bottom: 16px; }
-.produto-preco { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--verde-escuro); }
+.produto-preco { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--verde-escuro); display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.preco-antigo { font-size: 14px; text-decoration: line-through; color: var(--texto-suave); opacity: 0.6; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+.preco-novo { color: #EF4444; font-weight: 800; }
 .produto-preco-unit { font-size: 12px; color: var(--texto-suave); font-family: 'DM Sans', sans-serif; font-weight: 500; }
 
 .btn-add { 
