@@ -124,8 +124,7 @@ const PRODUTOS = {
   },
   "Farinha de Uva": {
     "custo": 5.7,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Mix de Castanhas": {
     "custo": 15.58,
@@ -167,10 +166,6 @@ const PRODUTOS = {
     "custo": 2.99,
     "tipo": "granel"
   },
-  "Granola": {
-    "custo": 5.47,
-    "tipo": "granel"
-  },
   "Chia": {
     "custo": 6.2,
     "tipo": "granel"
@@ -201,8 +196,7 @@ const PRODUTOS = {
   },
   "Canela em Rama": {
     "custo": 14,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Cravo da Índia": {
     "custo": 14.25,
@@ -371,8 +365,7 @@ const PRODUTOS = {
   },
   "Pepita de Girassol": {
     "custo": 5.49,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Semente de Abóbora": {
     "custo": 8.9,
@@ -392,8 +385,7 @@ const PRODUTOS = {
   },
   "Funcho": {
     "custo": 4.79,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Psyllium": {
     "custo": 6.67,
@@ -820,8 +812,7 @@ const PRODUTOS = {
   },
   "mix frutas tropicais chips": {
     "custo": 29.99,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "mix de chimarrão 160g artesanal NatuFarm": {
     "custo": 15,
@@ -890,6 +881,34 @@ const PRODUTOS = {
   "composto circulatório 60 caps": {
     "custo": 21.9,
     "tipo": "caps"
+  },
+  "granola morango iogurte e mel": {
+    "custo": 6,
+    "tipo": "granel"
+  },
+  "Granola com castanha completa": {
+    "custo": 6.5,
+    "tipo": "granel"
+  },
+  "granola castanha de caju e leite condessado": {
+    "custo": 5.5,
+    "tipo": "granel"
+  },
+  "leite de coco em po": {
+    "custo": 11.99,
+    "tipo": "granel"
+  },
+  "glucomannan": {
+    "custo": 34.9,
+    "tipo": "granel"
+  },
+  "farinha de maracuja": {
+    "custo": 6.9,
+    "tipo": "granel"
+  },
+  "tamara": {
+    "custo": 10.35,
+    "tipo": "granel"
   }
 };
 
@@ -1002,7 +1021,7 @@ const CATS = [
       "Gergelim Preto",
       "Gergelim Torrado",
       "Ginseng",
-      "Granola",
+      "Granola com castanha completa",
       "Graviola",
       "Guaco",
       "Guaraná 60 Cáps",
@@ -1088,15 +1107,20 @@ const CATS = [
       "cura tudo 500 ml",
       "damasco turco n2",
       "enxofre",
+      "farinha de maracuja",
       "farinha integral",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "glucomannan",
       "gotas de cardo mariano",
       "gotas de graviola",
       "gotas de passiflora",
       "gotas do zeca",
+      "granola castanha de caju e leite condessado",
+      "granola morango iogurte e mel",
       "guarana 60 caps",
       "isoflavona 60 caps",
+      "leite de coco em po",
       "lemon peper defumado",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
@@ -1111,6 +1135,7 @@ const CATS = [
       "pomada canela de velho premium",
       "psyllium 60 caps",
       "sucrilho sem açúcar",
+      "tamara",
       "tribulos + maca peruana",
       "uva passa branca",
       "vinagre de maça almaromi 400 ml",
@@ -1163,7 +1188,12 @@ const CATS = [
       "Xilitol",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
+      "farinha de maracuja",
+      "glucomannan",
+      "granola castanha de caju e leite condessado",
+      "granola morango iogurte e mel",
       "guarana 60 caps",
+      "leite de coco em po",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1202,7 +1232,7 @@ const CATS = [
       "FISIOFORT",
       "GINKGO BILOBA",
       "Ginseng",
-      "Granola",
+      "Granola com castanha completa",
       "Guaraná 60 Cáps",
       "Guaraná em Pó",
       "MAG-4 com Treonina 780mg 60 Cáps",
@@ -1229,9 +1259,13 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
+      "farinha de maracuja",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "glucomannan",
       "gotas do zeca",
+      "granola castanha de caju e leite condessado",
+      "granola morango iogurte e mel",
       "guarana 60 caps",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
@@ -1315,11 +1349,14 @@ const CATS = [
       "colageno hidrolizado",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
+      "farinha de maracuja",
+      "glucomannan",
       "gotas de cardo mariano",
       "gotas de graviola",
       "gotas do zeca",
       "guarana 60 caps",
       "isoflavona 60 caps",
+      "leite de coco em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1409,6 +1446,8 @@ const CATS = [
       "alfavaca",
       "cavalinha cha",
       "cura tudo 500 ml",
+      "farinha de maracuja",
+      "glucomannan",
       "gotas de cardo mariano",
       "gotas de graviola",
       "gotas do zeca",
@@ -1419,6 +1458,7 @@ const CATS = [
       "omega 3 caps",
       "ora pro nobis 60 caps",
       "psyllium 60 caps",
+      "tamara",
       "tribulos + maca peruana",
       "uva passa branca",
       "vinagre de maça almaromi 400 ml",
@@ -1526,6 +1566,8 @@ const CATS = [
       "Psyllium",
       "Xilitol",
       "cura tudo 500 ml",
+      "farinha de maracuja",
+      "glucomannan",
       "gotas de cardo mariano",
       "gotas do zeca",
       "melão são Caetano 60 caps.",
@@ -1678,7 +1720,9 @@ const CATS = [
       "Farinha de Banana",
       "Farinha de Beterraba",
       "Farinha de Uva",
+      "farinha de maracuja",
       "farinha integral",
+      "leite de coco em po",
       "mix de chimarrão 160g artesanal NatuFarm"
     ]
   },
@@ -1704,7 +1748,7 @@ const CATS = [
       "Coco em Flocos",
       "Fruta Cristalizada",
       "Gergelim Torrado",
-      "Granola",
+      "Granola com castanha completa",
       "Mix de Castanhas",
       "Nozes",
       "Pepita de Girassol",
@@ -1712,9 +1756,13 @@ const CATS = [
       "Semente de Abóbora",
       "Uva Passa",
       "damasco turco n2",
+      "granola castanha de caju e leite condessado",
+      "granola morango iogurte e mel",
+      "leite de coco em po",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
       "sucrilho sem açúcar",
+      "tamara",
       "uva passa branca"
     ]
   },
@@ -1738,16 +1786,20 @@ const CATS = [
       "Fruta Cristalizada",
       "Gergelim Branco",
       "Gergelim Preto",
-      "Granola",
+      "Granola com castanha completa",
       "Mel Composto Própolis Euc. Agrião e Copaíba 300g",
       "Mel Composto Própolis e Eucalipto 300g",
       "Mel de Laranjeira Bisnaga 220g",
       "Uva Passa",
       "Xilitol",
       "damasco turco n2",
+      "granola castanha de caju e leite condessado",
+      "granola morango iogurte e mel",
+      "leite de coco em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
+      "tamara",
       "uva passa branca"
     ]
   },
@@ -1905,7 +1957,6 @@ const IMGS = {
   "Farinha Linhaça Marrom": "data:image/jpeg;base64,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",
   "Farinha Linhaça Dourada": "https://image.tuasaude.com/media/article/ga/qy/linhaca_22793.jpg",
   "Manjericão": "https://images.tcdn.com.br/img/img_prod/750553/manjericao_50gr_3333_1_20200129123619.jpg",
-  "Granola": "https://cdn.awsli.com.br/600x450/757/757669/produto/135635236/5a96b447b9.jpg",
   "Chia": "https://www.em.com.br/emfoco/wp-content/uploads/2025/01/chia_1737556323606.jpg",
   "Aveia Flocos Grosso": "https://acdn-us.mitiendanube.com/stores/002/021/446/products/integrais-html-aveia-em-flocos-grossa-p-1724691251309-d656eb81bbe6619f9e17321318793989-1024-1024.webp",
   "Aveia Flocos Médio": "https://images.tcdn.com.br/img/img_prod/1091207/aveia_flocos_media_nacional_pct_1kg_2933_1_e43ea3cdffea4a392ef6f4e281755e40.png",
@@ -2082,7 +2133,14 @@ const IMGS = {
   "guarana 60 caps": "imagens/guarana-60-caps.jpg",
   "colageno tipo II + mag": "imagens/colageno-tipo-ii-mag.jpg",
   "colageno hidrolizado": "imagens/colageno-hidrolizado.jpg",
-  "composto circulatório 60 caps": "imagens/composto-circulatorio-60-caps.jpg"
+  "composto circulatório 60 caps": "imagens/composto-circulatorio-60-caps.jpg",
+  "granola morango iogurte e mel": "imagens/granola-morango-iogurte-e-mel.jpg",
+  "Granola com castanha completa": "https://cdn.awsli.com.br/600x450/757/757669/produto/135635236/5a96b447b9.jpg",
+  "granola castanha de caju e leite condessado": "imagens/granola-castanha-de-caju-e-leite-condessado.jpg",
+  "leite de coco em po": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0HKyhCTnYxP_AJLsOi1ujGzU9t3UK6_47nmdBIimhg&s=10",
+  "glucomannan": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrm_K1qm_YrF5kAVgKk2qs48uThRfKKM2AttVTjpU8yw&s=10",
+  "farinha de maracuja": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQ8-P8WpM0-sQmpQxJfLAF4zHMLtpBvzl9s6iI8fspg&s=10",
+  "tamara": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2H657GFE4cteyrFnpzJ3EQbLycGOeuIQJxZcG8PY2w&s=10"
 };
 
 const INFO = {
@@ -2249,10 +2307,6 @@ const INFO = {
   "Manjericão": {
     "ben": "Erva aromática doce e refrescante, rica em óleos essenciais como linalol e eugenol, que combatem infecções e inflamações. Ajuda na digestão pós-refeição e alivia gases.",
     "uso": "Adicione preferencialmente no final do cozimento ou fresco para preservar o aroma. Harmoniza com molho de tomate fresco, massas, pizzas margherita, queijo muçarela de búfala, aves e peixes assados."
-  },
-  "Granola": {
-    "ben": "Mix super nutritivo e crocante de aveia em flocos, sementes, castanhas e frutas desidratadas. Fornece carboidratos complexos de liberação gradual, fibras que regulam o intestino, gorduras boas das oleaginosas e muita energia.",
-    "uso": "Consuma de 2 a 3 colheres de sopa ao dia misturadas com iogurte natural, leite vegetal, açaí ou como acompanhamento para frutas picadas como banana e mamão."
   },
   "Chia": {
     "ben": "Supersemente com capacidade única de absorver água e formar um gel viscoso no estômago. Isso atrasa o esvaziamento gástrico, prolongando a sensação de saciedade, além de ser riquíssima em fibras, cálcio, proteínas e ômega 3.",
@@ -2899,6 +2953,28 @@ const INFO = {
   },
   "composto circulatório 60 caps": {
     "ben": "O produto na imagem é o Floracaps Composto Circulatório, um suplemento alimentar formulado para auxiliar na saúde do sistema vascular e na melhora da circulação sanguínea.Principais BenefíciosEste tipo de composto geralmente serve para:Melhorar a circulação: Estimula o fluxo sanguíneo arterial e venoso, ajudando no retorno venoso.Aliviar sintomas nas pernas: Auxilia na redução do inchaço (edema), sensação de peso, dores e cansaço nas pernas.Saúde dos vasos: Fortalece a resistência e o tônus das veias e vasos capilares, prevenindo a fragilidade vascular. Ação auxiliar em condições específicas: É comumente indicado como coadjuvante no"
+  },
+  "granola morango iogurte e mel": {
+    "ben": "Granola com morango e mel é uma combinação perfeita e saudável de café da manhã. Rica em fibras e antioxidantes, ela pode ser montada facilmente em casa ou comprada pronta com misturas que unem a acidez da fruta com a doçura natural do mel"
+  },
+  "Granola com castanha completa": {
+    "ben": "Mix super nutritivo e crocante de aveia em flocos, sementes, castanhas e frutas desidratadas. Fornece carboidratos complexos de liberação gradual, fibras que regulam o intestino, gorduras boas das oleaginosas e muita energia.",
+    "uso": "Consuma de 2 a 3 colheres de sopa ao dia misturadas com iogurte natural, leite vegetal, açaí ou como acompanhamento para frutas picadas como banana e mamão."
+  },
+  "granola castanha de caju e leite condessado": {
+    "ben": "granola com castanha é um mix nutritivo e crocante, rico em gorduras boas, fibras e minerais essenciais como selênio e zinco. Feita com base em aveia e oleaginosas, ela promove saciedade e fornece energia duradoura. É perfeita para acompanhar iogurtes, frutas, açaí ou ser consumida como um lanche rápido"
+  },
+  "leite de coco em po": {
+    "ben": "O leite de coco em pó serve para substituir o leite de vaca tradicional em dietas veganas ou com restrição à lactose. Ele é usado para dar cremosidade a bebidas como cafés e shakes, engrossar moquecas ou sopas, e no preparo de massas de bolo, mingaus e doces."
+  },
+  "glucomannan": {
+    "ben": "O glucomannan (ou glucomanano) é uma fibra alimentar solúvel extraída da raiz da planta Amorphophallus konjac, nativa do leste asiático. Quando em contato com a água no estômago, absorve líquidos e forma um gel espesso. Essa propriedade retarda o esvaziamento gástrico, promove saciedade prolongada e melhora o funcionamento do intestino"
+  },
+  "farinha de maracuja": {
+    "ben": "A farinha de maracujá, feita da casca da fruta, é excelente para o controle do diabetes e do colesterol, além de ajudar no emagrecimento. Rica em pectina (fibra solúvel), ela retarda a absorção de açúcares e gorduras no organismo e aumenta a saciedade"
+  },
+  "tamara": {
+    "ben": "A tâmara El Monaguillo é uma fruta seca da premium variedade Deglet Nour, cultivada em oásis no deserto do Saara tunisiano. Famosa por sua doçura natural e textura macia, é rica em fibras, vitaminas e potássio. É ideal para lanches ou para substituir o açúcar."
   }
 };
 
