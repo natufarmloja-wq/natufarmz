@@ -337,11 +337,13 @@ const PRODUTOS = {
   },
   "Cacau 50%": {
     "custo": 12.99,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 9.9
   },
   "Cacau 70%": {
     "custo": 14.99,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 10.4
   },
   "Açúcar Mascavo": {
     "custo": 2,
@@ -469,7 +471,8 @@ const PRODUTOS = {
   },
   "Cacau 100%": {
     "custo": 16.2,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 11.83
   },
   "Gergelim Branco": {
     "custo": 5.37,
@@ -620,7 +623,8 @@ const PRODUTOS = {
   },
   "CACAU BLACK": {
     "custo": 14.36,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 10.8
   },
   "FARINHA DE MANDIOCA": {
     "custo": 2.5,
