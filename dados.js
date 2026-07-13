@@ -329,21 +329,21 @@ const PRODUTOS = {
   },
   "Fruta Cristalizada": {
     "custo": 6.49,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 4.99
   },
   "Uva Passa": {
     "custo": 6.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 4.99
   },
   "Cacau 50%": {
     "custo": 12.99,
-    "tipo": "granel",
-    "precoPromo": 9.9
+    "tipo": "granel"
   },
   "Cacau 70%": {
     "custo": 14.99,
-    "tipo": "granel",
-    "precoPromo": 10.4
+    "tipo": "granel"
   },
   "Açúcar Mascavo": {
     "custo": 2,
@@ -471,8 +471,7 @@ const PRODUTOS = {
   },
   "Cacau 100%": {
     "custo": 16.2,
-    "tipo": "granel",
-    "precoPromo": 11.83
+    "tipo": "granel"
   },
   "Gergelim Branco": {
     "custo": 5.37,
@@ -528,7 +527,8 @@ const PRODUTOS = {
   },
   "Pistache com Casca": {
     "custo": 23.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 19.99
   },
   "Banana Chips Salsa e Cebola": {
     "custo": 6.67,
@@ -559,11 +559,13 @@ const PRODUTOS = {
   },
   "damasco turco n2": {
     "custo": 25.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 21
   },
   "uva passa branca": {
     "custo": 9.98,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 6.99
   },
   "farinha integral": {
     "custo": 2.5,
@@ -623,8 +625,7 @@ const PRODUTOS = {
   },
   "CACAU BLACK": {
     "custo": 14.36,
-    "tipo": "granel",
-    "precoPromo": 10.8
+    "tipo": "granel"
   },
   "FARINHA DE MANDIOCA": {
     "custo": 2.5,
@@ -913,6 +914,11 @@ const PRODUTOS = {
   "tamara": {
     "custo": 10.35,
     "tipo": "granel"
+  },
+  "amendoa": {
+    "custo": 14.35,
+    "tipo": "granel",
+    "precoPromo": 10.5
   }
 };
 
@@ -1103,6 +1109,7 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "Xilitol",
       "alfavaca",
+      "amendoa",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "colageno hidrolizado",
@@ -1261,6 +1268,7 @@ const CATS = [
       "Uva Passa",
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
+      "amendoa",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
       "farinha de maracuja",
@@ -1348,6 +1356,7 @@ const CATS = [
       "Vitamina A 280mg 60 Cápsulas",
       "Vitamina B12 280mg 60 Cáps",
       "alfavaca",
+      "amendoa",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "colageno hidrolizado",
@@ -1448,6 +1457,7 @@ const CATS = [
       "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
       "alfavaca",
+      "amendoa",
       "cavalinha cha",
       "cura tudo 500 ml",
       "farinha de maracuja",
@@ -1569,6 +1579,7 @@ const CATS = [
       "Pata de Vaca",
       "Psyllium",
       "Xilitol",
+      "amendoa",
       "cura tudo 500 ml",
       "farinha de maracuja",
       "glucomannan",
@@ -1759,6 +1770,7 @@ const CATS = [
       "Pistache com Casca",
       "Semente de Abóbora",
       "Uva Passa",
+      "amendoa",
       "damasco turco n2",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
@@ -2144,7 +2156,8 @@ const IMGS = {
   "leite de coco em po": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0HKyhCTnYxP_AJLsOi1ujGzU9t3UK6_47nmdBIimhg&s=10",
   "glucomannan": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrm_K1qm_YrF5kAVgKk2qs48uThRfKKM2AttVTjpU8yw&s=10",
   "farinha de maracuja": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQ8-P8WpM0-sQmpQxJfLAF4zHMLtpBvzl9s6iI8fspg&s=10",
-  "tamara": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2H657GFE4cteyrFnpzJ3EQbLycGOeuIQJxZcG8PY2w&s=10"
+  "tamara": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2H657GFE4cteyrFnpzJ3EQbLycGOeuIQJxZcG8PY2w&s=10",
+  "amendoa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r5u0C1QM8UxlCx40if5KxNuSII4mKlOCKVoZ1opMtA&s=10"
 };
 
 const INFO = {
@@ -2979,6 +2992,9 @@ const INFO = {
   },
   "tamara": {
     "ben": "A tâmara El Monaguillo é uma fruta seca da premium variedade Deglet Nour, cultivada em oásis no deserto do Saara tunisiano. Famosa por sua doçura natural e textura macia, é rica em fibras, vitaminas e potássio. É ideal para lanches ou para substituir o açúcar."
+  },
+  "amendoa": {
+    "ben": "As amêndoas são \"superalimentos\" ricos em vitamina E, magnésio, fibras e gorduras monoinsaturadas. Elas ajudam a controlar a glicemia, promovem a saciedade, protegem o coração e melhoram a saúde da pele. Por serem ricas em cálcio, também fortalecem os ossos"
   }
 };
 
