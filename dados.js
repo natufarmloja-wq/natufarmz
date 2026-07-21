@@ -234,7 +234,8 @@ const PRODUTOS = {
   },
   "Chá Verde": {
     "custo": 5.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "Sálvia": {
     "custo": 4.7,
@@ -354,7 +355,8 @@ const PRODUTOS = {
   },
   "Xilitol": {
     "custo": 7.69,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "Coco Ralado": {
     "custo": 8.72,
@@ -422,7 +424,8 @@ const PRODUTOS = {
   },
   "Amendoim Salsa e Cebola": {
     "custo": 5.89,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "Creatina": {
     "custo": 9.2,
@@ -434,7 +437,8 @@ const PRODUTOS = {
   },
   "Tempero pra Feijão": {
     "custo": 6.3,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "Açafrão da Terra": {
     "custo": 3.5,
@@ -800,7 +804,8 @@ const PRODUTOS = {
   },
   "mix frutas tropicais chips": {
     "custo": 29.99,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "mix de chimarrão 160g artesanal NatuFarm": {
     "custo": 15,
