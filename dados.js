@@ -132,18 +132,15 @@ const PRODUTOS = {
   },
   "Castanha do Pará": {
     "custo": 13.58,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Castanha de Caju": {
     "custo": 15.6,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Nozes": {
     "custo": 14,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Semente de Linhaça Marrom": {
     "custo": 4,
@@ -207,8 +204,7 @@ const PRODUTOS = {
   },
   "Seca Barriga": {
     "custo": 19.9,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "Anis Estrelado": {
     "custo": 13.8,
@@ -233,8 +229,7 @@ const PRODUTOS = {
   },
   "Chá Verde": {
     "custo": 5.5,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Sálvia": {
     "custo": 4.7,
@@ -354,8 +349,7 @@ const PRODUTOS = {
   },
   "Xilitol": {
     "custo": 7.69,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Coco Ralado": {
     "custo": 8.72,
@@ -423,8 +417,7 @@ const PRODUTOS = {
   },
   "Amendoim Salsa e Cebola": {
     "custo": 5.89,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Creatina": {
     "custo": 9.2,
@@ -436,8 +429,7 @@ const PRODUTOS = {
   },
   "Tempero pra Feijão": {
     "custo": 6.3,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Açafrão da Terra": {
     "custo": 3.5,
@@ -541,8 +533,7 @@ const PRODUTOS = {
   },
   "damasco turco n2": {
     "custo": 25.5,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "uva passa branca": {
     "custo": 9.98,
@@ -891,8 +882,7 @@ const PRODUTOS = {
   },
   "tamara": {
     "custo": 10.35,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "Mel Composto Própolis Euc. Gengibre e Romã 300g": {
     "custo": 31.99,
@@ -900,6 +890,46 @@ const PRODUTOS = {
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "custo": 49.9,
+    "tipo": "granel"
+  },
+  "goma xantana": {
+    "custo": 7.78,
+    "tipo": "granel"
+  },
+  "drageado de cereal crocante": {
+    "custo": 21.63,
+    "tipo": "granel"
+  },
+  "cebola crispy": {
+    "custo": 7.49,
+    "tipo": "granel"
+  },
+  "tempero bife acebolado": {
+    "custo": 4.28,
+    "tipo": "granel"
+  },
+  "tempero caldo de bacon": {
+    "custo": 2.9,
+    "tipo": "granel"
+  },
+  "tempero conquista sogra": {
+    "custo": 8.43,
+    "tipo": "granel"
+  },
+  "erva mate composta": {
+    "custo": 4.17,
+    "tipo": "granel"
+  },
+  "erva mate fina": {
+    "custo": 3.85,
+    "tipo": "granel"
+  },
+  "erva mate grossa": {
+    "custo": 3.65,
+    "tipo": "granel"
+  },
+  "erva mate cancheada": {
+    "custo": 3.47,
     "tipo": "granel"
   }
 };
@@ -1088,17 +1118,24 @@ const CATS = [
       "alfavaca",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "cebola crispy",
       "colageno hidrolizado",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
       "damasco turco n2",
+      "drageado de cereal crocante",
       "enxofre",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
+      "erva mate grossa",
       "farinha de maracuja",
       "farinha integral",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
       "glucomannan",
+      "goma xantana",
       "gotas de cardo mariano",
       "gotas de graviola",
       "gotas de passiflora",
@@ -1123,6 +1160,9 @@ const CATS = [
       "psyllium 60 caps",
       "sucrilho sem açúcar",
       "tamara",
+      "tempero bife acebolado",
+      "tempero caldo de bacon",
+      "tempero conquista sogra",
       "tribulos + maca peruana",
       "uva passa branca",
       "vinagre de maça almaromi 400 ml",
@@ -1175,8 +1215,11 @@ const CATS = [
       "Xilitol",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate grossa",
       "farinha de maracuja",
       "glucomannan",
+      "goma xantana",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "guarana 60 caps",
@@ -1245,6 +1288,9 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate grossa",
       "farinha de maracuja",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
@@ -1335,6 +1381,9 @@ const CATS = [
       "colageno hidrolizado",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate grossa",
       "farinha de maracuja",
       "glucomannan",
       "gotas de cardo mariano",
@@ -1384,6 +1433,7 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "erva mate cancheada",
       "gotas de passiflora",
       "gotas do zeca",
       "isoflavona 60 caps",
@@ -1431,8 +1481,13 @@ const CATS = [
       "alfavaca",
       "cavalinha cha",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
+      "erva mate grossa",
       "farinha de maracuja",
       "glucomannan",
+      "goma xantana",
       "gotas de cardo mariano",
       "gotas de graviola",
       "gotas do zeca",
@@ -1485,6 +1540,10 @@ const CATS = [
       "colageno hidrolizado",
       "colageno tipo II + mag",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
+      "erva mate grossa",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
       "gotas de cardo mariano",
@@ -1521,6 +1580,8 @@ const CATS = [
       "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Sálvia",
       "VALERIANA raiz",
+      "erva mate cancheada",
+      "erva mate grossa",
       "gotas de passiflora",
       "gotas do zeca",
       "magnésio quelato",
@@ -1552,8 +1613,12 @@ const CATS = [
       "Psyllium",
       "Xilitol",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate grossa",
       "farinha de maracuja",
       "glucomannan",
+      "goma xantana",
       "gotas de cardo mariano",
       "gotas do zeca",
       "melão são Caetano 60 caps.",
@@ -1621,6 +1686,10 @@ const CATS = [
       "alfavaca",
       "cavalinha cha",
       "cura tudo 500 ml",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
+      "erva mate grossa",
       "gotas de cardo mariano",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mulungu"
@@ -1680,9 +1749,16 @@ const CATS = [
       "Tomilho",
       "Vinagrete",
       "alfavaca",
+      "cebola crispy",
+      "erva mate cancheada",
+      "erva mate fina",
+      "goma xantana",
       "lemon peper defumado",
       "mix de chimarrão 160g artesanal NatuFarm",
-      "mix salsa tomate e alho"
+      "mix salsa tomate e alho",
+      "tempero bife acebolado",
+      "tempero caldo de bacon",
+      "tempero conquista sogra"
     ]
   },
   {
@@ -1705,8 +1781,11 @@ const CATS = [
       "Farinha de Banana",
       "Farinha de Beterraba",
       "Farinha de Uva",
+      "erva mate fina",
+      "erva mate grossa",
       "farinha de maracuja",
       "farinha integral",
+      "goma xantana",
       "leite de coco em po",
       "mix de chimarrão 160g artesanal NatuFarm"
     ]
@@ -1735,7 +1814,14 @@ const CATS = [
       "Pepita de Girassol",
       "Semente de Abóbora",
       "Uva Passa",
+      "cebola crispy",
       "damasco turco n2",
+      "drageado de cereal crocante",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
+      "erva mate grossa",
+      "goma xantana",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "leite de coco em po",
@@ -1772,6 +1858,9 @@ const CATS = [
       "Uva Passa",
       "Xilitol",
       "damasco turco n2",
+      "drageado de cereal crocante",
+      "erva mate cancheada",
+      "goma xantana",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "leite de coco em po",
@@ -1814,6 +1903,9 @@ const CATS = [
       "colageno hidrolizado",
       "colageno tipo II + mag",
       "enxofre",
+      "erva mate cancheada",
+      "erva mate composta",
+      "erva mate fina",
       "gotas do zeca",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
@@ -1868,6 +1960,7 @@ const CATS = [
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
+      "erva mate grossa",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
       "gotas de cardo mariano",
@@ -2115,7 +2208,17 @@ const IMGS = {
   "farinha de maracuja": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQ8-P8WpM0-sQmpQxJfLAF4zHMLtpBvzl9s6iI8fspg&s=10",
   "tamara": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2H657GFE4cteyrFnpzJ3EQbLycGOeuIQJxZcG8PY2w&s=10",
   "Mel Composto Própolis Euc. Gengibre e Romã 300g": "https://lojaapisnutri.fbitsstatic.net/media/apisnutri_mel_frontal_pote_vermelho_300g.png?v=202406131048",
-  "NutriDaily ARTRO MSM 550mg 60 Cáps -": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-artro-60-caps---4185-novo-exibi%C3%A7%C3%A3o-atual.png?v=202405240948"
+  "NutriDaily ARTRO MSM 550mg 60 Cáps -": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-artro-60-caps---4185-novo-exibi%C3%A7%C3%A3o-atual.png?v=202405240948",
+  "goma xantana": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgHerjZUshfAhrlXhgk_jMqvLKPj5MtsFDSdVts3w-g&s=10",
+  "drageado de cereal crocante": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRoneAtfFZklCuK-yHa7303qQEKyPDvKdJkxv7tr1Iw&s=10",
+  "cebola crispy": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhdnQ2Jk7StR9ZQyT7E5OafS6rKUI0OgDjDgfCEsGXA&s=10",
+  "tempero bife acebolado": "https://loja.saborethos.com.br/wp-content/uploads/2024/12/CXLP003-2.png.webp",
+  "tempero caldo de bacon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6qQvb7TarfuRxWTQm1iVWFLif9SdTvhBeK3Ut91lgA&s=10",
+  "tempero conquista sogra": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyMI3k3Ugib3ZfTOVpvcc491VKSHJBmU7fanSi7yejA&s=10",
+  "erva mate fina": "data:image/jpeg;base64,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",
+  "erva mate composta": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6_X61abIFk1Cd-Dd5B77C03k7spxIGwT4evoPVArzg&s=10",
+  "erva mate grossa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFPkbPFEc6fHyrxIgiHzOBTow4Bbe33dAb2sRLVII7A&s=10",
+  "erva mate cancheada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOMQthXi19LBTmQj7Khf1ie2pBSZPQOFyRmYR7GvLPQ&s=10"
 };
 
 const INFO = {
@@ -2930,6 +3033,36 @@ const INFO = {
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "ben": "É um produto formulado com Colágeno Tipo II e Metilsulfonilmetano (MSM). O Colágeno Tipo II é um importante elemento para a formação das cartilagens, principalmente as que revestem as extremidades dos ossos.\n\nO MSM possui átomos de Enxofre em sua composição, isso ajuda na formação da Elastina e da Condroitina, que também favorecem a formação articular."
+  },
+  "goma xantana": {
+    "ben": "é um aditivo em pó natural, derivado da fermentação da bactéria Xanthomonas campestris. Ela serve como espessante, estabilizante e emulsificante em alimentos. É muito usada em receitas sem glúten para dar liga, elasticidade e maciez às massas."
+  },
+  "drageado de cereal crocante": {
+    "ben": "é um doce feito com um núcleo de cereal leve (como bolinhas de arroz ou milho) coberto por uma camada uniforme de chocolate ao leite, branco ou amargo. É muito consumido como snack ou usado na decoração de bolos, ovos de Páscoa e sobremesas"
+  },
+  "cebola crispy": {
+    "ben": "A cebola crispy é uma cebola frita em tiras bem finas que fica muito crocante e sequinha. Ela é ótima para dar textura e sabor em hambúrgueres, cachorros-quentes, saladas, arroz com lentilha ou sopas."
+  },
+  "tempero bife acebolado": {
+    "ben": "tempero bife acebolado serve para realçar o sabor, dar cor e trazer praticidade ao preparar bifes de carne bovina. Ele é uma mistura pronta de condimentos desidratados — geralmente contendo cebola granulada, alho, sal, páprica e outras especiarias — que imita e intensifica o gosto do tradicional bife com cebola"
+  },
+  "tempero caldo de bacon": {
+    "ben": "O tempero caldo de bacon pode ser encontrado pronto em pó ou granulado (composto por sal, amido, alho, cebola e aroma defumado de bacon) em mercados e lojas de produtos naturais, sendo ótimo para dar sabor a feijão, arroz e sopas"
+  },
+  "tempero conquista sogra": {
+    "ben": "Tempero Conquista Sogra é um mix pronto de ervas e especiarias desidratadas, famoso por seu toque marcante e cítrico de limão, ideal para temperar carnes, frangos, peixes, arroz e legumes. Ele faz parte de uma linha de temperos com nomes bem-humorados inspirados na tradição do \"conquistar pelo paladar\"."
+  },
+  "erva mate composta": {
+    "ben": "A erva mate composta é uma mistura da tradicional erva-mate (Ilex paraguariensis) com outras ervas naturais, chás aromáticos ou especiarias. Geralmente contém entre 80% e 90% de erva-mate e o restante de ingredientes como camomila, capim-limão, hortelã, funcho ou erva-doce, ideal para quem busca um chimarrão mais suave e digestivo."
+  },
+  "erva mate fina": {
+    "ben": "A erva-mate fina (ou moagem fina) passa por um processo de trituração que resulta em partículas menores e mais homogêneas, com cor verde mais clara e viva. Ela oferece um sabor mais suave no paladar, gera uma infusão mais cremosa e exige mais técnica no preparo da cuia para não entupir a bomba"
+  },
+  "erva mate grossa": {
+    "ben": "A erva-mate grossa (ou moída grossa) tem partículas e folhas maiores com menos pó. Ela deixa o chimarrão ou tereré mais encorpado, evita o entupimento da bomba, demora mais para \"lavar\" (perder o gosto) e entrega um sabor herbal bem intenso e amargo"
+  },
+  "erva mate cancheada": {
+    "ben": "A erva-mate cancheada é um tipo de erva com moagem mais grossa e bruta, cujas folhas e ramos passam por um proceso inicial de trituração (o cancheio), sem chegar ao pó fino da erva tradicional de chimarrão. Ela é muito usada para chimarrão de sabor duradouro, chás e tereré"
   }
 };
 
