@@ -325,7 +325,8 @@ const PRODUTOS = {
   },
   "Fruta Cristalizada": {
     "custo": 6.49,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 5.5
   },
   "Uva Passa": {
     "custo": 6.5,
@@ -469,7 +470,8 @@ const PRODUTOS = {
   },
   "Gergelim Branco": {
     "custo": 5.37,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 4.83
   },
   "Gergelim Torrado": {
     "custo": 7.15,
@@ -477,7 +479,8 @@ const PRODUTOS = {
   },
   "Gergelim Preto": {
     "custo": 7.97,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 6.99
   },
   "Uxi Amarelo": {
     "custo": 8.8,
@@ -533,7 +536,8 @@ const PRODUTOS = {
   },
   "damasco turco n2": {
     "custo": 25.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 21
   },
   "uva passa branca": {
     "custo": 9.98,
@@ -898,7 +902,8 @@ const PRODUTOS = {
   },
   "drageado de cereal crocante": {
     "custo": 21.63,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 19.5
   },
   "cebola crispy": {
     "custo": 7.49,
@@ -931,6 +936,11 @@ const PRODUTOS = {
   "erva mate cancheada": {
     "custo": 3.47,
     "tipo": "granel"
+  },
+  "semente de abobora com casca": {
+    "custo": 8.56,
+    "tipo": "granel",
+    "precoPromo": 7.5
   }
 };
 
@@ -1158,6 +1168,7 @@ const CATS = [
       "ora pro nobis 60 caps",
       "pomada canela de velho premium",
       "psyllium 60 caps",
+      "semente de abobora com casca",
       "sucrilho sem açúcar",
       "tamara",
       "tempero bife acebolado",
@@ -1231,6 +1242,7 @@ const CATS = [
       "omega 3 caps",
       "ora pro nobis 60 caps",
       "psyllium 60 caps",
+      "semente de abobora com casca",
       "tribulos + maca peruana",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
@@ -1306,6 +1318,7 @@ const CATS = [
       "ora pro nobis 60 caps",
       "pomada canela de velho premium",
       "psyllium 60 caps",
+      "semente de abobora com casca",
       "tribulos + maca peruana",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi orgânico 400ml",
@@ -1398,6 +1411,7 @@ const CATS = [
       "mulungu 60 caps",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "semente de abobora com casca",
       "tribulos + maca peruana",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
@@ -1827,6 +1841,7 @@ const CATS = [
       "leite de coco em po",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
+      "semente de abobora com casca",
       "sucrilho sem açúcar",
       "tamara",
       "uva passa branca"
@@ -2218,7 +2233,8 @@ const IMGS = {
   "erva mate fina": "data:image/jpeg;base64,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",
   "erva mate composta": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6_X61abIFk1Cd-Dd5B77C03k7spxIGwT4evoPVArzg&s=10",
   "erva mate grossa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFPkbPFEc6fHyrxIgiHzOBTow4Bbe33dAb2sRLVII7A&s=10",
-  "erva mate cancheada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOMQthXi19LBTmQj7Khf1ie2pBSZPQOFyRmYR7GvLPQ&s=10"
+  "erva mate cancheada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOMQthXi19LBTmQj7Khf1ie2pBSZPQOFyRmYR7GvLPQ&s=10",
+  "semente de abobora com casca": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-HC4irRKV3VMBCuG0I5Nqw85LP4tASvulOimpQqStAkXqvZKeghRAiF5KXvh2UudWc6kM-ad5DHxkFlJ0cUs4z-ee9cXzZGqunN9MUAv29l05sXusIrWUNnvHIPXsjFbOXtaeA5olGH0&usqp=CAc"
 };
 
 const INFO = {
@@ -3063,6 +3079,9 @@ const INFO = {
   },
   "erva mate cancheada": {
     "ben": "A erva-mate cancheada é um tipo de erva com moagem mais grossa e bruta, cujas folhas e ramos passam por um proceso inicial de trituração (o cancheio), sem chegar ao pó fino da erva tradicional de chimarrão. Ela é muito usada para chimarrão de sabor duradouro, chás e tereré"
+  },
+  "semente de abobora com casca": {
+    "ben": ". Ela é totalmente comestível, rica em fibras, ferro, zinco e magnésio. No entanto, a casca é mais dura e fibrosa, o que faz com que muitas pessoas prefiram a versão sem casca (conhecida como pepita) por ser mais fácil de digeri"
   }
 };
 
