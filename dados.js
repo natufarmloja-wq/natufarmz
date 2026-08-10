@@ -325,8 +325,7 @@ const PRODUTOS = {
   },
   "Fruta Cristalizada": {
     "custo": 6.49,
-    "tipo": "granel",
-    "precoPromo": 5.5
+    "tipo": "granel"
   },
   "Uva Passa": {
     "custo": 6.5,
@@ -470,8 +469,7 @@ const PRODUTOS = {
   },
   "Gergelim Branco": {
     "custo": 5.37,
-    "tipo": "granel",
-    "precoPromo": 4.83
+    "tipo": "granel"
   },
   "Gergelim Torrado": {
     "custo": 7.15,
@@ -479,8 +477,7 @@ const PRODUTOS = {
   },
   "Gergelim Preto": {
     "custo": 7.97,
-    "tipo": "granel",
-    "precoPromo": 6.99
+    "tipo": "granel"
   },
   "Uxi Amarelo": {
     "custo": 8.8,
@@ -545,7 +542,8 @@ const PRODUTOS = {
   },
   "farinha integral": {
     "custo": 2.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "mix salsa tomate e alho": {
     "custo": 6.8,
@@ -646,7 +644,8 @@ const PRODUTOS = {
   },
   "Suplemento Mineral De Ferro 60 Cáps": {
     "custo": 26.68,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 24
   },
   "FISIOFORT": {
     "custo": 12.88,
@@ -699,7 +698,8 @@ const PRODUTOS = {
   },
   "NAC 600mg 30 Cápsulas": {
     "custo": 29.9,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": {
     "custo": 49.9,
@@ -716,8 +716,7 @@ const PRODUTOS = {
   },
   "omega 3 caps": {
     "custo": 25.99,
-    "tipo": "caps",
-    "precoPromo": 22.99
+    "tipo": "caps"
   },
   "Óleo De Menta 10ml": {
     "custo": 22,
@@ -733,11 +732,13 @@ const PRODUTOS = {
   },
   "HOMEM Polivitamínico 500mg 30 Cáps": {
     "custo": 36.32,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "NutriDaily MULHER Polivitamínico 500mg 30 Cáps": {
     "custo": 32,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 28.5
   },
   "NutriDaily Sênior 610mg 60 Cápsulas": {
     "custo": 41.99,
@@ -745,26 +746,25 @@ const PRODUTOS = {
   },
   "vinagre de maça almaromi 400 ml": {
     "custo": 12,
-    "tipo": "caps",
-    "precoPromo": 9.99
+    "tipo": "caps"
   },
   "vinagre de maça almaromi orgânico 400ml": {
     "custo": 32.5,
-    "tipo": "caps",
-    "precoPromo": 29
+    "tipo": "caps"
   },
   "vinagre de maça almaromi beneficios 500": {
     "custo": 48,
-    "tipo": "caps",
-    "precoPromo": 44
+    "tipo": "caps"
   },
   "Vitamina A 280mg 60 Cápsulas": {
     "custo": 24.99,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 22.49
   },
   "Vitamina B12 280mg 60 Cáps": {
     "custo": 22,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 19.9
   },
   "B7 280mg 60 Cáps": {
     "custo": 27.99,
@@ -777,11 +777,13 @@ const PRODUTOS = {
   },
   "Vitamina D3 280mg 60 Cáps": {
     "custo": 25.99,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 23.39
   },
   "Suplemento Mineral de Zinco 280mg 60 Cáps": {
     "custo": 25.6,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 23
   },
   "enxofre": {
     "custo": 6.94,
@@ -842,7 +844,8 @@ const PRODUTOS = {
   },
   "isoflavona 60 caps": {
     "custo": 22.5,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 20.5
   },
   "guarana 60 caps": {
     "custo": 23.4,
