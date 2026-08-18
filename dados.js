@@ -521,7 +521,8 @@ const PRODUTOS = {
   },
   "Amendoim Xerém": {
     "custo": 5.5,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 4.99
   },
   "Amendoim Pimenta": {
     "custo": 5.57,
@@ -534,7 +535,7 @@ const PRODUTOS = {
   "damasco turco n2": {
     "custo": 25.5,
     "tipo": "granel",
-    "precoPromo": 21
+    "precoPromo": 21.99
   },
   "uva passa branca": {
     "custo": 9.98,
@@ -555,7 +556,8 @@ const PRODUTOS = {
   },
   "sucrilho sem açúcar": {
     "custo": 8.99,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 5.99
   },
   "alfavaca": {
     "custo": 7.5,
@@ -644,8 +646,7 @@ const PRODUTOS = {
   },
   "Suplemento Mineral De Ferro 60 Cáps": {
     "custo": 26.68,
-    "tipo": "caps",
-    "precoPromo": 24
+    "tipo": "caps"
   },
   "FISIOFORT": {
     "custo": 12.88,
@@ -665,12 +666,12 @@ const PRODUTOS = {
   },
   "MAG-4 com Treonina 780mg 60 Cáps": {
     "custo": 47.17,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "Magnésio Malato 600mg 60 Cáps": {
     "custo": 42,
-    "tipo": "caps",
-    "precoPromo": 36
+    "tipo": "caps"
   },
   "magnésio quelato": {
     "custo": 29.9,
@@ -703,7 +704,8 @@ const PRODUTOS = {
   },
   "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": {
     "custo": 49.9,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "Óleo De Alho 250mg 60 Cáps": {
     "custo": 39.99,
@@ -737,8 +739,7 @@ const PRODUTOS = {
   },
   "NutriDaily MULHER Polivitamínico 500mg 30 Cáps": {
     "custo": 32,
-    "tipo": "caps",
-    "precoPromo": 28.5
+    "tipo": "caps"
   },
   "NutriDaily Sênior 610mg 60 Cápsulas": {
     "custo": 41.99,
@@ -746,7 +747,8 @@ const PRODUTOS = {
   },
   "vinagre de maça almaromi 400 ml": {
     "custo": 12,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "vinagre de maça almaromi orgânico 400ml": {
     "custo": 32.5,
@@ -758,13 +760,11 @@ const PRODUTOS = {
   },
   "Vitamina A 280mg 60 Cápsulas": {
     "custo": 24.99,
-    "tipo": "caps",
-    "precoPromo": 22.49
+    "tipo": "caps"
   },
   "Vitamina B12 280mg 60 Cáps": {
     "custo": 22,
-    "tipo": "caps",
-    "precoPromo": 19.9
+    "tipo": "caps"
   },
   "B7 280mg 60 Cáps": {
     "custo": 27.99,
@@ -772,18 +772,15 @@ const PRODUTOS = {
   },
   "Suplemento de Vitamina C + Zinco 1.100mg 60 Cáps": {
     "custo": 42.99,
-    "tipo": "caps",
-    "precoPromo": 36
+    "tipo": "caps"
   },
   "Vitamina D3 280mg 60 Cáps": {
     "custo": 25.99,
-    "tipo": "caps",
-    "precoPromo": 23.39
+    "tipo": "caps"
   },
   "Suplemento Mineral de Zinco 280mg 60 Cáps": {
     "custo": 25.6,
-    "tipo": "granel",
-    "precoPromo": 23
+    "tipo": "granel"
   },
   "enxofre": {
     "custo": 6.94,
@@ -820,7 +817,8 @@ const PRODUTOS = {
   },
   "gotas de passiflora": {
     "custo": 14.5,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "tribulos + maca peruana": {
     "custo": 26.6,
@@ -832,7 +830,8 @@ const PRODUTOS = {
   },
   "psyllium 60 caps": {
     "custo": 26.5,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "mulungu 60 caps": {
     "custo": 25.6,
@@ -844,8 +843,7 @@ const PRODUTOS = {
   },
   "isoflavona 60 caps": {
     "custo": 22.5,
-    "tipo": "caps",
-    "precoPromo": 20.5
+    "tipo": "caps"
   },
   "guarana 60 caps": {
     "custo": 23.4,
@@ -853,11 +851,13 @@ const PRODUTOS = {
   },
   "colageno tipo II + mag": {
     "custo": 32,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "colageno hidrolizado": {
     "custo": 27,
-    "tipo": "caps"
+    "tipo": "caps",
+    "semEstoque": true
   },
   "composto circulatório 60 caps": {
     "custo": 21.9,
@@ -897,7 +897,8 @@ const PRODUTOS = {
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "custo": 49.9,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "goma xantana": {
     "custo": 7.78,
@@ -906,7 +907,7 @@ const PRODUTOS = {
   "drageado de cereal crocante": {
     "custo": 21.63,
     "tipo": "granel",
-    "precoPromo": 19.5
+    "precoPromo": 18
   },
   "cebola crispy": {
     "custo": 7.49,
@@ -918,7 +919,8 @@ const PRODUTOS = {
   },
   "tempero caldo de bacon": {
     "custo": 2.9,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "tempero conquista sogra": {
     "custo": 8.43,
@@ -943,7 +945,7 @@ const PRODUTOS = {
   "semente de abobora com casca": {
     "custo": 8.56,
     "tipo": "granel",
-    "precoPromo": 7.5
+    "precoPromo": 6.99
   }
 };
 
