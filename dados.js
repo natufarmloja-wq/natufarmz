@@ -621,8 +621,7 @@ const PRODUTOS = {
   },
   "BRONCO IMUNI+NAC": {
     "custo": 31,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "POMADA CANELA DE VELHO": {
     "custo": 12.99,
@@ -666,8 +665,7 @@ const PRODUTOS = {
   },
   "MAG-4 com Treonina 780mg 60 Cáps": {
     "custo": 47.17,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "Magnésio Malato 600mg 60 Cáps": {
     "custo": 42,
@@ -699,13 +697,11 @@ const PRODUTOS = {
   },
   "NAC 600mg 30 Cápsulas": {
     "custo": 29.9,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": {
     "custo": 49.9,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "Óleo De Alho 250mg 60 Cáps": {
     "custo": 39.99,
@@ -747,8 +743,7 @@ const PRODUTOS = {
   },
   "vinagre de maça almaromi 400 ml": {
     "custo": 12,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "vinagre de maça almaromi orgânico 400ml": {
     "custo": 32.5,
@@ -817,8 +812,7 @@ const PRODUTOS = {
   },
   "gotas de passiflora": {
     "custo": 14.5,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "tribulos + maca peruana": {
     "custo": 26.6,
@@ -830,8 +824,7 @@ const PRODUTOS = {
   },
   "psyllium 60 caps": {
     "custo": 26.5,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "mulungu 60 caps": {
     "custo": 25.6,
@@ -856,8 +849,7 @@ const PRODUTOS = {
   },
   "colageno hidrolizado": {
     "custo": 27,
-    "tipo": "caps",
-    "semEstoque": true
+    "tipo": "caps"
   },
   "composto circulatório 60 caps": {
     "custo": 21.9,
@@ -897,8 +889,7 @@ const PRODUTOS = {
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "custo": 49.9,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "goma xantana": {
     "custo": 7.78,
