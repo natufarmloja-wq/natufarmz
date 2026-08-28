@@ -543,8 +543,7 @@ const PRODUTOS = {
   },
   "farinha integral": {
     "custo": 2.5,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "mix salsa tomate e alho": {
     "custo": 6.8,
@@ -710,7 +709,8 @@ const PRODUTOS = {
   "Óleo de Coco Extra Virgem 200ml - ApisNutri": {
     "custo": 36.99,
     "tipo": "caps",
-    "precoPromo": 31.99
+    "precoPromo": 31.99,
+    "semEstoque": true
   },
   "omega 3 caps": {
     "custo": 25.99,
@@ -910,8 +910,7 @@ const PRODUTOS = {
   },
   "tempero caldo de bacon": {
     "custo": 2.9,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "tempero conquista sogra": {
     "custo": 8.43,
@@ -937,6 +936,26 @@ const PRODUTOS = {
     "custo": 8.56,
     "tipo": "granel",
     "precoPromo": 6.99
+  },
+  "marapuama em po": {
+    "custo": 5.56,
+    "tipo": "granel"
+  },
+  "temp amaciante de carne": {
+    "custo": 3.94,
+    "tipo": "granel"
+  },
+  "vegetais liofilizados chips": {
+    "custo": 23.8,
+    "tipo": "granel"
+  },
+  "cha ora pro nobis": {
+    "custo": 14.12,
+    "tipo": "granel"
+  },
+  "abutua": {
+    "custo": 7.56,
+    "tipo": "granel"
   }
 };
 
@@ -1125,6 +1144,7 @@ const CATS = [
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "cebola crispy",
+      "cha ora pro nobis",
       "colageno hidrolizado",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
@@ -1153,6 +1173,7 @@ const CATS = [
       "leite de coco em po",
       "lemon peper defumado",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1167,11 +1188,13 @@ const CATS = [
       "semente de abobora com casca",
       "sucrilho sem açúcar",
       "tamara",
+      "temp amaciante de carne",
       "tempero bife acebolado",
       "tempero caldo de bacon",
       "tempero conquista sogra",
       "tribulos + maca peruana",
       "uva passa branca",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
@@ -1232,6 +1255,7 @@ const CATS = [
       "guarana 60 caps",
       "leite de coco em po",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
@@ -1240,6 +1264,7 @@ const CATS = [
       "psyllium 60 caps",
       "semente de abobora com casca",
       "tribulos + maca peruana",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml"
@@ -1308,6 +1333,7 @@ const CATS = [
       "granola morango iogurte e mel",
       "guarana 60 caps",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
       "omega 3 caps",
@@ -1316,6 +1342,7 @@ const CATS = [
       "psyllium 60 caps",
       "semente de abobora com casca",
       "tribulos + maca peruana",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi orgânico 400ml",
       "Óleo de Coco Extra Virgem 200ml - ApisNutri"
@@ -1387,6 +1414,7 @@ const CATS = [
       "alfavaca",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "cha ora pro nobis",
       "colageno hidrolizado",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
@@ -1401,6 +1429,7 @@ const CATS = [
       "guarana 60 caps",
       "isoflavona 60 caps",
       "leite de coco em po",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1409,6 +1438,7 @@ const CATS = [
       "ora pro nobis 60 caps",
       "semente de abobora com casca",
       "tribulos + maca peruana",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
@@ -1447,6 +1477,7 @@ const CATS = [
       "gotas de passiflora",
       "gotas do zeca",
       "isoflavona 60 caps",
+      "marapuama em po",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mulungu 60 caps",
       "ora pro nobis 60 caps",
@@ -1490,6 +1521,7 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "alfavaca",
       "cavalinha cha",
+      "cha ora pro nobis",
       "cura tudo 500 ml",
       "erva mate cancheada",
       "erva mate composta",
@@ -1502,6 +1534,7 @@ const CATS = [
       "gotas de graviola",
       "gotas do zeca",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1511,6 +1544,7 @@ const CATS = [
       "tamara",
       "tribulos + maca peruana",
       "uva passa branca",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
@@ -1547,6 +1581,7 @@ const CATS = [
       "Uxi Amarelo",
       "Vitamina D3 280mg 60 Cáps",
       "amora branca + isoflavona gotas",
+      "cha ora pro nobis",
       "colageno hidrolizado",
       "colageno tipo II + mag",
       "cura tudo 500 ml",
@@ -1561,6 +1596,7 @@ const CATS = [
       "gotas de passiflora",
       "gotas do zeca",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -1637,6 +1673,7 @@ const CATS = [
       "psyllium 60 caps",
       "sucrilho sem açúcar",
       "tribulos + maca peruana",
+      "vegetais liofilizados chips",
       "vinagre de maça almaromi beneficios 500"
     ]
   },
@@ -1695,6 +1732,7 @@ const CATS = [
       "VALERIANA raiz",
       "alfavaca",
       "cavalinha cha",
+      "cha ora pro nobis",
       "cura tudo 500 ml",
       "erva mate cancheada",
       "erva mate composta",
@@ -1766,6 +1804,7 @@ const CATS = [
       "lemon peper defumado",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix salsa tomate e alho",
+      "temp amaciante de carne",
       "tempero bife acebolado",
       "tempero caldo de bacon",
       "tempero conquista sogra"
@@ -1797,6 +1836,7 @@ const CATS = [
       "farinha integral",
       "goma xantana",
       "leite de coco em po",
+      "marapuama em po",
       "mix de chimarrão 160g artesanal NatuFarm"
     ]
   },
@@ -1840,7 +1880,8 @@ const CATS = [
       "semente de abobora com casca",
       "sucrilho sem açúcar",
       "tamara",
-      "uva passa branca"
+      "uva passa branca",
+      "vegetais liofilizados chips"
     ]
   },
   {
@@ -1879,7 +1920,8 @@ const CATS = [
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
       "tamara",
-      "uva passa branca"
+      "uva passa branca",
+      "vegetais liofilizados chips"
     ]
   },
   {
@@ -1919,6 +1961,7 @@ const CATS = [
       "erva mate fina",
       "gotas do zeca",
       "magnésio quelato",
+      "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
@@ -2230,7 +2273,12 @@ const IMGS = {
   "erva mate composta": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6_X61abIFk1Cd-Dd5B77C03k7spxIGwT4evoPVArzg&s=10",
   "erva mate grossa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFPkbPFEc6fHyrxIgiHzOBTow4Bbe33dAb2sRLVII7A&s=10",
   "erva mate cancheada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOMQthXi19LBTmQj7Khf1ie2pBSZPQOFyRmYR7GvLPQ&s=10",
-  "semente de abobora com casca": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-HC4irRKV3VMBCuG0I5Nqw85LP4tASvulOimpQqStAkXqvZKeghRAiF5KXvh2UudWc6kM-ad5DHxkFlJ0cUs4z-ee9cXzZGqunN9MUAv29l05sXusIrWUNnvHIPXsjFbOXtaeA5olGH0&usqp=CAc"
+  "semente de abobora com casca": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-HC4irRKV3VMBCuG0I5Nqw85LP4tASvulOimpQqStAkXqvZKeghRAiF5KXvh2UudWc6kM-ad5DHxkFlJ0cUs4z-ee9cXzZGqunN9MUAv29l05sXusIrWUNnvHIPXsjFbOXtaeA5olGH0&usqp=CAc",
+  "marapuama em po": "data:image/jpeg;base64,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",
+  "temp amaciante de carne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZ0qk3YJEYNnrX1RRpx_p6N8RwlFlQSnwkve8s6m0VA&s=10",
+  "vegetais liofilizados chips": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31KfPsfpW-qIjRj5VCvCyKXPpd0nCivTUJ4cbROzZjA&s=10",
+  "cha ora pro nobis": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoPsn9k1TzpHtPOfoyz5NEGEvn1Y497er1JM-Nh86xQ&s=10v",
+  "abutua": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VYwQLhZHgO9p21DDflyO5qgjHwf_zZHGD-KOp4cilQ&s"
 };
 
 const INFO = {
@@ -3078,6 +3126,21 @@ const INFO = {
   },
   "semente de abobora com casca": {
     "ben": ". Ela é totalmente comestível, rica em fibras, ferro, zinco e magnésio. No entanto, a casca é mais dura e fibrosa, o que faz com que muitas pessoas prefiram a versão sem casca (conhecida como pepita) por ser mais fácil de digeri"
+  },
+  "marapuama em po": {
+    "ben": "A marapuama em pó serve principalmente como um estimulante natural para aumentar a libido, combater a fadiga física e mental e melhorar a circulação sanguínea"
+  },
+  "temp amaciante de carne": {
+    "ben": "Agem muito rápido devido às enzimas (como papaína e bromelina). O tempo de marinada deve ser curto, entre 10 a 30 minutos, caso contrário a carne pode desmanchar"
+  },
+  "vegetais liofilizados chips": {
+    "ben": "Vegetais liofilizados são alimentos desidratados a frio sob vácuo, um processo que remove a água e preserva cerca de 95% dos nutrientes, além da cor, do sabor e da textura originais."
+  },
+  "cha ora pro nobis": {
+    "ben": "O chá de ora-pro-nóbis serve para melhorar a digestão, fortalecer a imunidade e combater inflamações devido à sua alta concentração de fibras, vitaminas e antioxidantes."
+  },
+  "abutua": {
+    "ben": "abútua rasurada é a raiz ou o cipó picado em pedaços pequenos da planta medicinal Chondrodendron platyphyllum ou Cissampelos pareira, usada popularmente para fazer chás."
   }
 };
 
