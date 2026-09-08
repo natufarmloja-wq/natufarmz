@@ -521,8 +521,7 @@ const PRODUTOS = {
   },
   "Amendoim Xerém": {
     "custo": 5.5,
-    "tipo": "granel",
-    "precoPromo": 4.99
+    "tipo": "granel"
   },
   "Amendoim Pimenta": {
     "custo": 5.57,
@@ -555,8 +554,7 @@ const PRODUTOS = {
   },
   "sucrilho sem açúcar": {
     "custo": 8.99,
-    "tipo": "granel",
-    "precoPromo": 5.99
+    "tipo": "granel"
   },
   "alfavaca": {
     "custo": 7.5,
@@ -640,7 +638,8 @@ const PRODUTOS = {
   },
   "Extrato Aquoso de Própolis Verde": {
     "custo": 34.99,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 29.99
   },
   "Suplemento Mineral De Ferro 60 Cáps": {
     "custo": 26.68,
@@ -676,7 +675,8 @@ const PRODUTOS = {
   },
   "Mel de Laranjeira Bisnaga 220g": {
     "custo": 28.9,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 24.99
   },
   "mel flores eucalipto 310ml bisnaga": {
     "custo": 32,
@@ -684,11 +684,13 @@ const PRODUTOS = {
   },
   "Mel Composto Própolis e Eucalipto 300g": {
     "custo": 31.99,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 28.99
   },
   "Mel Composto Própolis Euc. Agrião e Copaíba 300g": {
     "custo": 31.99,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 28.99
   },
   "MELATONINA": {
     "custo": 24.99,
@@ -706,19 +708,14 @@ const PRODUTOS = {
     "custo": 39.99,
     "tipo": "caps"
   },
-  "Óleo de Coco Extra Virgem 200ml - ApisNutri": {
-    "custo": 36.99,
-    "tipo": "caps",
-    "precoPromo": 31.99,
-    "semEstoque": true
-  },
   "omega 3 caps": {
     "custo": 25.99,
     "tipo": "caps"
   },
   "Óleo De Menta 10ml": {
     "custo": 22,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 19.9
   },
   "Spray de Própolis e Menta 30m": {
     "custo": 19.99,
@@ -751,7 +748,8 @@ const PRODUTOS = {
   },
   "vinagre de maça almaromi beneficios 500": {
     "custo": 48,
-    "tipo": "caps"
+    "tipo": "caps",
+    "precoPromo": 43.99
   },
   "Vitamina A 280mg 60 Cápsulas": {
     "custo": 24.99,
@@ -885,7 +883,8 @@ const PRODUTOS = {
   },
   "Mel Composto Própolis Euc. Gengibre e Romã 300g": {
     "custo": 31.99,
-    "tipo": "granel"
+    "tipo": "granel",
+    "precoPromo": 28.99
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "custo": 49.9,
@@ -894,11 +893,6 @@ const PRODUTOS = {
   "goma xantana": {
     "custo": 7.78,
     "tipo": "granel"
-  },
-  "drageado de cereal crocante": {
-    "custo": 21.63,
-    "tipo": "granel",
-    "precoPromo": 18
   },
   "cebola crispy": {
     "custo": 7.49,
@@ -934,8 +928,7 @@ const PRODUTOS = {
   },
   "semente de abobora com casca": {
     "custo": 8.56,
-    "tipo": "granel",
-    "precoPromo": 6.99
+    "tipo": "granel"
   },
   "marapuama em po": {
     "custo": 5.56,
@@ -1150,7 +1143,6 @@ const CATS = [
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
       "damasco turco n2",
-      "drageado de cereal crocante",
       "enxofre",
       "erva mate cancheada",
       "erva mate composta",
@@ -1199,8 +1191,7 @@ const CATS = [
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
       "Óleo De Alho 250mg 60 Cáps",
-      "Óleo De Menta 10ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "Óleo De Menta 10ml"
     ]
   },
   {
@@ -1344,8 +1335,7 @@ const CATS = [
       "tribulos + maca peruana",
       "vegetais liofilizados chips",
       "vinagre de maça almaromi 400 ml",
-      "vinagre de maça almaromi orgânico 400ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "vinagre de maça almaromi orgânico 400ml"
     ]
   },
   {
@@ -1443,8 +1433,7 @@ const CATS = [
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
       "Óleo De Alho 250mg 60 Cáps",
-      "Óleo De Menta 10ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "Óleo De Menta 10ml"
     ]
   },
   {
@@ -1548,8 +1537,7 @@ const CATS = [
       "vinagre de maça almaromi 400 ml",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
-      "Óleo De Menta 10ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "Óleo De Menta 10ml"
     ]
   },
   {
@@ -1866,7 +1854,6 @@ const CATS = [
       "Uva Passa",
       "cebola crispy",
       "damasco turco n2",
-      "drageado de cereal crocante",
       "erva mate cancheada",
       "erva mate composta",
       "erva mate fina",
@@ -1910,7 +1897,6 @@ const CATS = [
       "Uva Passa",
       "Xilitol",
       "damasco turco n2",
-      "drageado de cereal crocante",
       "erva mate cancheada",
       "goma xantana",
       "granola castanha de caju e leite condessado",
@@ -1969,8 +1955,7 @@ const CATS = [
       "ora pro nobis 60 caps",
       "tribulos + maca peruana",
       "vinagre de maça almaromi beneficios 500",
-      "vinagre de maça almaromi orgânico 400ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "vinagre de maça almaromi orgânico 400ml"
     ]
   },
   {
@@ -2036,8 +2021,7 @@ const CATS = [
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml",
       "Óleo De Alho 250mg 60 Cáps",
-      "Óleo De Menta 10ml",
-      "Óleo de Coco Extra Virgem 200ml - ApisNutri"
+      "Óleo De Menta 10ml"
     ]
   }
 ];
@@ -2218,7 +2202,6 @@ const IMGS = {
   "NAC 600mg 30 Cápsulas": "https://lojaapisnutri.fbitsstatic.net/media/pg4kw0hu_41hijocae7ipg_9.png?v=202604091843",
   "NutriDaily Cabelos e Unhas 700mg 30 Capsulas - Apisnutri": "https://lojaapisnutri.fbitsstatic.net/media/01_nutri-daily-hair-exibi%C3%A7%C3%A3o-atual.png?v=202407021501",
   "Óleo De Alho 250mg 60 Cáps": "https://lojaapisnutri.fbitsstatic.net/media/01oleo-de-alho-250mg-60-caps---127-exibi%C3%A7%C3%A3o-atual.png?v=202406121630",
-  "Óleo de Coco Extra Virgem 200ml - ApisNutri": "https://lojaapisnutri.fbitsstatic.net/media/pote-%C3%B3leo-de-coco-200ml-exibi%C3%A7%C3%A3o-atual.png?v=202604281728",
   "omega 3 caps": "https://lojaapisnutri.fbitsstatic.net/media/%C3%B3leo-de-peixe-1g-(%C3%B4mega-3)-120-caps---177-exibi%C3%A7%C3%A3o-atual.png?v=202405100958",
   "Óleo De Menta 10ml": "https://lojaapisnutri.fbitsstatic.net/media/oleo-de-menta-10ml---2492-exibi%C3%A7%C3%A3o-atual.png?v=202406101621",
   "Spray de Própolis e Menta 30m": "https://lojaapisnutri.fbitsstatic.net/media/01pr%C3%B3prolis_menta_30ml_frontal.png?v=202406140918",
@@ -2264,7 +2247,6 @@ const IMGS = {
   "Mel Composto Própolis Euc. Gengibre e Romã 300g": "https://lojaapisnutri.fbitsstatic.net/media/apisnutri_mel_frontal_pote_vermelho_300g.png?v=202406131048",
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": "https://lojaapisnutri.fbitsstatic.net/media/nutri-daily-artro-60-caps---4185-novo-exibi%C3%A7%C3%A3o-atual.png?v=202405240948",
   "goma xantana": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgHerjZUshfAhrlXhgk_jMqvLKPj5MtsFDSdVts3w-g&s=10",
-  "drageado de cereal crocante": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRoneAtfFZklCuK-yHa7303qQEKyPDvKdJkxv7tr1Iw&s=10",
   "cebola crispy": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhdnQ2Jk7StR9ZQyT7E5OafS6rKUI0OgDjDgfCEsGXA&s=10",
   "tempero bife acebolado": "https://loja.saborethos.com.br/wp-content/uploads/2024/12/CXLP003-2.png.webp",
   "tempero caldo de bacon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6qQvb7TarfuRxWTQm1iVWFLif9SdTvhBeK3Ut91lgA&s=10",
@@ -2956,9 +2938,6 @@ const INFO = {
   "Óleo De Alho 250mg 60 Cáps": {
     "ben": "O Óleo de Alho se destaca por proporcionar uma concentração significativamente maior de Alicina quando comparado ao alimento in natura, um princípio ativo cujas propriedades antioxidantes podem trazer muitos benefícios para a saúde do nosso organismo."
   },
-  "Óleo de Coco Extra Virgem 200ml - ApisNutri": {
-    "ben": "O Óleo de Coco é extraído mediante prensagem da polpa ou carne dos cocos (Cocos Nucifera). São encontradas diversas substâncias no Óleo de Coco, entre elas os Ácidos Graxos essenciais e o Glicerol, que é importante para o organismo. Com ele o corpo produz Ácidos Graxos saturados e insaturados de acordo com suas necessidades."
-  },
   "omega 3 caps": {
     "ben": "É um suplemento à base de Óleo de Peixe, contendo EPA e DHA, considerado uma 'gordura boa' e essencial, pois não pode ser produzido naturalmente pelo organismo, devendo, portanto, ser obtido através da alimentação e/ou suplementação."
   },
@@ -3096,9 +3075,6 @@ const INFO = {
   },
   "goma xantana": {
     "ben": "é um aditivo em pó natural, derivado da fermentação da bactéria Xanthomonas campestris. Ela serve como espessante, estabilizante e emulsificante em alimentos. É muito usada em receitas sem glúten para dar liga, elasticidade e maciez às massas."
-  },
-  "drageado de cereal crocante": {
-    "ben": "é um doce feito com um núcleo de cereal leve (como bolinhas de arroz ou milho) coberto por uma camada uniforme de chocolate ao leite, branco ou amargo. É muito consumido como snack ou usado na decoração de bolos, ovos de Páscoa e sobremesas"
   },
   "cebola crispy": {
     "ben": "A cebola crispy é uma cebola frita em tiras bem finas que fica muito crocante e sequinha. Ela é ótima para dar textura e sabor em hambúrgueres, cachorros-quentes, saladas, arroz com lentilha ou sopas."
