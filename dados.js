@@ -533,8 +533,7 @@ const PRODUTOS = {
   },
   "damasco turco n2": {
     "custo": 25.5,
-    "tipo": "granel",
-    "precoPromo": 21.99
+    "tipo": "granel"
   },
   "uva passa branca": {
     "custo": 9.98,
@@ -675,8 +674,7 @@ const PRODUTOS = {
   },
   "Mel de Laranjeira Bisnaga 220g": {
     "custo": 28.9,
-    "tipo": "caps",
-    "precoPromo": 24.99
+    "tipo": "caps"
   },
   "mel flores eucalipto 310ml bisnaga": {
     "custo": 32,
@@ -684,13 +682,11 @@ const PRODUTOS = {
   },
   "Mel Composto Própolis e Eucalipto 300g": {
     "custo": 31.99,
-    "tipo": "caps",
-    "precoPromo": 28.99
+    "tipo": "caps"
   },
   "Mel Composto Própolis Euc. Agrião e Copaíba 300g": {
     "custo": 31.99,
-    "tipo": "caps",
-    "precoPromo": 28.99
+    "tipo": "caps"
   },
   "MELATONINA": {
     "custo": 24.99,
@@ -714,8 +710,7 @@ const PRODUTOS = {
   },
   "Óleo De Menta 10ml": {
     "custo": 22,
-    "tipo": "caps",
-    "precoPromo": 19.9
+    "tipo": "caps"
   },
   "Spray de Própolis e Menta 30m": {
     "custo": 19.99,
@@ -748,8 +743,7 @@ const PRODUTOS = {
   },
   "vinagre de maça almaromi beneficios 500": {
     "custo": 48,
-    "tipo": "caps",
-    "precoPromo": 43.99
+    "tipo": "caps"
   },
   "Vitamina A 280mg 60 Cápsulas": {
     "custo": 24.99,
@@ -805,7 +799,7 @@ const PRODUTOS = {
     "tipo": "caps"
   },
   "gotas de cardo mariano": {
-    "custo": 14.5,
+    "custo": 16.99,
     "tipo": "caps"
   },
   "gotas de passiflora": {
@@ -883,8 +877,7 @@ const PRODUTOS = {
   },
   "Mel Composto Própolis Euc. Gengibre e Romã 300g": {
     "custo": 31.99,
-    "tipo": "granel",
-    "precoPromo": 28.99
+    "tipo": "granel"
   },
   "NutriDaily ARTRO MSM 550mg 60 Cáps -": {
     "custo": 49.9,
@@ -940,7 +933,8 @@ const PRODUTOS = {
   },
   "vegetais liofilizados chips": {
     "custo": 23.8,
-    "tipo": "granel"
+    "tipo": "granel",
+    "semEstoque": true
   },
   "cha ora pro nobis": {
     "custo": 14.12,
@@ -949,6 +943,70 @@ const PRODUTOS = {
   "abutua": {
     "custo": 7.56,
     "tipo": "granel"
+  },
+  "gotas de sinusite": {
+    "custo": 23.99,
+    "tipo": "caps"
+  },
+  "gotas de melao sao caetano": {
+    "custo": 16.99,
+    "tipo": "caps"
+  },
+  "gotas de cavalinha": {
+    "custo": 16.99,
+    "tipo": "caps"
+  },
+  "gotas de valeriana": {
+    "custo": 16.99,
+    "tipo": "caps"
+  },
+  "gotas de oliveira": {
+    "custo": 16.99,
+    "tipo": "caps"
+  },
+  "gostas prostaticas": {
+    "custo": 16.99,
+    "tipo": "granel"
+  },
+  "gotas de são João": {
+    "custo": 16.99,
+    "tipo": "caps"
+  },
+  "composto laxante": {
+    "custo": 36.8,
+    "tipo": "granel"
+  },
+  "picolinato de cromo": {
+    "custo": 29.9,
+    "tipo": "caps"
+  },
+  "figalive": {
+    "custo": 31,
+    "tipo": "caps"
+  },
+  "hviron": {
+    "custo": 46,
+    "tipo": "granel"
+  },
+  "aloe vera": {
+    "custo": 32.9,
+    "tipo": "granel"
+  },
+  "gel lipo redutor": {
+    "custo": 22,
+    "tipo": "granel"
+  },
+  "colageno tipo 2 com vitamina c": {
+    "custo": 36,
+    "tipo": "granel"
+  },
+  "centella asiatica": {
+    "custo": 24.99,
+    "tipo": "granel"
+  },
+  "melao sao caetano 60 caps": {
+    "custo": 26.8,
+    "tipo": "caps"
   }
 };
 
@@ -1134,13 +1192,17 @@ const CATS = [
       "Vitamina D3 280mg 60 Cáps",
       "Xilitol",
       "alfavaca",
+      "aloe vera",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "cebola crispy",
+      "centella asiatica",
       "cha ora pro nobis",
       "colageno hidrolizado",
+      "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
+      "composto laxante",
       "cura tudo 500 ml",
       "damasco turco n2",
       "enxofre",
@@ -1150,23 +1212,34 @@ const CATS = [
       "erva mate grossa",
       "farinha de maracuja",
       "farinha integral",
+      "figalive",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "gel lipo redutor",
       "glucomannan",
       "goma xantana",
+      "gostas prostaticas",
       "gotas de cardo mariano",
+      "gotas de cavalinha",
       "gotas de graviola",
+      "gotas de melao sao caetano",
+      "gotas de oliveira",
       "gotas de passiflora",
+      "gotas de sinusite",
+      "gotas de são João",
+      "gotas de valeriana",
       "gotas do zeca",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "guarana 60 caps",
+      "hviron",
       "isoflavona 60 caps",
       "leite de coco em po",
       "lemon peper defumado",
       "magnésio quelato",
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
+      "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mix frutas tropicais chips",
@@ -1175,6 +1248,7 @@ const CATS = [
       "mulungu 60 caps",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "pomada canela de velho premium",
       "psyllium 60 caps",
       "semente de abobora com casca",
@@ -1234,16 +1308,22 @@ const CATS = [
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
       "Xilitol",
+      "aloe vera",
+      "centella asiatica",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
       "erva mate cancheada",
       "erva mate grossa",
       "farinha de maracuja",
+      "figalive",
+      "gel lipo redutor",
       "glucomannan",
       "goma xantana",
+      "gotas de cavalinha",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "guarana 60 caps",
+      "hviron",
       "leite de coco em po",
       "magnésio quelato",
       "marapuama em po",
@@ -1252,6 +1332,7 @@ const CATS = [
       "mix frutas tropicais chips",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "psyllium 60 caps",
       "semente de abobora com casca",
       "tribulos + maca peruana",
@@ -1310,25 +1391,33 @@ const CATS = [
       "Uva Passa",
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
+      "aloe vera",
+      "centella asiatica",
+      "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
       "erva mate cancheada",
       "erva mate composta",
       "erva mate grossa",
       "farinha de maracuja",
+      "figalive",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "gel lipo redutor",
       "glucomannan",
+      "gotas de cavalinha",
       "gotas do zeca",
       "granola castanha de caju e leite condessado",
       "granola morango iogurte e mel",
       "guarana 60 caps",
+      "hviron",
       "magnésio quelato",
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "pomada canela de velho premium",
       "psyllium 60 caps",
       "semente de abobora com casca",
@@ -1404,8 +1493,10 @@ const CATS = [
       "alfavaca",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "centella asiatica",
       "cha ora pro nobis",
       "colageno hidrolizado",
+      "colageno tipo 2 com vitamina c",
       "composto circulatório 60 caps",
       "cura tudo 500 ml",
       "erva mate cancheada",
@@ -1413,19 +1504,24 @@ const CATS = [
       "erva mate grossa",
       "farinha de maracuja",
       "glucomannan",
+      "gostas prostaticas",
       "gotas de cardo mariano",
+      "gotas de cavalinha",
       "gotas de graviola",
       "gotas do zeca",
       "guarana 60 caps",
+      "hviron",
       "isoflavona 60 caps",
       "leite de coco em po",
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
+      "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mulungu 60 caps",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "semente de abobora com casca",
       "tribulos + maca peruana",
       "vegetais liofilizados chips",
@@ -1460,10 +1556,15 @@ const CATS = [
       "Sálvia",
       "Uxi Amarelo",
       "Vitamina D3 280mg 60 Cáps",
+      "aloe vera",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "centella asiatica",
       "erva mate cancheada",
+      "gel lipo redutor",
+      "gotas de cavalinha",
       "gotas de passiflora",
+      "gotas de valeriana",
       "gotas do zeca",
       "isoflavona 60 caps",
       "marapuama em po",
@@ -1509,18 +1610,23 @@ const CATS = [
       "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
       "alfavaca",
+      "aloe vera",
       "cavalinha cha",
       "cha ora pro nobis",
+      "composto laxante",
       "cura tudo 500 ml",
       "erva mate cancheada",
       "erva mate composta",
       "erva mate fina",
       "erva mate grossa",
       "farinha de maracuja",
+      "figalive",
       "glucomannan",
       "goma xantana",
       "gotas de cardo mariano",
       "gotas de graviola",
+      "gotas de melao sao caetano",
+      "gotas de oliveira",
       "gotas do zeca",
       "magnésio quelato",
       "marapuama em po",
@@ -1568,10 +1674,13 @@ const CATS = [
       "Suplemento Mineral de Zinco 280mg 60 Cáps",
       "Uxi Amarelo",
       "Vitamina D3 280mg 60 Cáps",
+      "aloe vera",
       "amora branca + isoflavona gotas",
       "cha ora pro nobis",
       "colageno hidrolizado",
+      "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
+      "composto laxante",
       "cura tudo 500 ml",
       "erva mate cancheada",
       "erva mate composta",
@@ -1579,9 +1688,13 @@ const CATS = [
       "erva mate grossa",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "gel lipo redutor",
       "gotas de cardo mariano",
       "gotas de graviola",
+      "gotas de oliveira",
       "gotas de passiflora",
+      "gotas de são João",
+      "gotas de valeriana",
       "gotas do zeca",
       "magnésio quelato",
       "marapuama em po",
@@ -1617,6 +1730,8 @@ const CATS = [
       "erva mate cancheada",
       "erva mate grossa",
       "gotas de passiflora",
+      "gotas de são João",
+      "gotas de valeriana",
       "gotas do zeca",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
@@ -1654,7 +1769,10 @@ const CATS = [
       "glucomannan",
       "goma xantana",
       "gotas de cardo mariano",
+      "gotas de cavalinha",
+      "gotas de melao sao caetano",
       "gotas do zeca",
+      "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
       "ora pro nobis 60 caps",
@@ -1727,6 +1845,8 @@ const CATS = [
       "erva mate fina",
       "erva mate grossa",
       "gotas de cardo mariano",
+      "gotas de cavalinha",
+      "gotas de melao sao caetano",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mulungu"
     ]
@@ -1937,15 +2057,20 @@ const CATS = [
       "Vitamina A 280mg 60 Cápsulas",
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
+      "aloe vera",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
+      "centella asiatica",
       "colageno hidrolizado",
+      "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
       "enxofre",
       "erva mate cancheada",
       "erva mate composta",
       "erva mate fina",
+      "gel lipo redutor",
       "gotas do zeca",
+      "hviron",
       "magnésio quelato",
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
@@ -1953,6 +2078,7 @@ const CATS = [
       "mix de chimarrão 160g artesanal NatuFarm",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "tribulos + maca peruana",
       "vinagre de maça almaromi beneficios 500",
       "vinagre de maça almaromi orgânico 400ml"
@@ -1994,26 +2120,42 @@ const CATS = [
       "Vitamina A 280mg 60 Cápsulas",
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
+      "aloe vera",
       "amora branca + isoflavona gotas",
+      "centella asiatica",
       "colageno hidrolizado",
+      "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
       "composto circulatório 60 caps",
+      "composto laxante",
       "cura tudo 500 ml",
       "erva mate grossa",
+      "figalive",
       "fisio forte GOLD",
       "fisio forte PREMIUM",
+      "gel lipo redutor",
+      "gostas prostaticas",
       "gotas de cardo mariano",
+      "gotas de cavalinha",
       "gotas de graviola",
+      "gotas de melao sao caetano",
+      "gotas de oliveira",
       "gotas de passiflora",
+      "gotas de sinusite",
+      "gotas de são João",
+      "gotas de valeriana",
       "gotas do zeca",
       "guarana 60 caps",
+      "hviron",
       "magnésio quelato",
       "mel flores eucalipto 310ml bisnaga",
+      "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
       "mulungu 60 caps",
       "omega 3 caps",
       "ora pro nobis 60 caps",
+      "picolinato de cromo",
       "pomada canela de velho premium",
       "psyllium 60 caps",
       "tribulos + maca peruana",
@@ -2056,7 +2198,7 @@ const IMGS = {
   "Tribulus Terrestris": "https://www.ingredientesonline.com.br/media/amasty/webp/catalog/product/cache/e928b84fd671f46d7960e6ef707820a9/t/r/tribulus_terrestris_a_granel_200g_ingredientes_online_7_jpg.webp",
   "Catuaba": "https://images.tcdn.com.br/img/img_prod/1231090/catuaba_em_po_100g_5276_1_e23bddfb7908a8f203d61f9dafe196c8.jpeg",
   "Moringa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPlitjTgjl8XnT5C26hBh4-_RyvehT-Fpxmw&s",
-  "Farinha de Beterraba": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Detroitdarkredbeets.png/500px-Detroitdarkredbeets.png",
+  "Farinha de Beterraba": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFiobKtjnQrodECJFTH2KKGvHZgMIgJLJmR7zmnyTww&s=10",
   "Farinha de Uva": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRSwAr3LsJT8dLbXnDY5F5sJWo2N7ZY8R7tQ&s",
   "Mix de Castanhas": "https://doceriapaodemel.com.br/wp-content/uploads/2026/01/9946ea17d7889ecb06c44c81ec9eefcd.jpeg",
   "Castanha do Pará": "https://saboremgraos.com.br/wp-content/uploads/2024/10/castanha_do_para_grande_granel_100g_347_1_46edee6d7e5c72c5dbc839def5108e57.jpg",
@@ -2074,7 +2216,7 @@ const IMGS = {
   "Farinha de Aveia": "https://cdn.awsli.com.br/800x800/36/36210/produto/40191113/3ccff3c16f.jpg",
   "Farelo de Aveia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_PB5S9I8oHR13CvkzUTY7HStuFGsw7acKw&s",
   "Canela em Pó": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRNj7xTTr5nFgyX8UMeJdKwG48ZQWQ9ts39A&s",
-  "Canela em Rama": "https://armazemseuluiz.com.br/storage/app/uploads/public/672/24a/403/67224a4033980182922134",
+  "Canela em Rama": "data:image/jpeg;base64,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",
   "Cravo da Índia": "https://cdn0.umcomo.com.br/pt/posts/2/8/4/como_plantar_cravo_da_india_22482_600.jpg",
   "Gengibre": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTpNeo_VmnC-4J-G5v5bJ70PgXEVwqTQbjw&s",
   "Seca Barriga": "https://www.produtosnaturaisnutribem.com.br/userfiles/1266/SECA%20BARRIGA%20COM%20NOZ%20DA%20INDIA.JPG",
@@ -2260,7 +2402,23 @@ const IMGS = {
   "temp amaciante de carne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZ0qk3YJEYNnrX1RRpx_p6N8RwlFlQSnwkve8s6m0VA&s=10",
   "vegetais liofilizados chips": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31KfPsfpW-qIjRj5VCvCyKXPpd0nCivTUJ4cbROzZjA&s=10",
   "cha ora pro nobis": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoPsn9k1TzpHtPOfoyz5NEGEvn1Y497er1JM-Nh86xQ&s=10v",
-  "abutua": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VYwQLhZHgO9p21DDflyO5qgjHwf_zZHGD-KOp4cilQ&s"
+  "abutua": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VYwQLhZHgO9p21DDflyO5qgjHwf_zZHGD-KOp4cilQ&s",
+  "gotas de sinusite": "https://i.ibb.co/zWgZGrDH/IMG-20260820-WA0002.jpg",
+  "gotas de melao sao caetano": "https://i.ibb.co/gbQysZJ3/IMG-20260922-153331.jpg",
+  "gotas de cavalinha": "https://i.ibb.co/90cSsq8/IMG-20260922-153354.jpg",
+  "gotas de valeriana": "https://i.ibb.co/DHvtjTd2/IMG-20260922-153246.jpg",
+  "gotas de oliveira": "https://i.ibb.co/0VGYwTB6/IMG-20260922-153416.jpg",
+  "gostas prostaticas": "https://i.ibb.co/FqXjy6NM/IMG-20260922-153427.jpg",
+  "gotas de são João": "https://i.ibb.co/d0wZHn7Y/IMG-20260922-153510.jpg",
+  "composto laxante": "https://i.ibb.co/tpqV5fGS/IMG-20260922-153439.jpg",
+  "picolinato de cromo": "https://lojaapisnutri.fbitsstatic.net/media/picolinato-de-cromo-300mg-60-c%C3%A1ps---403-exibi%C3%A7%C3%A3o-atual.png?v=202405281439",
+  "figalive": "https://lojaapisnutri.fbitsstatic.net/media/figalive-150ml.png?v=202406101603",
+  "hviron": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTstTJY00U7g0n3ccieu6Pq5vJLIevqvJWUxlPGNsE44Q&s",
+  "aloe vera": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWjxlLSGEUI2VMhnc8LNMTYjcLyjRMxLTWaX6Z_ifRvw&s=10",
+  "gel lipo redutor": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY2KYs8VM6pET4SQ8jDo--6C9BOQGWRZ4Ybn1WwjNh6A&s",
+  "colageno tipo 2 com vitamina c": "https://lojaapisnutri.fbitsstatic.net/media/colageno-tipo-ii--vitamina-c-500mg-60-comprimidos---5319-exibi%C3%A7%C3%A3o-atual.png?v=202405281121",
+  "centella asiatica": "https://i.ibb.co/nN625Cpw/IMG-20260925-163823.jpg",
+  "melao sao caetano 60 caps": "https://i.ibb.co/DPRLYyGN/IMG-20260925-163830.jpg"
 };
 
 const INFO = {
@@ -3117,6 +3275,51 @@ const INFO = {
   },
   "abutua": {
     "ben": "abútua rasurada é a raiz ou o cipó picado em pedaços pequenos da planta medicinal Chondrodendron platyphyllum ou Cissampelos pareira, usada popularmente para fazer chás."
+  },
+  "gotas de melao sao caetano": {
+    "ben": "✅ Auxilia no controle do açúcar no sangue (diabetes tipo 2)\n✅ Melhora a resistência à insulina\n✅ Ação anti-inflamatória e antioxidante\n✅ Ajuda na digestão"
+  },
+  "gotas de cavalinha": {
+    "ben": "gotas de cavalinha\n✅ Efeito diurético, reduz o inchaço\n✅ Fortalece cabelo e unhas\n✅ Ajuda na saúde da pele\n✅ Auxilia na saúde dos ossos"
+  },
+  "gotas de valeriana": {
+    "ben": "gotas de valeriana\n✅ fortes propriedades calmantes, sedativas e relaxantes no sistema nervoso\n✅ Reduz a ansiedade e o estresse\n✅ Melhora a qualidade do sono\n✅ Alivia dores de cabeça tensionais\n✅ Reduz cólicas e espasmos musculares\n✅ Auxilia nos sintomas de TPM e menopausa"
+  },
+  "gotas de oliveira": {
+    "ben": "extrato de oliveira\n✅ Ajuda a controlar a pressão arterial\n✅ Ação antioxidante\n✅ Auxilia no controle do colesterol\n✅ Fortalece a imunidade"
+  },
+  "gostas prostaticas": {
+    "ben": "composto prostatico\n\n✅ Auxilia na saúde da próstata\n✅ Ajuda a reduzir a inflamação\n✅ Melhora o fluxo urinário\n✅ Reduz idas frequentes ao banheiro à noite"
+  },
+  "gotas de são João": {
+    "ben": "✅ Auxilia no tratamento da depressão leve a moderada\n✅ Ajuda a controlar a ansiedade\n✅ Melhora o humor e reduz a tristeza\n✅ Ação calmante, reduz o estresse"
+  },
+  "composto laxante": {
+    "ben": "✅ Ajuda a combater a prisão de ventre\n✅ Estimula o funcionamento do intestino\n✅ Efeito laxante natural"
+  },
+  "picolinato de cromo": {
+    "ben": "picolinato de cromo\n✅ Ajuda a controlar o açúcar no sangue\n✅ Aumenta a sensibilidade à insulina\n✅ Reduz a compulsão por doces\n✅ Auxilia no emagrecimento\n✅ Apoia o ganho de massa magra"
+  },
+  "figalive": {
+    "ben": "figa live\n✅ Ajuda na saúde e funcionamento do fígado\n✅ Auxilia no metabolismo de gorduras\n✅ Contribui para o metabolismo energético"
+  },
+  "hviron": {
+    "ben": "hviron\n✅ Aumenta força, energia e disposição\n✅ Fortalece a imunidade\n✅ Suporte muscular\n✅ Favorece a potência e a saúde sexual"
+  },
+  "aloe vera": {
+    "ben": "aloevera\n✅ Fortalece a imunidade\n✅ Ação antioxidante\n✅ Auxilia na saúde da pele\n✅ Zero açúcares e zero lactose"
+  },
+  "gel lipo redutor": {
+    "ben": "gel lipo redutor marylife\n✅ Ação termoativada, aquece a pele na aplicação\n✅ Ajuda a reduzir a celulite\n✅ Melhora a firmeza da pele\n✅ Auxilia na redução de medidas em massagens"
+  },
+  "colageno tipo 2 com vitamina c": {
+    "ben": "Formulado com o Colágeno Tipo II, também conhecido como o \"não hidrolisado ou não desnaturado\" é a forma de Colágeno mais recomendada para a reconstrução de tecidos cartilaginosos, pois é o componente maioritário das cartilagens.\n\nFonte de proteínas, o Colágeno auxilia na formação de ossos e músculos, melhora a flexibilidade e a mobilidade, na recuperação de lesões, podendo ajudar no tratamento das dores articulares e doenças degenerativas, como osteoartrite e a artrite reumanoide, nutrindo e recuperando os tecidos articulares cartilaginosos.\n\nJá o papel da Vitamina C é aumentar a produção, absorção e atividade do colágeno. É essencial na formação das fibras de Colágeno em todos os tecidos do organismo."
+  },
+  "centella asiatica": {
+    "ben": "centella asiatica\n\n🌿 Centella Asiática\n\nA queridinha de quem quer cuidar da pele e da circulação por dentro ✨\n\n✅ Ajuda na cicatrização da pele\n✅ Auxilia na produção de colágeno, deixando a pele mais firme\n✅ Bom apoio pra quem sofre com varizes e pernas cansadas\n✅ Muito usada também pra melhorar a memória e reduzir o cansaço mental"
+  },
+  "melao sao caetano 60 caps": {
+    "ben": "🌿 Melão de São Caetano\nConhecido popularmente como aliado do equilíbrio do açúcar no sangue 🍃\n✅ Bastante procurado por quem busca apoio natural pra manter a glicose sob controle\n✅ Tradição popular como tônico amargo, bom pro fígado e pra digestão"
   }
 };
 
