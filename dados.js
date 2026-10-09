@@ -103,7 +103,7 @@ const PRODUTOS = {
     "tipo": "granel"
   },
   "Maca Peruana": {
-    "custo": 5.98,
+    "custo": 6.8,
     "tipo": "granel"
   },
   "Tribulus Terrestris": {
@@ -637,8 +637,7 @@ const PRODUTOS = {
   },
   "Extrato Aquoso de Própolis Verde": {
     "custo": 34.99,
-    "tipo": "caps",
-    "precoPromo": 29.99
+    "tipo": "caps"
   },
   "Suplemento Mineral De Ferro 60 Cáps": {
     "custo": 26.68,
@@ -775,8 +774,7 @@ const PRODUTOS = {
   },
   "mix frutas tropicais chips": {
     "custo": 29.99,
-    "tipo": "granel",
-    "semEstoque": true
+    "tipo": "granel"
   },
   "mix de chimarrão 160g artesanal NatuFarm": {
     "custo": 15,
@@ -1007,6 +1005,14 @@ const PRODUTOS = {
   "melao sao caetano 60 caps": {
     "custo": 26.8,
     "tipo": "caps"
+  },
+  "amendoas laminadas": {
+    "custo": 17.5,
+    "tipo": "granel"
+  },
+  "mix de vegetais ships": {
+    "custo": 24.99,
+    "tipo": "granel"
   }
 };
 
@@ -1193,6 +1199,7 @@ const CATS = [
       "Xilitol",
       "alfavaca",
       "aloe vera",
+      "amendoas laminadas",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "cebola crispy",
@@ -1242,6 +1249,7 @@ const CATS = [
       "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "mix frutas tropicais chips",
       "mix salsa tomate e alho",
       "mulungu",
@@ -1329,6 +1337,7 @@ const CATS = [
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "mix frutas tropicais chips",
       "omega 3 caps",
       "ora pro nobis 60 caps",
@@ -1392,6 +1401,7 @@ const CATS = [
       "Vitamina B12 280mg 60 Cáps",
       "Vitamina D3 280mg 60 Cáps",
       "aloe vera",
+      "amendoas laminadas",
       "centella asiatica",
       "colageno tipo 2 com vitamina c",
       "colageno tipo II + mag",
@@ -1415,6 +1425,7 @@ const CATS = [
       "marapuama em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "omega 3 caps",
       "ora pro nobis 60 caps",
       "picolinato de cromo",
@@ -1491,6 +1502,7 @@ const CATS = [
       "Vitamina A 280mg 60 Cápsulas",
       "Vitamina B12 280mg 60 Cáps",
       "alfavaca",
+      "amendoas laminadas",
       "amora branca + isoflavona gotas",
       "cavalinha cha",
       "centella asiatica",
@@ -1518,6 +1530,7 @@ const CATS = [
       "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "mulungu 60 caps",
       "omega 3 caps",
       "ora pro nobis 60 caps",
@@ -1633,6 +1646,7 @@ const CATS = [
       "mel flores eucalipto 310ml bisnaga",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "omega 3 caps",
       "ora pro nobis 60 caps",
       "psyllium 60 caps",
@@ -1775,6 +1789,7 @@ const CATS = [
       "melao sao caetano 60 caps",
       "melão são Caetano 60 caps.",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "ora pro nobis 60 caps",
       "psyllium 60 caps",
       "sucrilho sem açúcar",
@@ -1972,6 +1987,7 @@ const CATS = [
       "Pepita de Girassol",
       "Semente de Abóbora",
       "Uva Passa",
+      "amendoas laminadas",
       "cebola crispy",
       "damasco turco n2",
       "erva mate cancheada",
@@ -1983,6 +1999,7 @@ const CATS = [
       "granola morango iogurte e mel",
       "leite de coco em po",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "mix frutas tropicais chips",
       "semente de abobora com casca",
       "sucrilho sem açúcar",
@@ -2016,6 +2033,7 @@ const CATS = [
       "Mel de Laranjeira Bisnaga 220g",
       "Uva Passa",
       "Xilitol",
+      "amendoas laminadas",
       "damasco turco n2",
       "erva mate cancheada",
       "goma xantana",
@@ -2024,6 +2042,7 @@ const CATS = [
       "leite de coco em po",
       "mel flores eucalipto 310ml bisnaga",
       "mix de chimarrão 160g artesanal NatuFarm",
+      "mix de vegetais ships",
       "mix frutas tropicais chips",
       "tamara",
       "uva passa branca",
@@ -2418,7 +2437,9 @@ const IMGS = {
   "gel lipo redutor": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY2KYs8VM6pET4SQ8jDo--6C9BOQGWRZ4Ybn1WwjNh6A&s",
   "colageno tipo 2 com vitamina c": "https://lojaapisnutri.fbitsstatic.net/media/colageno-tipo-ii--vitamina-c-500mg-60-comprimidos---5319-exibi%C3%A7%C3%A3o-atual.png?v=202405281121",
   "centella asiatica": "https://i.ibb.co/nN625Cpw/IMG-20260925-163823.jpg",
-  "melao sao caetano 60 caps": "https://i.ibb.co/DPRLYyGN/IMG-20260925-163830.jpg"
+  "melao sao caetano 60 caps": "https://i.ibb.co/DPRLYyGN/IMG-20260925-163830.jpg",
+  "amendoas laminadas": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWos2JZHmoWRx8_OOJz5bHrBxxW3Zx69sgocuYET6sog&s=10",
+  "mix de vegetais ships": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDkMULHiFPhm3tRA8NUX-quIYzgqRbowXx_erPdfPnA&s=10"
 };
 
 const INFO = {
@@ -3320,6 +3341,12 @@ const INFO = {
   },
   "melao sao caetano 60 caps": {
     "ben": "🌿 Melão de São Caetano\nConhecido popularmente como aliado do equilíbrio do açúcar no sangue 🍃\n✅ Bastante procurado por quem busca apoio natural pra manter a glicose sob controle\n✅ Tradição popular como tônico amargo, bom pro fígado e pra digestão"
+  },
+  "amendoas laminadas": {
+    "ben": "As amêndoas laminadas são fatias finas de amêndoa crua sem pele, muito utilizadas para dar crocância, sabor e sofisticação a pratos doces e salgados."
+  },
+  "mix de vegetais ships": {
+    "ben": "Os vegetais liofilizados são legumes e verduras que passam por um processo avançado de desidratação a frio (congelamento seguido de vácuo e sublimação) que elimina quase toda a água do alimento."
   }
 };
 
